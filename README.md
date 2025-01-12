@@ -26,4 +26,5 @@
     <li>Print even numbers upto 100</li>
     <li>Game Number</li>
     <li>JS String</li>
+    <li>Template Literals</li>
 </ol>

@@ -28,4 +28,5 @@
     <li>JS String</li>
     <li>Template Literals</li>
     <li>String Methods</li>
+    <li>Arrays</li>
 </ol>

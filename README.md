@@ -21,4 +21,5 @@
     <li>For Loop</li>
     <li>While Loop</li>
     <li>Do While Loop</li>
+    <li>For of Loop</li>
 </ol>

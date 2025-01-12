@@ -25,4 +25,5 @@
     <li>For In Loop</li>
     <li>Print even numbers upto 100</li>
     <li>Game Number</li>
+    <li>JS String</li>
 </ol>

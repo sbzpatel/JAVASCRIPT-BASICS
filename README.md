@@ -24,4 +24,5 @@
     <li>For of Loop</li>
     <li>For In Loop</li>
     <li>Print even numbers upto 100</li>
+    <li>Game Number</li>
 </ol>

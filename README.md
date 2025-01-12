@@ -27,4 +27,5 @@
     <li>Game Number</li>
     <li>JS String</li>
     <li>Template Literals</li>
+    <li>String Methods</li>
 </ol>

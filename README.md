@@ -23,4 +23,5 @@
     <li>Do While Loop</li>
     <li>For of Loop</li>
     <li>For In Loop</li>
+    <li>Print even numbers upto 100</li>
 </ol>

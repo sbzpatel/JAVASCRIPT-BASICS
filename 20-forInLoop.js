@@ -1,5 +1,7 @@
 console.log("@@@@@@@@@@@ For-of Loop @@@@@@@@@@@");
 
+// for in used for access objects and array variables values one by one
+
 let student = {
     name: "Arhaan Patel",
     age: 20,

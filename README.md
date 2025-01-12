@@ -29,4 +29,5 @@
     <li>Template Literals</li>
     <li>String Methods</li>
     <li>Arrays</li>
+    <li>Arrays Methods</li>
 </ol>

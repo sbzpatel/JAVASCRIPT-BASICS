@@ -35,4 +35,5 @@
     <li>forEach Loop</li>
     <li>map() Function</li>
     <li>filter() Function</li>
+    <li>reduce() Function</li>
 </ol>

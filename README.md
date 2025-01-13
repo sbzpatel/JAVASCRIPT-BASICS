@@ -39,4 +39,5 @@
     <li>Inline Event Handling</li>
     <li>External Event Handling (By javascript file seperately)</li>
     <li>Event Object</li>
+    <li>Event Listeners</li>
 </ol>

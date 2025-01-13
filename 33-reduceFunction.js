@@ -16,7 +16,7 @@ const arrLargest = arr.reduce((prev, curr) => {     // example 2, greatest among
 
 console.log("Largest among array elements:", arrLargest);
 
-const arrSmallest = arr.reduce((prev, curr) => {
+const arrSmallest = arr.reduce((prev, curr) => {    // example 3, smallest among array element
     return prev < curr ? prev : curr;
 })
 

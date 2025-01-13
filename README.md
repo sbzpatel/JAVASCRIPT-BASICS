@@ -30,4 +30,5 @@
     <li>String Methods</li>
     <li>Arrays</li>
     <li>Arrays Methods</li>
+    <li>JS Functions</li>
 </ol>

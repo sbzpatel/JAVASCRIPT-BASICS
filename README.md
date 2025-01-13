@@ -33,4 +33,5 @@
     <li>Functions</li>
     <li>Arrow Functions</li>
     <li>forEach Loop</li>
+    <li>map Function</li>
 </ol>

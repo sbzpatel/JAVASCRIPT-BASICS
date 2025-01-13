@@ -1,6 +1,6 @@
 # Javascript Basic Concepts
 
-<p>In this repo covered all the basic concepts of Javascript as mentioned below:</p>
+<p>This repo covered all the basic concepts of Javascript as mentioned below:</p>
 
 <ol>
     <li>Alert & Console Dialog</li>

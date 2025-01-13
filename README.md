@@ -33,5 +33,6 @@
     <li>Functions</li>
     <li>Arrow Functions</li>
     <li>forEach Loop</li>
-    <li>map Function</li>
+    <li>map() Function</li>
+    <li>filter() Function</li>
 </ol>

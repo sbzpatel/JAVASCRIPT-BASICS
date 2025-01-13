@@ -37,4 +37,5 @@
     <li>filter() Function</li>
     <li>reduce() Function</li>
     <li>Inline Event Handling</li>
+    <li>External Event Handling (By javascript file seperately)</li>
 </ol>

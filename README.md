@@ -32,4 +32,5 @@
     <li>Arrays Methods</li>
     <li>Functions</li>
     <li>Arrow Functions</li>
+    <li>forEach Loop</li>
 </ol>

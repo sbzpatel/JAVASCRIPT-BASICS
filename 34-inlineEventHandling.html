@@ -10,8 +10,8 @@
 <body>
     <h1 style="text-align: center;">Inline Event Handling</h1>
 
-    <p>There are many types of events occured in.</p> 
-    <p>These event should handle by some way called as event handling in javascript.</p>
+    <h3>There are many types of events occured in.</h3> 
+    <h3>These event should handle by some way called as event handling in javascript.</h3>
 
     <button 
         onclick="console.log('Button was clicked!!!'); alert('Hello Sbz!!')"
@@ -35,7 +35,7 @@
         This is a box
     </div>
 
-    <p>Below are Tags which having events handled by script in another file</p>
+    <h3>Below are Tags which having events handled by script in another file</h3>
 
     <button 
         id="btn1"
@@ -53,7 +53,7 @@
         This is a box
     </div>
 
-    <p>On below tags event, we are getting information about events from "event object" like <b>e.targe, e.type, e.clientX, e.clientY</b> etc like many more</p>
+    <h3>On below tags event, we are getting information about events from "event object" like <b>e.targe, e.type, e.clientX, e.clientY</b> etc like many more</h3>
 
     <button 
         id="btn11"
@@ -61,7 +61,18 @@
         btn1
     </button>
 
+    <h3>Events handled through EventListeners</h3>
+    <p>In Event Listeners we can creates more than one events handlers on same id but in normal way second one overrides first one.</p>
+    <p>This is advantage of Event Listeners in javascript.</p>
+
+    <button id="#btn786">Click Me to Handle!!</button>
+
+    <p>Below button has more than one eventListeners handlers (3) </p>
+
+    <button id="#btn313">Click Me to Handle!!</button>
+
     <script src="35-externalEventHandling.js"></script>
+    <script src="37-eventListeners.js"></script>
 </body>
 
 <!-- <script src="1-alertNConsole.js"></script> -->

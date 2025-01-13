@@ -36,4 +36,5 @@
     <li>map() Function</li>
     <li>filter() Function</li>
     <li>reduce() Function</li>
+    <li>Inline Event Handling</li>
 </ol>

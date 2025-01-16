@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ For-of Loop @@@@@@@@@@@");
+console.log("@@@@@@@@@@@ For-in Loop @@@@@@@@@@@");
 
 // for in used for access objects and array variables values one by one
 

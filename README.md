@@ -42,4 +42,5 @@
     <li>Event Listeners</li>
     <li>JS Objects</li>
     <li>JS Objects Prototype</li>
+    <li>JS Classes</li>
 </ol>

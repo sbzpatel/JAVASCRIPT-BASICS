@@ -44,4 +44,5 @@
     <li>JS Objects Prototype</li>
     <li>JS Classes</li>
     <li>Class constructor</li>
+    <li>Class Inheritance</li>
 </ol>

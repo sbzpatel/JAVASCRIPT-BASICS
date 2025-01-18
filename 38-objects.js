@@ -4,8 +4,11 @@ const student = {
     firstName: "Shahbaz",
     lastName: "Patel",
     age: 35,
-    printFullName: function() {
+    printFullName: function() {         // way1 to define function in object
         return this.firstName+" "+this.lastName;
+    },
+    printAge() {                        // way2 to define function in object
+        return this.age;
     }
 }
 

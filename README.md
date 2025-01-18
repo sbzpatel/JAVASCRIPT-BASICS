@@ -45,4 +45,5 @@
     <li>JS Classes</li>
     <li>Class constructor</li>
     <li>Class Inheritance</li>
+    <li>Method Overriding</li>
 </ol>

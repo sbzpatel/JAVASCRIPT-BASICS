@@ -50,5 +50,6 @@
     <li>Async Execution</li>
     <li>CallBack Function</li>
     <li>CallBack hell</li>
-    <li>Promises</li>
+    <li>Promise object</li>
+    <li>Promise chain</li>
 </ol>

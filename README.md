@@ -52,4 +52,5 @@
     <li>CallBack hell</li>
     <li>Promise object</li>
     <li>Promise chain</li>
+    <li>Async await function</li>
 </ol>

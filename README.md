@@ -53,4 +53,5 @@
     <li>Promise object</li>
     <li>Promise chain</li>
     <li>Async await function</li>
+    <li>Fetch API</li>
 </ol>

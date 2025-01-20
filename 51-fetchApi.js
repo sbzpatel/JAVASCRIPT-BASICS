@@ -6,11 +6,15 @@
 
 // HTTP ->> Hypertext transfer Protocol (according to that rules, defined some methods as below)
 
+
+
 // HTTP Methods ->> 
     // 1) GET ->> Simple request to get data
     // 2) POST ->> Here we pass or send some data with API request
     // 3) PUT ->> Here we are edit some data on the server side through passing data and specific id 
     // 4) DELETE ->> Here we delete the particular field or document in database through that API
+
+
 
 // HTTP Status Codes ->>
     // 1) 200 ->> Getting Successful Response
@@ -20,6 +24,13 @@
     // 5) 500 ->> server side error occurred
     // 400 onwards ->> Status code shows the errors occurred at the client side
     // 500 onwards ->> Status code shows the errors occurred at the server side
+
+
+
+// Headers ->> Headers are an extra information send from both client or server side, 
+// It may be request headers or response headers
+
+
 
 const URL = "https://catfact.ninja/facts";
 let factPara = document.querySelector("#fact");
@@ -57,6 +68,7 @@ const getFactsThroughPromiseChain = () => {
     })
 }
 
-// getApiData();
+getApiData();       // we are using async-await over promise chain due to its code simplicity, 
+// promise chain call code is comment out below 
 
-getFactsThroughPromiseChain();
+// getFactsThroughPromiseChain();

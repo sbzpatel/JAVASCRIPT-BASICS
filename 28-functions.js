@@ -40,11 +40,11 @@ sumFun(4, 7);
 
 
 
-function sumDiff(n1, n2) {          // function defintion with return value
+function diffFun(n1, n2) {          // function defintion with return value
     return n1 - n2;
     console.log("dont run this command after return.");         // statment not able to run
 }
 // functions parameters are local scope within that same function only
 
-let diff = sumDiff(5, 1);
+let diff = diffFun(5, 1);
 console.log("Difference of 5 & 1 is", diff);

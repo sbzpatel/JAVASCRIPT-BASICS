@@ -17,3 +17,5 @@ console.log("Student First Name:", student.firstName);
 console.log("Student Last Name:", student.lastName);
 
 console.log("Student Full Name:", student.printFullName());
+
+console.log("Student Full Name:", student.printAge());

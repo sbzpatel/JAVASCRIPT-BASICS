@@ -3,7 +3,7 @@
 class Person {
     constructor(name) {
         // console.log("Person constructor calling... enter");    // 2
-        this.species = "Homo sapeiens";
+        this.species = "Homo sapiens";
         this.name = name;
         // console.log("Person constructor calling... exit");     // 3
     }

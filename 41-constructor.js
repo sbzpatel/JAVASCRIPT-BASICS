@@ -12,20 +12,21 @@ class ToyotaCar {
         this.brand = brand;     
         this.mileage = mileage;
     }
+
     start() {
-        console.log("starts...");
+        console.log(`${this.brand} starts...`);
     } 
 
     stop() {
-        console.log("stops...");
+        console.log(`${this.brand} stops...`);
     }
 }
  
 let fortuner = new ToyotaCar("fortuner", 10);     // Output ->> Creating new ToyotaCar Object Constructor... (constructor called & sets properties brand & mileage)
-console.log("Brand Name:", fortuner.brand);       // Now these properties access from objects
+console.log("Brand Name:", fortuner.brand);       // Now these properties can access from objects
 console.log("Mileage:", fortuner.mileage);
 
 
-let innova = new ToyotaCar("Lexus", 14);       // Output ->> Creating new ToyotaCar Object Constructor... (constructor called & sets properties brand & mileage)
-console.log("Brand Name:", innova.brand);      // Now these properties access from objects
+let innova = new ToyotaCar("Innova Crysta", 14);       // Output ->> Creating new ToyotaCar Object Constructor... (constructor called & sets properties brand & mileage)
+console.log("Brand Name:", innova.brand);              // Now these properties can access from objects
 console.log("Mileage:", innova.mileage);

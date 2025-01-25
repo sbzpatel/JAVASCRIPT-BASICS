@@ -16,9 +16,10 @@ class SoftwareEngineer extends Person {
     }
 }
 
+
 let sbz = new SoftwareEngineer();
 
 sbz.work();         // Output ->> Coding...
 
 // Here object sbz overrides the method "work" of class "SoftwareEngineer" over class "Person" 
-// So instead of print "Work...", it prints  "Coding..."
+// So instead of print "Work...", it prints "Coding..."

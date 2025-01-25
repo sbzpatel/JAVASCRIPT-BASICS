@@ -2,7 +2,7 @@ console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
 
 // forEach loop is a method used to retrieve one by one data of an array
 
-// It is a function to execute for each for each element in the array
+// It is a method to execute for each element in the array
 
 // Generally callBackFunction is a function that is passed as an argument to another function
 

@@ -42,9 +42,8 @@
             getData(786, () => {
                 console.log("Processing data 786...");
                 getData(0, () => {
-                    console.log("Pocessing completed...");
+                    console.log("Processing completed...");
                 });
-                
             });
         });
     })

@@ -1,11 +1,11 @@
-// A javascript object is an entity having state & behaviour(properties & methods).
+// A javascript object is much like real time entity having state & behaviour(properties & methods).
 
 const student = {
     firstName: "Shahbaz",
     lastName: "Patel",
     age: 35,
-    printFullName: function() {         // way1 to define function in object
-        return this.firstName+" "+this.lastName;
+    printFullName: function () {         // way1 to define function in object
+        return this.firstName + " " + this.lastName;
     },
     printAge() {                        // way2 to define function in object
         return this.age;

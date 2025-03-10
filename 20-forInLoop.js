@@ -1,6 +1,6 @@
 console.log("@@@@@@@@@@@ For-in Loop @@@@@@@@@@@");
 
-// for in used for access objects and array variables values one by one
+// for-in is a special type of for loop used to access the key of each element of an object.
 
 let student = {
     name: "Arhaan Patel",

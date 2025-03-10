@@ -1,13 +1,13 @@
-console.log("Variable Types");
+console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
 
-// 3 types of variable types 
-// 1)let      2)var       3)const
+// There are 3 variable types 
+// 1)var      2)const       3)let
 
-// 1) var ->> Its a global scope variable. can be re-declared & updated.
+// 1) var ->> var variables can store different types of data, which can be redeclare and reassign. It has a global scope.
 
-// 2) let ->> Its a block scope variable. can't re-declare but can update it.
+// 2) let ->> This type of variable can store different types of data, here we can reassign its value only. It has a block(Local) scope.
 
-// 3) const ->> Its can't redeclare or re-assign(update).
+// 3) const ->> This type of variable can't redeclare or re-assign(update). It has a block(Local) scope. 
 
 var a = 20;
 
@@ -34,3 +34,5 @@ const pi = 3.14;
 // const pi = 4;    // Wrong
 
 console.log(pi);
+
+console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");

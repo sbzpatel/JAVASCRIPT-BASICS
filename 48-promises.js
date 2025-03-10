@@ -1,12 +1,21 @@
-// Promise is for "eventual" completion of task. It is object in JS.
+// A Promise is a JS Object which represents the eventual completion(or failure) of an asynchronous operation and it returns the resulting value.
 
-// It is solution to callback hell
+// Promise object is a solution to callback hell
+
+// A Promise can be one out of 3 states:
+// 	1) Pending: The initial state, where the operation has not completed yet.
+// 	2) Fulfilled(resolved): The operation completed successfully.
+// 	3) Rejected: The operation failed.
+
+// Once a promise is created, it can be used with .then() & .catch() methods to handle the fulfilled or rejected state. 	
+
+// The .then() method allows to chain multiple promises, creating a sequence of asynchronous operations that execute one after other complete.
+
+// The .catch() method is used to handle any errors that occur in the promise chain when operation failed.
 
 // promise object syntax ->> let promise = new Promise((resolve, reject) => {...});
 
-// Promise object contains function which contains 2 handlers or callbacks which are 1) resolve 2) reject
 
-// Below is basic example of promise
 
 let promise = new Promise((resolve, reject) => {    // here state will be "pending", because dont return any state programmatically(resolve or reject)
     console.log("I am a promise...");
@@ -24,23 +33,19 @@ let promise2 = new Promise((resolve, reject) => {
 
 
 
-// When we creates a promise, there are 3 states in which it present:
+// When we create a promise, there are 3 states in which it present:
 // 1) Pending - this state occurred when no any promise return in a promise object
-// 2) Resolve(fulfilled) - this state occurred when any value successfully returned without any error
+// 2) Resolved(fulfilled) - this state occurred when any value successfully returned without any error
 // 3) Reject - this state occurred when any error occurred with some response from promise object
 
-// Basically we don't creates promise ourself, but when we work with APIs then the promises are creates API side, so we can get the state accordingly
+// Basically we don't creates promise ourself, but when we work with APIs then the promises are creates at API side, so we can get the state accordingly
 
-function getData(dataId, getNextData) {
+function getData(dataId) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("Data:", dataId);
 
             resolve("success");
-    
-            if(getNextData) {
-                getNextData();
-            }
         }, 5000);
     });
 }

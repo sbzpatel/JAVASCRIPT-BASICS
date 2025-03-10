@@ -2,7 +2,7 @@
 
 // Syntax ->> async function myFunc() {...}
 
-// await pauses the execution of its surrounding async function until the promise is settled.
+// await pauses the execution of its surrounding async functions until the promise is settled.
 
 function api() {
     return new Promise((resolve, reject) => {
@@ -17,7 +17,4 @@ async function getWeatherData() {
     await api();
 }
 
-getWeatherData();   
-
-
-
+getWeatherData();

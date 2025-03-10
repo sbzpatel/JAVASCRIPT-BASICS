@@ -1,5 +1,7 @@
 console.log("@@@@@@@@@@@ For Loop @@@@@@@@@@@");
 
+// A for-loop repeatedly executes a block of code till the condition is true, once a condition is false then loop gets break.
+
 // console.log("Shahbaz Patel");
 // console.log("Shahbaz Patel");
 // console.log("Shahbaz Patel");

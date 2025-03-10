@@ -1,7 +1,7 @@
 console.log("@@@@@@@@@@@ String Methods @@@@@@@@@@@");
 
 // These are built-in functions to manipulate a string
-// string are immutable, cannot change just makes another copy and make changes
+// strings are immutable, cannot change just makes another copy and make changes
 
 let myName = "Shahbaz Patel";
 
@@ -51,4 +51,6 @@ console.log(trimmedCollege);
 
 let charAt4 = myName.charAt(4);
 
-console.log("Character at 4:", charAt4);        
+console.log("Character at 4:", charAt4);
+
+console.log("@@@@@@@@@@@ String Methods @@@@@@@@@@@");

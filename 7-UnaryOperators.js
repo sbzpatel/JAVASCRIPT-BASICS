@@ -1,6 +1,7 @@
 console.log("@@@@@@@@@@@ Unary Operators @@@@@@@@@@@");
 
-    // Unary Operatory ->> --, ++
+    // Unary Operator is used to perform the operation on a single operand or variable.
+    // Unary Operators ->> --, ++
 
     let a = 6;
     let b = 2;

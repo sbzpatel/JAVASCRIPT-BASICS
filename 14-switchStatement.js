@@ -1,17 +1,17 @@
 console.log("@@@@@@@@@@@ Switch Statement @@@@@@@@@@@");
 
-const language = "HTML";    // JAVA
+    const language = "HTML";    // JAVA
 
-switch(language) {
-    case "HTML":
-        console.log("HTML selected.");
-    break;
-    case "CSS":
-        console.log("CSS selected.");
-    break;
-    default:
-        console.log("Invalid options!"); 
-    break;
-}
+    switch(language) {
+        case "HTML":
+            console.log("HTML selected.");
+        break;
+        case "CSS":
+            console.log("CSS selected.");
+        break;
+        default:
+            console.log("Invalid options!"); 
+        break;
+    }
 
-
+console.log("@@@@@@@@@@@ Switch Statement @@@@@@@@@@@");

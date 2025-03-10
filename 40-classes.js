@@ -1,11 +1,11 @@
 // Class is a program-code template for creating objects.
 
-// Those objects will have some state(variables) & some behaviour(functions) inside it.
+// Those class objects will have some state(variables) & behaviour(functions) inside it.
 
 class ToyotaCar {
     start() {
         console.log("starts...");
-    } 
+    }
 
     stop() {
         console.log("stops...");
@@ -28,14 +28,14 @@ console.log(fortuner.brandName);        // Output ->> Fortuner
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-    let innova = new ToyotaCar();
+let innova = new ToyotaCar();
 
-    innova.start();
+innova.start();
 
-    innova.stop();
+innova.stop();
 
-    innova.setBrand("Innova Crysta");
+innova.setBrand("Innova Crysta");
 
-    console.log(innova.brandName);          // Output ->> Innova Crysta
+console.log(innova.brandName);          // Output ->> Innova Crysta
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

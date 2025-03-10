@@ -1,8 +1,6 @@
-// method overriding is a phenomenon in inheritance where child class method overrides with its parent class if both method had a same name
+// method overriding is a phenomenon in inheritance, where child class method overrides with its parent class method if both method had a same name
 
-// Generally method overriding is applicable for inherited class methods as well as constructors
-
-// Below example describes how overriding happening in class inheritance
+// Generally method overriding is applicable for inherited class methods & its constructors
 
 class Person {
     work() {
@@ -21,5 +19,5 @@ let sbz = new SoftwareEngineer();
 
 sbz.work();         // Output ->> Coding...
 
-// Here object sbz overrides the method "work" of class "SoftwareEngineer" over class "Person" 
+// Here object sbz overrides the method "work" of class "SoftwareEngineer" over class "Person"
 // So instead of print "Work...", it prints "Coding..."

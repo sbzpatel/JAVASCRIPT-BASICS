@@ -1,4 +1,4 @@
-// Each Object contains a special object named "prototype" which contains different types of properties as well as methods.
+// Each object has a special object named "prototype" which contains properties and methods that can inherit by other object.
 
 // We can set the prototype using "__proto__"
 

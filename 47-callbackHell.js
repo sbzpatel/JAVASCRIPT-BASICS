@@ -1,3 +1,7 @@
+// Callbacks are use for handle asynchronous operations like reading files, making API requests and working with a timers.
+// When there are excessive nesting callback functions, it becomes difficult to read the code, debug and maintain. such a type of situation leads to a problem known as the "callback hell". 
+// To overcome from this situation we are using promises and async/await function which improves the code readability and maintainability. 
+
 // $$$$$$$$$$$$$$$$$$$$$$ callback hell (with getNextData function) $$$$$$$$$$$$$$$$$$$$$$$
 
     function getData(dataId, getNextData) {

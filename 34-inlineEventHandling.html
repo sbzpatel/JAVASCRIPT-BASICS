@@ -10,59 +10,49 @@
 <body>
     <h1 style="text-align: center;">Inline Event Handling</h1>
 
-    <h3>There are many types of events occured in.</h3> 
-    <h3>These event should handle by some way called as event handling in javascript.</h3>
+    <h3>There are many types of events occured in web.</h3>
+    <h3>These events should handle by some way called as event handling in javascript.</h3>
 
-    <button 
-        onclick="console.log('Button was clicked!!!'); alert('Hello Sbz!!')"
-    >
+    <button onclick="console.log('Button was clicked!!!'); alert('Hello Sbz!!')">
         Click Me!
     </button>
 
-    <button 
-        ondblclick="console.log('Button was clicked 2x!!!'); alert('Hello Sbz, Double clicked on button!!')"
-    >
+    <button ondblclick="console.log('Button was clicked 2x!!!'); alert('Hello Sbz, Double clicked on button!!')">
         Click Me 2 times!
     </button>
 
     <br>
     <br>
 
-    <div 
-        style="height: 100px; width: 100px; color: white; background-color: dodgerblue; border: 1px solid black;"
-        onmouseover="console.log('U are inside div...')"
-    >
+    <div style="height: 100px; width: 100px; color: white; background-color: dodgerblue; border: 1px solid black;"
+        onmouseover="console.log('U are inside div...')">
         This is a box
     </div>
 
     <h3>Below are Tags which having events handled by script in another file</h3>
 
-    <button 
-        id="btn1"
-    >
+    <button id="btn1">
         btn1
     </button>
 
     <br>
     <br>
 
-    <div 
-        style="height: 100px; width: 100px; color: white; background-color: dodgerblue; border: 1px solid black;"
-        id="box"
-    >
+    <div style="height: 100px; width: 100px; color: white; background-color: dodgerblue; border: 1px solid black;"
+        id="box">
         This is a box
     </div>
 
-    <h3>On below tags event, we are getting information about events from "event object" like <b>e.targe, e.type, e.clientX, e.clientY</b> etc like many more</h3>
+    <h3>On below tags event, we are getting information about events from "event object" like <b>e.targe, e.type,
+            e.clientX, e.clientY</b> etc like many more</h3>
 
-    <button 
-        id="btn11"
-    >
+    <button id="btn11">
         btn1
     </button>
 
     <h3>Events handled through EventListeners</h3>
-    <p>In Event Listeners we can creates more than one events handlers on same id but in normal way second one overrides first one.</p>
+    <p>In Event Listeners we can creates more than one events handlers on same id but in normal way second one overrides
+        first one.</p>
     <p>This is advantage of Event Listeners in javascript.</p>
 
     <button id="#btn786">Click Me to Handle!!</button>

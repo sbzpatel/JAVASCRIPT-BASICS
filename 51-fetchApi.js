@@ -1,29 +1,27 @@
 // The Fetch API provides an interface for fetching (sending/receiving) resources.
-
 // It uses Request & Response Objects.
-
 // The fetch() method is used to fetch a resource(data).
-
 // HTTP ->> Hypertext transfer Protocol (according to that rules, defined some methods as below)
 
 
 
 // HTTP Methods ->> 
-    // 1) GET ->> Simple request to get data
-    // 2) POST ->> Here we pass or send some data with API request
-    // 3) PUT ->> Here we are edit some data on the server side through passing data and specific id 
-    // 4) DELETE ->> Here we delete the particular field or document in database through that API
+// 1) GET ->> Simple request to get data
+// 2) POST ->> Here we pass or send some data with API request
+// 3) PUT ->> Here we are edit some data on the server side through passing data and using specific id 
+// 4) DELETE ->> Here we delete the particular field or document in database through that API by passing specific id
 
 
 
 // HTTP Status Codes ->>
-    // 1) 200 ->> Getting Successful Response
-    // 2) 201 ->> POST Method successfully created or inserted field in database
-    // 3) 404 ->> Not found
-    // 4) 400 ->> client side error occurred
-    // 5) 500 ->> server side error occurred
-    // 400 onwards ->> Status code shows the errors occurred at the client side
-    // 500 onwards ->> Status code shows the errors occurred at the server side
+// 1) 200 ->> Getting Successful Response
+// 2) 201 ->> POST Method successfully created or inserted field in database
+// 3) 404 ->> Not found
+// 4) 400 ->> client side error occurred
+// 5) 500 ->> server side error occurred
+
+// 400 onwards ->> Status code shows the errors occurred at the client side
+// 500 onwards ->> Status code shows the errors occurred at the server side
 
 
 
@@ -58,17 +56,17 @@ const getApiData = async () => {
 const getFactsThroughPromiseChain = () => {
     console.log("getFactsThroughPromiseChain calling...");
 
-    fetch(URL)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        factPara.innerHTML = data.data[0].fact;
-    })
+    fetch(URL)              // fetch function is a promise function which returns its state, and we will get it using .then()
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
+            factPara.innerHTML = data.data[0].fact;
+        })
 }
 
 getApiData();       // we are using async-await over promise chain due to its code simplicity, 
-// promise chain call code is comment out below 
 
-// getFactsThroughPromiseChain();
+
+// getFactsThroughPromiseChain();       // Its a promise chaining code to getAPIData 

@@ -1,3 +1,5 @@
+// Its a named container that stores and manages different types of data like numbers, text, objects, array and many more.
+
 fullName = "Shahbaz Patel";
 age = 34;
 price = 101.56;

@@ -39,17 +39,15 @@
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$ callback hell $$$$$$$$$$$$$$$$$$$$$$$$$
 
+    console.log("Fetching Data1...");
     getData(1, () => {
-        console.log("Processing data 1...");
-        getData(313, () => {
-            console.log("Processing data 313...");
-            getData(786, () => {
-                console.log("Processing data 786...");
-                getData(0, () => {
-                    console.log("Processing completed...");
-                });
-            });
-        });
+        console.log("Fetching Data2...");
+        getData(2, () => {
+            console.log("Fetching Data3...");
+            getData(3, () => {
+                console.log("All data successfully fetched!!!!");
+            })
+        })
     })
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$ callback hell $$$$$$$$$$$$$$$$$$$$$$$$$

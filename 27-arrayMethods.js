@@ -64,7 +64,7 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
 
         // shift delete the array element at the beginning
 
-        shaikhFriend.shift();           // added "Abrar" at the beginning of array 
+        shaikhFriend.shift();           // removed "Abrar" at the beginning of array 
         console.log(shaikhFriend);      // removed first item of array, "Abrar"
 
     console.log("####### shift() #######");

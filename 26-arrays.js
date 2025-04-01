@@ -1,6 +1,6 @@
 console.log("@@@@@@@@@@@ Arrays @@@@@@@@@@@");
 
-// Arrays are "mutable", unlike strings(immutable), so we can directly change array key values
+// Arrays are "mutable", unlike strings(immutable), so we can directly change array key values with different methods in javascript.
 
 let nums = [4, 7, 10, 34, 56];
 

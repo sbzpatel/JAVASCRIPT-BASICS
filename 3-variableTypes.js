@@ -1,13 +1,13 @@
 console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
 
-// There are 3 variable types 
+// There are 3 variable types in javascript:
 // 1)var      2)const       3)let
 
-// 1) var ->> var variables can store different types of data, which can be redeclare and reassign. It has a global scope.
+// 1) var ->> This type of variable can store different types of data, which can redeclare and reassign its value. It has a global scope.
 
-// 2) let ->> This type of variable can store different types of data, here we can reassign its value only. It has a block(Local) scope.
+// 2) let ->> This type of variable can store different types of data, here we can't redeclare it but reassign its value only. It has a block(Local) scope.
 
-// 3) const ->> This type of variable can't redeclare or re-assign(update). It has a block(Local) scope. 
+// 3) const ->> This type of variable can't redeclare and re-assign(update) its value. It has a block(Local) scope. 
 
 var a = 20;
 

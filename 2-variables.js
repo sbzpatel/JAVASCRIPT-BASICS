@@ -1,4 +1,4 @@
-// Its a named container that stores and manages different types of data like numbers, text, objects, array and many more.
+// Variable is a named container that store and manage different types of data like number, text, object, array and many more.
 
 fullName = "Shahbaz Patel";
 age = 34;

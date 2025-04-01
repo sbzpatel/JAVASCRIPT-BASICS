@@ -1,7 +1,6 @@
 console.log("@@@@@@@@@@@ Stirng @@@@@@@@@@@");
 
-    // String is a sequence of characters used to represent text
-    // there are some inbuild properties and methods to deal with strings in javascript
+    // String is a sequence of characters used to represent text, there are some inbuild properties and methods to deal with strings in javascript.
 
     let str = "Shahbaz";
 

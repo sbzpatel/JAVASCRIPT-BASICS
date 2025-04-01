@@ -41,13 +41,14 @@ let promise2 = new Promise((resolve, reject) => {
 // Basically we don't creates promise ourself, but when we work with APIs then the promises are creates at API side, so we can get the state accordingly
 
 function getData(dataId) {
+    console.log("Fetching Data"+dataId+"...")
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Data:", dataId);
-
+            console.log("Data"+dataId+" successfully fetched.");
+            
             resolve("success");
-        }, 5000);
-    });
+        }, 3000)
+    })
 }
 
 // Now above we saw the concept how to change the state of the promises according to our result, 

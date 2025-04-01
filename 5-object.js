@@ -1,6 +1,6 @@
 console.log("@@@@@@@@@@@ Object @@@@@@@@@@@");
 
-// Object is like real time object which contain different information in the form of key:value pair separated by the comma.
+// Object is like real time object which contain different information about object in the form of key:value pair separated by the comma.
 
 const student = {
     fullName: "Shahbaz Shaikh",

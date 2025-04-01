@@ -48,5 +48,6 @@ console.log("@@@@@@@@@@@ JS Functions @@@@@@@@@@@");
 
     let diff = diffFun(5, 1);
     console.log("Difference of 5 & 1 is", diff);
+    console.log(`Diffeence of 5 & 1 is ${diff}`);       // expression return using back ticks(``)
 
 console.log("@@@@@@@@@@@ JS Functions @@@@@@@@@@@");

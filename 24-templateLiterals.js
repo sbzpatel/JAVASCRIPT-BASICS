@@ -1,6 +1,6 @@
 console.log("@@@@@@@@@@@ Template Literals @@@@@@@@@@@");
 
-    // Template Literal is a way to embed expressions with string using back ticks(``)
+    // Template Literal is a way to embed expressions with string using back ticks(``) which make code more reliable to maintainable to use.
 
     // template literals
     const specialString = `This is a template literals.`;

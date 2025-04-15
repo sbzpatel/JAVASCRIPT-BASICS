@@ -3,6 +3,22 @@ console.log("@@@@@@@@@@@ String Methods @@@@@@@@@@@");
 // These are built-in functions to manipulate a string
 // strings are immutable, cannot change just makes another copy and make changes
 
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ String Methods $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ //
+// str.length();	str.charAt();	str.charCodeAt();	    str.indexOf("z");       str.lastIndexOf("z");
+
+// str.includes();		str.startsWith();		str.endsWith();
+
+// str.slice();		str.substring();		str.substr();
+
+// str.replace();		str.replaceAll();		
+
+// str.toUpperCase();		str.toLowerCase();
+
+// str.trim();		str.trimStart();	str.trimEnd();
+
+// str.concat();		str.split();		str.repeat();
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ String Methods $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ //
+
 let myName = "Shahbaz Patel";
 
 let college = "     Dr. J J Magdum College of Engineering, Jaysingpur.             ";
@@ -52,5 +68,33 @@ console.log(trimmedCollege);
 let charAt4 = myName.charAt(4);
 
 console.log("Character at 4:", charAt4);
+
+
+
+
+fName = "Shahbaz";
+strPhrase = "Shahbaz Patel is a Patel's";
+
+console.log(fName.length);
+console.log(fName.charAt(4));
+console.log(fName.charCodeAt(4));
+console.log(fName.indexOf("h"));
+console.log(fName.lastIndexOf("h"));
+console.log(fName.trim());
+console.log(fName.trimStart());
+console.log(fName.trimEnd());
+console.log(fName.toLowerCase());
+console.log(fName.toUpperCase());
+console.log(fName.slice(0,4));
+console.log(fName.substring(0,4));
+console.log(fName.substr(4,3));
+console.log(fName.concat(" Patel"));
+console.log(fName.repeat(5));
+console.log(strPhrase.replace("Patel", "Shaikh"));
+console.log(strPhrase.replaceAll("Patel", "Shaikh"));
+console.log(strPhrase.includes("Patel"));
+console.log(strPhrase.startsWith("Shahbaz"));
+console.log(strPhrase.endsWith("Patel's"));
+console.log(fName.split(""));
 
 console.log("@@@@@@@@@@@ String Methods @@@@@@@@@@@");

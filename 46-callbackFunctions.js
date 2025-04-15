@@ -27,3 +27,27 @@ const hello = () => {
 }
 
 setTimeout(hello, 3000);    // hello function will call after 3 seconds
+
+
+
+// Below code shows the "45-asyncExecution.js" program execution in sequentially using callback function
+// Here all the Statements are executes sequentially, after executes Statement1 goes to the Statment2 and after completing in 3 seconds then and only goes for Statement3 and Statement4
+
+function initialExecution(callbackFun) {
+    console.log("Statement1 executes...");
+    
+    setTimeout(() => {
+        console.log("Statement2 executes...");
+        
+        callbackFun();
+    }, 3000)
+}
+
+function afterExecution() {
+    console.log("Statement3 executes...");
+    console.log("Statement4 executes...");
+}
+
+initialExecution(afterExecution);
+
+// Below code shows the "45-asyncExecution.js" program execution in sequentially using callback function

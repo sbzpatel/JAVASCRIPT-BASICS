@@ -1,8 +1,6 @@
 console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
 
-    const arrowSum = (a, b) => {
-        console.log(a+b);
-    }
+    const arrowSum = (a, b) => console.log(a+b);
 
     arrowSum(5, 4);
 
@@ -10,9 +8,7 @@ console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
 
 
 
-    let arrowMul = (a, b) => {
-        return a*b;
-    }
+    let arrowMul = (a, b) => a*b;
 
     console.log(arrowMul(4,5));
 

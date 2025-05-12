@@ -1,4 +1,4 @@
-// The super keyword is used to call the constructor of its parent class as well as access the parent's properties and methods.
+// The super keyword is used to call the constructor of its parent class as well as access the parent's methods.
 
 class Person {
     constructor(name) {

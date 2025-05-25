@@ -16,4 +16,12 @@ console.log("@@@@@@@@@@@ Template Literals @@@@@@@@@@@");
 
     console.log(`The cost of ${obj.item} is ${obj.price} Rupees.`);         // this is written with template expression
 
+
+    // Multi-line Strings
+    const multiline = `This is line1
+    This is line2
+    \tThis is line3`;
+
+    console.log(multiline);
+
 console.log("@@@@@@@@@@@ Template Literals @@@@@@@@@@@");

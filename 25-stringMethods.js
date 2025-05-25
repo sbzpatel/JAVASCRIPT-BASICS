@@ -98,3 +98,44 @@ console.log(strPhrase.endsWith("Patel's"));
 console.log(fName.split(""));
 
 console.log("@@@@@@@@@@@ String Methods @@@@@@@@@@@");
+
+// @@@@@@@@@@@@@@@ Interview Questions @@@@@@@@@@@@@@@ //
+
+    // How to reverse the String?
+
+        // Eg:
+            let fname = "Shahbaz";
+            console.log(fname.split('').reverse().join(''));
+
+    // How to check whether string is palindrome?
+
+        // Eg:
+            let fName = "BOB";
+            let reverseFName = fName.split('').reverse().join('');
+
+            if(fName == reverseFName) {
+                console.log(`${fName} is a palindrome.`);
+            } else {
+                console.log(`${fName} is not a palindrome.`);
+            }
+
+    // Explain the difference between primitive strings and String objects.
+    
+        // Eg:
+            console.log(typeof "hello");           // "string"
+            console.log(typeof new String("hi"));  // "object"
+
+    // How do you escape special characters in a string?
+    
+        // Eg:
+            const str77 = "He said, \"Hello\"";
+
+    // What Is String Interpolation in JavaScript?
+        // String Interpolation is a process of inserting variables or expressions inside a string.
+        // In JavaScript, this is done using template literals — strings wrapped in backticks (`) instead of quotes.
+
+        // Eg:
+            const yourname = "Alice";
+            const greeting = `Hello, ${yourname}!`;  // string interpolation
+            console.log(greeting); // "Hello, Alice!"
+// @@@@@@@@@@@@@@@ Interview Questions @@@@@@@@@@@@@@@ //

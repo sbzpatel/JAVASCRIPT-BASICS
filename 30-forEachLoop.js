@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
+// ✅ ############## forEach Loop ############## ✅ //
 
     // forEach loop is a method used to retrieve one by one element of an array
     // It is a method to execute for each element in the array
@@ -13,9 +13,6 @@ console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
 
 
 
-
-
-
     let cities = ["Pune", "Mumbai", "Kolhapur", "Sangli", "Solapur"];       // example 2
 
     console.log("$$$$$$ Cities $$$$$$");
@@ -25,9 +22,7 @@ console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
     })
 
     console.log("$$$$$$ Cities $$$$$$");
-
-
-
+    
 
 
     console.log("$$$$$$ forEach Callback comes with 3 arguments (val, id , arr) $$$$$$");
@@ -40,4 +35,4 @@ console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
 
     console.log("$$$$$$ forEach Callback comes with 3 arguments (val, id , arr) $$$$$$");
 
-console.log("@@@@@@@@@@@ For Each Loop @@@@@@@@@@@");
+// ✅ ############## forEach Loop ############## ✅ //

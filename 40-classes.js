@@ -1,41 +1,56 @@
-// Class is a program-code template for creating objects.
+// ✅ $$$$$$$$$$$$$$$$$$$ JavaScript Classes $$$$$$$$$$$$$$$$$$$ ✅ //
 
-// Those class objects will have some state(variables) & behaviour(functions) inside it.
+    // A class is a blueprint for creating objects with shared properties and methods.
 
-class ToyotaCar {
-    start() {
-        console.log("starts...");
-    }
 
-    stop() {
-        console.log("stops...");
-    }
 
-    setBrand(brand) {       // method setBrand used to set "brandName" property of object 
-        this.brandName = brand;
-    }
-}
+    //🔹$$$$$$$$$$$$$$$$$$$ Syntax of a Class(Class Creation) $$$$$$$$$$$$$$$$$$$🔹//
+    
+        class ToyotaCar {
+            start() {
+                console.log("starts...");
+            }
 
-let fortuner = new ToyotaCar();     // creates objects of class fortuner
+            stop() {
+                console.log("stops...");
+            }
 
-fortuner.start();       // call start method of object fortuner
+            setBrand(brand) {       // method setBrand used to set "brandName" property of object 
+                this.brandName = brand;
+            }
+        }
 
-fortuner.stop();        // call stop method of object fortuner
+    //🔹$$$$$$$$$$$$$$$$$$$ Syntax of a Class(Class Creation) $$$$$$$$$$$$$$$$$$$🔹//
 
-fortuner.setBrand("Fortuner");      // sets the brandName property in fortuner object through "setBrand" method
 
-console.log(fortuner.brandName);        // Output ->> Fortuner
+    // 🔹 $$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$🔹 //
 
-// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        let fortuner = new ToyotaCar();     // creates object of class fortuner
 
-let innova = new ToyotaCar();
+        fortuner.start();       // call start method of object fortuner
 
-innova.start();
+        fortuner.stop();        // call stop method of object fortuner
 
-innova.stop();
+        fortuner.setBrand("Fortuner");      // sets the brandName property in fortuner object through "setBrand" method
 
-innova.setBrand("Innova Crysta");
+        console.log(fortuner.brandName);        // Output ->> Fortuner
 
-console.log(innova.brandName);          // Output ->> Innova Crysta
+    // 🔹 $$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$ 🔹 //
 
-// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+    // ✅ $$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$ ✅ //
+
+        let innova = new ToyotaCar();
+
+        innova.start();
+
+        innova.stop();
+
+        innova.setBrand("Innova Crysta");
+
+        console.log(innova.brandName);          // Output ->> Innova Crysta
+
+    // ✅ $$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$ ✅ //
+
+// ✅ $$$$$$$$$$$$$$$$$$$ JavaScript Classes $$$$$$$$$$$$$$$$$$$ ✅ //

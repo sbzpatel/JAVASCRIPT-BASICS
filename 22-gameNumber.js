@@ -1,10 +1,14 @@
-let gameNum = 25;
+// ✅ ############## GAME NUMBER ############## ✅ //
 
-let enteredNum = prompt("Guess the game number :");
+        let gameNum = 25;
 
-var msg = false;
-while(gameNum != enteredNum) {
-        enteredNum = prompt("You entered wrong number. Guess again bro :");
-}
+        let enteredNum = prompt("Guess the game number :");
 
-console.log("Congratulation bntae, you guessed right number bro!!!!");
+        var msg = false;
+        while(gameNum != enteredNum) {
+                enteredNum = prompt("You entered wrong number. Guess again bro :");
+        }
+
+        console.log("Congratulation bntae, you guessed right number bro!!!!");
+
+// ✅ ############## GAME NUMBER ############## ✅ //

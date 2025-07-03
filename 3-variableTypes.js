@@ -1,47 +1,51 @@
-console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
+// ✅ ##############  Variable Types (Variable Declaration Keyword) ############## ✅ //
 
-// There are 3 variable types in javascript:
-// 1)var      2)const       3)let
+    // Variable can declare using different keywords(var, let & const) which are differ in their scope.
+    
+    // There are 3 variable declaration keywords in javascript:
+    // 1) var      2) const       3) let
 
-// 1) var ->> This type of variable can store different types of data, which can redeclare and reassign its value. It has a global scope.
+    // ✅ 1) var ->> The oldest method for declaring variables. It has function-scoped and allow to re-declare and re-assign its value. Now a days we avoiding to use it, to prevent from unexpected behavior of a program.
 
-// 2) let ->> This type of variable can store different types of data, here we can't redeclare it but reassign its value only. It has a block(Local) scope.
+    // Eg:
+        var a = 20;
 
-// 3) const ->> This type of variable can't redeclare and re-assign(update) its value. It has a block(Local) scope. 
+        var a = 35;
 
-var a = 20;
+        // var a = 50;
 
-var a = 35;
-
-// var a = 50;
-
-console.log(a);
-
+        console.log(a);
 
 
-let b = 30;
+    // ✅ 2) let ->> Introduced in ES6, it has block-scoped and does not allow re-declaration within the same scope(but we can re-assign its value).
 
-// let b = 44;      // Wrong
+    // Eg:
+        let b = 30;
 
-b = "Shahbaz";
+        // let b = 44;      // Wrong
 
-console.log(b);
+        b = "Shahbaz";
+
+        console.log(b);
 
 
+    // ✅ 3) const ->> Also introduced in ES6, const is block-scoped and cannot be re-assign after their initial value is set on declaration. 
 
-const pi = 3.14;
+    // Eg:
+        const pi = 3.14;
 
-// const pi = 4;    // Wrong
+        // const pi = 4;    // Wrong
 
-console.log(pi);
+        console.log(pi);
 
-console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
+// ✅ ##############  Variable Types (Variable Declaration Keyword) ############## ✅ //
 
-//###################### Challenging JavaScript Questions on var, let, and const ######################//
+
+// ✅ ###################### Challenging JavaScript Questions on var, let, and const ###################### ✅ //
     console.log(a);
     var a = 10;     // Output ->> undefined
 
-    // var variable hoisted(pulled up) at the top with an intial value of undefined. So the output is 'undefined'.
+    // var variable hoisted(pulled up) at the top with an initial value of undefined. So the output is 'undefined'.
 
 
 
@@ -107,7 +111,7 @@ console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
     }
     foo();      //  Output ->> undefined
 
-    // var has functional scope in functions, so in function foo it is hoisted and initiazed as 'undefined'. So console.log(x) see the local 'x' not an outer 'x'.
+    // var has functional scope in functions, so in function x is hoisted and initiazed as 'undefined'. So console.log(x) see the local 'x' not an outer 'x'.
     // Outer x and in foo() function x variables are different.
 
 
@@ -122,14 +126,14 @@ console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
 
     /*
 
-    Functional Scope ->> 
+    ✅ Functional Scope ->> 
         The variable is only accessible within the function where it is declared (including nested blocks), and not outside of it.
         In JavaScript, variables declared with **var** are function-scoped.
 
         Eg:
             function greet() {
-            var message = "Hello!";
-            console.log(message); // ✅ Works here
+                var message = "Hello!";
+                console.log(message); // ✅ Works here
             }
 
             greet();
@@ -158,4 +162,4 @@ console.log("@@@@@@@@@@@ Variable Types @@@@@@@@@@@");
 
     */
 
-//###################### Challenging JavaScript Questions on var, let, and const ######################//
+// ✅ ###################### Challenging JavaScript Questions on var, let, and const ###################### ✅ //

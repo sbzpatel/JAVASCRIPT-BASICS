@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ Ternary Operator @@@@@@@@@@@");
+// ✅ ############## Ternary Operator ############## ✅ //
 
     let age = 34;
 
@@ -6,4 +6,4 @@ console.log("@@@@@@@@@@@ Ternary Operator @@@@@@@@@@@");
 
     console.log("Your eligible status on age entered ->>", eligibleMsg);
 
-console.log("@@@@@@@@@@@ Ternary Operator @@@@@@@@@@@");
+// ✅ ############## Ternary Operator ############## ✅ //

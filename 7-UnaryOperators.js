@@ -1,15 +1,17 @@
-console.log("@@@@@@@@@@@ Unary Operators @@@@@@@@@@@");
+// ✅ ############## Unary Operators ############## ✅ //
 
-    // Unary Operator is used to perform the operation on a single operand or variable.
+    // Unary Operator is used to perform the operation on a single operand or variable or numerical data type.
     // Unary Operators ->> --, ++
 
-    let a = 6;
-    let b = 2;
 
-    a++;
-    console.log("a inc by 1 ->>", a);
+    // Eg:
+        let a = 6;
+        let b = 2;
 
-    b--;
-    console.log("b dec by 1 ->>", b);
+        a++;
+        console.log("a inc by 1 ->>", a);
 
-console.log("@@@@@@@@@@@ Unary Operators @@@@@@@@@@@");
+        b--;
+        console.log("b dec by 1 ->>", b);
+
+// ✅ ############## Unary Operators ############## ✅ //

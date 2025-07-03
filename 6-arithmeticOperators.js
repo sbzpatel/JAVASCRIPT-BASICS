@@ -1,19 +1,19 @@
-// Used to perform arithmetic operations on data
+// ✅ ############## Arithmetic Operators ############## ✅ //
 
-// a+b is expression, where "a" & "b" are operands and "+" is an operator
+    // Arithmetic operators used to perform arithmetic operations on numerical data types.
+    // a+b is an expression, where "a" & "b" are operands(Number datatypes) and "+" is an operator.
+    // Arithmetic Operators ->> +, -, *, /, %, ** 
 
-console.log("@@@@@@@@@@@ Arithmetic Operators @@@@@@@@@@@");
 
-    // Arithmetic Operator ->> +, -, *, /, %, ** 
+    // Eg:
+        let a = 6;
+        let b = 2;
 
-    let a = 6;
-    let b = 2;
+        console.log("a + b = ", a + b);
+        console.log("a - b = ", a - b);
+        console.log("a * b = ", a * b);
+        console.log("a / b = ", a / b);
+        console.log("a % b = ", a % b);
+        console.log("a ** b = ", a ** b);       // 6^2 = 36 
 
-    console.log("a + b = ", a + b);
-    console.log("a - b = ", a - b);
-    console.log("a * b = ", a * b);
-    console.log("a / b = ", a / b);
-    console.log("a % b = ", a % b);
-    console.log("a ** b = ", a ** b);       // 6^2 = 36 
-
-console.log("@@@@@@@@@@@ Arithmetic Operators @@@@@@@@@@@");
+// ✅ ############## Arithmetic Operators ############## ✅ //

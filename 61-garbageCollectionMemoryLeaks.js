@@ -1,4 +1,3 @@
-
 // In JavaScript, Garbage Collection(GC) and Memory Leaks are the crucial concepts related to how memory is managed during program execution.
 
 // ############ 🗑️ Garbage Collection 🗑️ ############ //
@@ -12,7 +11,7 @@
             // Keeps track of how many references point to an object. if its zero, then remove that object.
             
         // 2) Mark-and-Sweep:
-            // Periodically, the GC "marks" all objects reachable from the root (global object, local variables in functions, etc), then "sweeps" and removs those not marked.
+            // Periodically, the GC "marks" all objects reachable from the root (global object, local variables in functions, etc), then "sweeps" and removes those not marked.
             
     // Eg:
         let person = { name: "John" };
@@ -26,7 +25,7 @@
 
     // A memory leak happens when memory that is no longer needed is not released, because something is still referencing it unintentionally.
     
-    // 💣 Common Causes of Memory Leaks //
+    // 💣 Common Causes of Memory Leaks 💣 //
         // 1) Global variables(never go out of scope) ->>
         
         // Eg:
@@ -76,9 +75,3 @@
         // 4) Use browser tools like Chrome DevTools Memory Tab to analyze memory usage and detect leaks.
 
 // ############ 🧠 Memory Leak 🧠 ############ //
-
-
-
-
-
-

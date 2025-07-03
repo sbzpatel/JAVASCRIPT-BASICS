@@ -1,129 +1,152 @@
-// Destructuring in javascript is a powerful way to unpack the items of an array or properties of an objects in a distinct variables.
+// ✅ @@@@@@@@@@@@@@@@@@@@@ JS Destructure @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-// We can destructure arrays & objects both of.
+    // Destructuring in javascript is a powerful way to unpack the elements of an array or properties of an object in a distinct variables.
 
-// @@@@@@@@@@@@@@@@@@@@@ Array Destructuring @@@@@@@@@@@@@@@@@@@@@ //
+    // We can destructure arrays & objects both of.
 
-    // Basic Syntax
+    // ✅ @@@@@@@@@@@@@@@@@@@@@ Array Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-        const arr = [10, 30, 50];
-        const [a, b, c] = arr;
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Basic Syntax @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-        console.log(a);     // 10
-        console.log(b);     // 30
-        console.log(c);     // 50
+            const arr = [10, 30, 50];
+            const [a, b, c] = arr;
 
-    
+            console.log(a);     // 10
+            console.log(b);     // 30
+            console.log(c);     // 50
 
-    // Skipping items
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Basic Syntax @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-        const [first, , third, ] = [1,3,6,0];
+        
 
-        console.log(first);     // 1
-        console.log(third);     // 6
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Skipping items @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
+            const [ first, , third, ] = [1,3,6,0];
 
+            console.log(first);     // 1
+            console.log(third);     // 6
 
-    // Default Values
-
-        const [x = 200, y=400] = [1];
-
-        console.log(x);     // 1
-        console.log(y);     // 400 (prints default value)
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Skipping items @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 
 
-    // Swapping Variables
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Default Values @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-        let n1 = 1, n2 = 2;
-        [n2, n1] = [n1, n2];
+            const [x = 200, y=400] = [1];
 
-        console.log(n1);    // 2
-        console.log(n2);    // 1
+            console.log(x);     // 1
+            console.log(y);     // 400 (prints default value)
 
-
-
-    // Nested Array
-
-        let [m, [n, o]] = [1, [2, 3]];
-        console.log(n);     // 2
-
-
-// @@@@@@@@@@@@@@@@@@@@@ Array Destructuring @@@@@@@@@@@@@@@@@@@@@ //
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Default Values @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 
 
-// @@@@@@@@@@@@@@@@@@@@@ Object Destructuring @@@@@@@@@@@@@@@@@@@@@ //
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Swapping Variables @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-    // Basic Syntax
+            let n1 = 1, n2 = 2;
+            [n2, n1] = [n1, n2];
 
-        const person = {
-            fullname: "Shahbaz Patel",
-            email: "shabya@gmail.com",
-            isMarried: true,
-            age: 35
-        }
+            console.log(n1);    // 2
+            console.log(n2);    // 1
 
-
-        const {name, email, isMarried, age} = person;
-
-        console.log(`Name: ${fullname}`);       // Name: Shahbaz Patel
-        console.log(`Email: ${email}`);     // Email: shabya@gmail.com
-        console.log(`isMarried: ${isMarried}`);     // isMarried: true
-        console.log(`Age: ${age}`);         // Age: 35
-
-    
-
-    // Renaming Variables
-
-        const laptop = {
-            brand: "ASUS",
-            price: 78500 
-        }
-
-        const { brand: maker } = laptop;
-
-        console.log(maker);
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Swapping Variables @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 
 
-    // Nested Objects
-    
-        const user = {
-            info: {
-                school: "Anglo Urdu High School, Aurwad"
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Nested Array @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+            let [m, [n, o]] = [1, [2, 3]];
+            console.log(n);     // 2
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Nested Array @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+
+    // ✅ @@@@@@@@@@@@@@@@@@@@@ Array Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+
+
+    // ✅ @@@@@@@@@@@@@@@@@@@@@ Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Basic Syntax @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+            const person = {
+                fullname: "Shahbaz Patel",
+                email: "shabya@gmail.com",
+                isMarried: true,
+                age: 35
             }
-        }
-
-        const {
-            info: { school }
-        } = user;
-
-        console.log(school);
 
 
+            const {fullname, email, isMarried, age} = person;
 
-    // Destructuring in Function Parameters
+            console.log(`Name: ${fullname}`);       // Name: Shahbaz Patel
+            console.log(`Email: ${email}`);     // Email: shabya@gmail.com
+            console.log(`isMarried: ${isMarried}`);     // isMarried: true
+            console.log(`Age: ${age}`);         // Age: 35
 
-        function greet({ name, age }) {
-            console.log(`Hello ${name}, age ${age}`);
-        }
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Basic Syntax @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-        const employee = { name: "Bob", age: 30 };
-        greet(employee); // Hello Bob, age 30
+        
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Renaming Variables @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+            const laptop = {
+                brand: "ASUS",
+                price: 78500 
+            }
+
+            const { brand: maker } = laptop;
+
+            console.log(maker);
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Renaming Variables @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 
 
-    // Combine Array & Object Destructuring
-    
-        const people = [
-            { name: "Tom", age: 40 },
-            { name: "Sara", age: 32 }
-        ];
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Nested Objects @@@@@@@@@@@@@@@@@@@@@ ✅ //
+        
+            const user = {
+                info: {
+                    school: "Anglo Urdu High School, Aurwad"
+                }
+            }
 
-        const [{ name: firstName }, { age: secondAge }] = people;
-        console.log(firstName);     // Tom
-        console.log(secondAge);     // 32
+            const {
+                info: { school }
+            } = user;
 
-// @@@@@@@@@@@@@@@@@@@@@ Object Destructuring @@@@@@@@@@@@@@@@@@@@@ //
+            console.log(school);
 
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Nested Objects @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Destructuring in Function Parameters @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+            function greet({ name, age }) {
+                console.log(`Hello ${name}, age ${age}`);
+            }
+
+            const employee = { name: "Bob", age: 30 };
+            greet(employee); // Hello Bob, age 30
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Destructuring in Function Parameters @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combine Array & Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+        
+            const people = [
+                { name: "Tom", age: 40 },
+                { name: "Sara", age: 32 }
+            ];
+
+            const [{ name: firstName }, { age: secondAge }] = people;
+            console.log(firstName);     // Tom
+            console.log(secondAge);     // 32
+
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combine Array & Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+    // ✅ @@@@@@@@@@@@@@@@@@@@@ Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+
+// ✅ @@@@@@@@@@@@@@@@@@@@@ JS Destructure @@@@@@@@@@@@@@@@@@@@@ ✅ //

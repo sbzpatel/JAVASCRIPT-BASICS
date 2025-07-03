@@ -1,34 +1,40 @@
-// The super keyword is used to call the constructor of its parent class as well as access the parent's methods.
+// ✅ $$$$$$$$$$$$$$$$$$$ Super Keyword $$$$$$$$$$$$$$$$$$$ ✅ //
 
-class Person {
-    constructor(name) {
-        // console.log("Person constructor calling... enter");    // 2
-        this.species = "Homo sapiens";
-        this.name = name;
-        // console.log("Person constructor calling... exit");     // 3
-    }
+    // The super keyword is used to call the constructor of its parent class as well as access the parent's class methods.
 
-    eat() {
-        console.log("Eat...");
-    }
-}
 
-class Engineer extends Person {
-    constructor(name, branch) {
-        // console.log("Engineer constructor calling... enter");   // 1
-        super(name);
-        this.branch = branch;
-        // console.log("Engineer constructor calling... exit");    // 4
-    }
+    // Eg:
+        class Person {
+            constructor(name) {
+                // console.log("Person constructor calling... enter");    // 2
+                this.species = "Homo sapiens";
+                this.name = name;
+                // console.log("Person constructor calling... exit");     // 3
+            }
 
-    work() {
-        super.eat();
-        console.log("Solve problems, Build something...");
-    }
-}
+            eat() {
+                console.log("Eat...");
+            }
+        }
 
-let sbz = new Engineer("Shahbaz", "Civil Engineering");
+        class Engineer extends Person {
+            constructor(name, branch) {
+                // console.log("Engineer constructor calling... enter");   // 1
+                super(name);
+                this.branch = branch;
+                // console.log("Engineer constructor calling... exit");    // 4
+            }
 
-console.log(sbz);
+            work() {
+                super.eat();
+                console.log("Solve problems, Build something...");
+            }
+        }
 
-sbz.work();
+        let sbz = new Engineer("Shahbaz", "Civil Engineering");
+
+        console.log(sbz);
+
+        sbz.work();
+
+// ✅ $$$$$$$$$$$$$$$$$$$ Super Keyword $$$$$$$$$$$$$$$$$$$ ✅ //

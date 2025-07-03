@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ If Statement @@@@@@@@@@@");
+// ✅ ############## if Statement ############## ✅ //
 
     let age = 34;
     let mode = "dark";
@@ -18,4 +18,4 @@ console.log("@@@@@@@@@@@ If Statement @@@@@@@@@@@");
         console.log("Yesss!!! you can vote now!!!");
     }
 
-console.log("@@@@@@@@@@@ If Statement @@@@@@@@@@@");
+// ✅ ############## if Statement ############## ✅ //

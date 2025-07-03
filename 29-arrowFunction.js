@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
+// ✅ ############## Arrow Functions ############## ✅ //
 
     const arrowSum = (a, b) => console.log(a+b);
 
@@ -41,7 +41,7 @@ console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
             
             setTimeout(() => {
                 this.count++;
-                console.log(count);
+                console.log(this.count);
             }, 3000)
         }
         
@@ -50,4 +50,4 @@ console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
         
     // 4) Arrow functions used in Functional Programming (methods like map(), filter() & reduce())
 
-console.log("@@@@@@@@@@@ Arrow Functions @@@@@@@@@@@");
+// ✅ ############## Arrow Functions ############## ✅ //

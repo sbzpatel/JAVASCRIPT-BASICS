@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ If-else Statement @@@@@@@@@@@");
+// ✅ ############## if-else Statement ############## ✅ //
 
     let mode = "light";
     let color;
@@ -17,4 +17,4 @@ console.log("@@@@@@@@@@@ If-else Statement @@@@@@@@@@@");
         console.log("Sorry, You cannot vote!!!");
     }
 
-console.log("@@@@@@@@@@@ If-else Statement @@@@@@@@@@@");
+// ✅ ############## if-else Statement ############## ✅ //

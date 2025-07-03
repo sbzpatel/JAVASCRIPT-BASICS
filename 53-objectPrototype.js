@@ -1,64 +1,65 @@
-// JavaScript uses prototypal inheritance, meaning that objects can inherit properties and methods from other objects via a prototype chain.
+// ✅ $$$$$$$$$$$$$$$$$ Object Prototype $$$$$$$$$$$$$$$$$ ✅ //
 
-// Every JavaScript object has an internal link to another object called its prototype.
+    // JavaScript uses prototypal inheritance, that means objects can inherit properties and methods from other objects via a prototype chain.
+    // Every JavaScript object has an internal link to another object called its prototype.
 
-const person = {
-    greet: function() {
-        console.log("Hello!");
+    const person = {
+        greet: function() {
+            console.log("Hello!");
+        }
     }
-}
 
-const student = Object.create(person);
+    const student = Object.create(person);
 
-student.name = "Shahbaz";
+    student.name = "Shahbaz";
 
-student.greet();    // Output: "Hello!"
-
-
-
-// Constructor Function & Prototypes
-
-// In below example, sayHello method is not stored in every Person instance—it lives on the prototype, shared across all instances.
-
-function Person(name) {
-  this.name = name;
-}
-
-Person.prototype.sayHello = function() {
-  console.log(`Hello, my name is ${this.name}`);
-};
-
-const alice = new Person("Alice");
-alice.sayHello(); // Hello, my name is Alice
+    student.greet();    // Output: "Hello!"
 
 
 
-// Inheritance with Constructor Function
+    // Constructor Function & Prototypes
 
-function Animal(name) {
-  this.name = name;
-}
+    // In below example, sayHello method is not stored in every Person instance—it lives on the prototype, shared across all instances.
 
-Animal.prototype.speak = function() {
-  console.log(`${this.name} makes a sound`);
-};
+    function Person(name) {
+      this.name = name;
+    }
 
-function Dog(name, breed) {
-  Animal.call(this, name); // Call parent constructor
-  this.breed = breed;
-}
+    Person.prototype.sayHello = function() {
+      console.log(`Hello, my name is ${this.name}`);
+    };
 
-// Inherit from Animal
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
-
-// Extend Dog
-Dog.prototype.bark = function() {
-  console.log(`${this.name} barks`);
-};
-
-const dog = new Dog("Buddy", "Golden Retriever");
-dog.speak(); // Buddy makes a sound
-dog.bark();  // Buddy barks
+    const alice = new Person("Alice");
+    alice.sayHello(); // Hello, my name is Alice
 
 
+
+    // Inheritance with Constructor Function
+
+    function Animal(name) {
+      this.name = name;
+    }
+
+    Animal.prototype.speak = function() {
+      console.log(`${this.name} makes a sound`);
+    };
+
+    function Dog(name, breed) {
+      Animal.call(this, name); // Call parent constructor
+      this.breed = breed;
+    }
+
+    // Inherit from Animal
+    Dog.prototype = Object.create(Animal.prototype);
+    Dog.prototype.constructor = Dog;
+
+    // Extend Dog
+    Dog.prototype.bark = function() {
+      console.log(`${this.name} barks`);
+    };
+
+    const dog = new Dog("Buddy", "Golden Retriever");
+    dog.speak(); // Buddy makes a sound
+    dog.bark();  // Buddy barks
+
+// ✅ $$$$$$$$$$$$$$$$$ Object Prototype $$$$$$$$$$$$$$$$$ ✅ //

@@ -1,72 +1,203 @@
-console.log("@@@@@@@@@@@ Arrays @@@@@@@@@@@");
+// ✅ ############## JavaScript Arrays ############## ✅ //
 
-// Arrays are "mutable", unlike strings(immutable), so we can directly change array key values with different methods in javascript.
+    // In Javascript, array is a special type of object used to store & manage ordered collection of values of any data types(string, number, another array or functions).
 
-let nums = [4, 7, 10, 34, 56];
+    // Each element in an array assigned a numerical index to access it, first element of an array assigned index 0, next element's index could be 1 and so on.
 
-console.log(nums);              // print all array values 
-
-console.log(nums.length);       // 5
-
-let friends = ["Shahbaz", "Kaleem", "Ilham", "Maghfir", "Badreaalam", "Abdulrehmaan"];
-
-console.log(friends);
-
-console.log(friends.length);    // 6
-
-console.log(typeof friends)     // object
-
-console.log(friends[0]);        // Shahbaz
-
-console.log(friends[4]);        // Badreaalam
-
-console.log(nums[2]);           // 10
-
-console.log(nums[7]);           // undefined
-
-nums[2] = 11;                   // value directly changed on index 2 in array "nums"
-
-console.log(nums);              // print with changed value [4, 7, 11, 34, 56]
-
-console.log("############## For Loop to display arrays ##############");
-
-// for (let i=0; i<nums.length; i++) {
-//     console.log(nums[i]);
-// }
-
-for (let f = 0; f < friends.length; f++) {
-    console.log(friends[f]);
-}
-
-console.log("############## For Loop to display arrays ##############");
+    // Arrays are dynamic, means its size can change(increase or shrink) during program execution.
 
 
+    // Syntax ->>
+        const fruits = ["Banana", "Orange", "Mango"];
+        console.log(fruits);
+        
+    // Using constructor we can create array like below:
+        const Fruits = new Array("Banana", "Orange", "Mango");
+        console.log(Fruits); 
+        
+    // The literal "[]" syntax is preferred for readability and simplicity.
 
-console.log("############## For of to display arrays ##############");
+    // In array, each element has a numeric index, starting from 0, in "fruits" array variable contains 3 elements & "Banana" present on index 0, simillarly "Orange" element present on index 1 and "Mango" element present on index 2.
+    // Index is used to access & manipulate the array's element.
 
-for (let item of nums) {
-    console.log(item);
-}
+    // ✅ ############## How to declare an array? ############## ✅ //
 
-console.log("############## For of to display arrays ##############");
+        // ✅ ############## Using square brackets[] (Most common way) ############## ✅ //
+
+            // Eg:
+                let friends = ["Shahbaz", "Kaleem", "Ilham"];
+
+        // ✅ ############## Using square brackets[] (Most common way) ############## ✅ //
+
+            
+        // ✅ ############## Using the Array constructor ############## ✅ //
+
+            // Eg:
+                let friendsArr = new Array("Shahbaz", "Kaleem", "Ilham");
+
+        // ✅ ############## Using the Array constructor ############## ✅ //
+
+    // ✅ ############## How to declare an array? ############## ✅ //
+
+            
+    // ✅ ############## Accessing array element ############## ✅ //
+        // We can access each array element using it's index.
+
+        // Eg:
+            console.log(friends[1]);        // Kaleem
+
+    // ✅ ############## Accessing array element ############## ✅ //
+
+            
+    // ✅ ############## Modifying array element ############## ✅ //
+        // We can modify the each array element using assignment operators(=) as below:
+        
+        // Eg:
+            friends[2] = "Badreaalam";
+            console.log(friends[2]);        // Badreaalam
+
+    // ✅ ############## Modifying array element ############## ✅ //
+
+            
+    // ✅ ############## Looping through array ############## ✅ //
+        // Genrally we are using 3 loop methods to access array elements iteratively(sequentially).
+
+        // Eg:  (Using for loop)
+            for(let i=0;i<friends.length;i++) {
+                console.log(friends[i]);
+            }
+            
+        // Eg: (Using forEach loop)
+            friends.forEach(function(friend) {
+                console.log(friend);
+            })
+
+        // Eg: (Using for...of loop)
+            for(let friend of friends) {
+                console.log(friend);
+            }
+
+    // ✅ ############## Looping through array ############## ✅ //
 
 
+    // ✅ ############## Convert array like object to an array ############## ✅ //
+        // The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object.
+        
+        // Eg:
+            objectLikeArray = {     // Array like object
+                0: "Shahbaz",
+                1: "Kaleem",
+                2: "Ilham",
+                length: 3
+            }
 
-console.log("############## Average of Marks ##############");
+            friends = Array.from(objectLikeArray);      // converts this type of object to an array using "Array.from"
 
-let marks = [85, 95, 84, 92, 89];
+            console.log(friends[1]);    // Kaleem
 
-let sum = 0;
-
-for (let i = 0; i < marks.length; i++) {
-    sum += marks[i];
-}
-
-console.log("Obtained Marks are:", sum);
-console.log("Obtained Avg Marks are:", (sum / marks.length));
-
-console.log("############## Average of Marks ##############");
+    // ✅ ############## Convert array like object to an array ############## ✅ //
 
 
+    // ✅ ############## Spread operators & arrays ############## ✅ //
+        // The spread operator(...) in javascript used to expand or spread the elements of an array into individual element.
+        
+        // ✅ ############## Copying Array ############## ✅ //
+            // It allows to create a shallow copy of an existing array
+
+            // Eg:
+                const originalArray = [1,2,3,4];
+                const copiedArray = [...originalArray];
+                console.log(copiedArray);
+
+        // ✅ ############## Copying Array ############## ✅ //
 
 
+        // ✅ ############## Concatenating Array ############## ✅ //
+            // It enables to combine two or more arrays into a new array.
+
+            // Eg:
+                const arr1 = [1, 2];
+                const arr2 = [3, 4];
+                const combinedArr = [...arr1, ... arr2];
+
+                console.log(combinedArr);
+
+        // ✅ ############## Concatenating Array ############## ✅ //
+
+
+        // ✅ ############## Inserting Elements ############## ✅ //
+            // It lets you insert an elements in an array at any position.
+
+            // Eg:
+                const array = [1, 3, 4];
+                const newArray = [1, 2, ...array.slice(1)] // newArray will be [1, 2, 3, 4]
+
+        // ✅ ############## Inserting Elements ############## ✅ //
+
+
+        // ✅ ############## Passing array elements as an arguments to a function ############## ✅ //
+
+            // Eg:
+                function add(a, b, c) {
+                    return a+b+c;
+                }
+
+                const numbers = [1,2,3];
+                console.log(add(...numbers));
+
+        // ✅ ############## Passing array elements as an arguments to a function ############## ✅ //
+
+    
+        // ✅ ############## Converting String to Array ############## ✅ //
+            // Spread operator allow we to convert string to an array:
+
+            // Eg:
+                const fname = "Shahbaz";
+                const nameArr = [...fname];     // ["S","h",a","h","b","a","z"]
+
+        // ✅ ############## Converting String to Array ############## ✅ //
+
+    // ✅ ############## Spread operators & arrays ############## ✅ //
+
+
+    // ✅ ############## Sparse arrays ############## ✅ //
+            // Sparse array is an array that do not have its elements at contiguos positions, there are some empty slots & holes.
+            
+            // Eg:
+                const friends = [];
+                friends[0] = "Shahbaz";
+                friends[2] = "Ilham";
+
+                console.log(friends);       // [ 'Shahbaz', <1 empty item>, 'Ilham' ]
+                console.log(friends[1]);    // undefined
+
+    // ✅ ############## Sparse arrays ############## ✅ //
+        
+// ✅ ############## JavaScript Arrays ############## ✅ //
+
+
+// ✅ ############## For of to display arrays ############## ✅ //
+
+    // Eg:
+        for (let item of nums) {
+            console.log(item);
+        }
+
+// ✅ ############## For of to display arrays ############## ✅ //
+
+
+// ✅ ############## Average of Marks ############## ✅ //
+
+    // Eg:
+        let marks = [85, 95, 84, 92, 89];
+
+        let sum = 0;
+
+        for (let i = 0; i < marks.length; i++) {
+            sum += marks[i];
+        }
+
+        console.log("Obtained Marks are:", sum);
+        console.log("Obtained Avg Marks are:", (sum / marks.length));
+
+// ✅ ############## Average of Marks ############## ✅ //

@@ -1,12 +1,47 @@
-console.log("@@@@@@@@@@@ Stirng @@@@@@@@@@@");
+// ✅ ############## String ############## ✅ //
 
-    // String is a sequence of characters used to represent text, there are some inbuild properties and methods to deal with strings in javascript.
+    // String is a sequence of characters used to represent text, there are some inbuild properties and methods to deal with strings in JavaScript.
 
-    let str = "Shahbaz";
 
-    console.log("String Length:", str.length);   // returns length of string, 7
+    // ✅ ############## Declaring Strings ############## ✅ //
+        // We can use single quote(' '), double quote(" ") & backticks(` `).
 
-    console.log("str[0]:", str[0]);   // S
-    console.log("str[4]:", str[4]);   // b
+        // Eg:
+            let str = "Shahbaz";    // using double quote
+            let str1 = 'Patel';     // using single quote
+            let str2 = `Shahbaz Patel`;     // using backticks
 
-console.log("@@@@@@@@@@@ Stirng @@@@@@@@@@@");
+    // ✅ ############## Declaring Strings ############## ✅ //
+
+
+    // 🧵 ############## String Concatenation ############## 🧵 //
+        // Eg:
+            let fname = 'Shahbaz';
+            let greeting = "Hello, " + fname + "!";
+
+        // Eg: (Using Template Literals - Preferred for readablility)
+            let greeting1 = `Hello ${fname}!`;
+
+    // 🧵 ############## String Concatenation ############## 🧵 //
+
+
+    // 🔠 ############## String Indexing ############## 🔠 //
+        // Eg:
+            let msg = "Hello!!!";
+
+            console.log(msg[0]);            // H
+            console.log(msg.charAt(1))      // e
+
+    // 🔠 ############## String Indexing ############## 🔠 //
+
+
+    // 📌 ############## Immutability ############## 📌 //
+        // Eg:
+            let str3 = "Aurwad";
+
+            str[0] = "P";       // ❌ Won't work
+            console.log(str3);      // Aurwad (unchanged)
+
+    // 📌 ############## Immutability ############## 📌 //
+
+// ✅ ############## String ############## ✅ //

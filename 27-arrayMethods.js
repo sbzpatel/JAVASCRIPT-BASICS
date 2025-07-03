@@ -1,8 +1,9 @@
-console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
-    // Javascript provides a rich set of array methods to help to manipulate and work with arrays easily.
+// ✅ @@@@@@@@@@@@@@@ Array Methods @@@@@@@@@@@@@@@ ✅ //
+
+    // Javascript provides a rich set of array methods that helps to manipulate and work with array easily.
     // Below is a categorized overview of commonly used array methods
 
-    // 1) Iteration Methods ->>
+    // ✅ 1) Iteration Methods ->>
             // a) forEach
             // b) map()
             // c) filter()
@@ -10,7 +11,7 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
             // e) some()
             // f) every()
             
-    // 2) Modification Methods ->>
+    // ✅ 2) Modification Methods ->>
             // a) push()
             // b) pop()
             // c) unshift()
@@ -18,21 +19,21 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
             // e) splice()
             // f) slice()
 
-    // 3)  Search and Check Methods ->>
+    // ✅ 3)  Search and Check Methods ->>
             // a) includes()
             // b) indexOf()
             // c) lastIndexOf()
 
-    // 4) Sorting & Reverse Methods ->>
+    // ✅ 4) Sorting & Reverse Methods ->>
             // a) sort()
             // b) reverse()
 
-    // 5) Combination Methods ->>
+    // ✅ 5) Combination Methods ->>
             // a) concat()
             // b) join()
             // c) flat() 
 
-    // 6) Creation Methods ->>
+    // ✅ 6) Creation Methods ->>
             // a) Array.of()
             // b) Array.from()
 
@@ -41,7 +42,7 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
 
 
 
-    console.log("####### push method #######");
+    console.log("####### push() method #######");
 
         console.log("Friends Length(Before):", friends.length);
         // let newFriendsLength = friends.push("Badreaalam");           // pushed single value at end, returning updated length of array
@@ -50,7 +51,7 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
         console.log("Friends Length(After push):", newFriendsLength);
         console.log(friends);       // array with updated values
 
-    console.log("####### push method #######");
+    console.log("####### push() method #######");
 
 
 
@@ -142,7 +143,7 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
     console.log("####### splice() #######");
 
 
-    /* New code with all Array methods (-- starts --)
+    /* ✅ New code with all Array methods (-- starts --) ✅
 
 
             let friends = ["Shahbaz", "Kaleem", "Ilham", "Badre", "Maghfir", "Zuber"];
@@ -150,164 +151,185 @@ console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
             let nums = [3,9,1,6,2,7,0,4,5];
 
             // 1) friends.length
-            console.log(friends.length);
+                console.log(friends.length);
+
 
             // 2) for of loop
             console.log("############# for of loop ############")
-            for(let friend of friends) {
-                console.log(friend);
-            }
+                for(let friend of friends) {
+                    console.log(friend);
+                }
             console.log("############# for of loop ############")
 
-            // 3) forEach
+
+            // 3) forEach()
             console.log("############# forEach ############")
-            friends.forEach((item) => {
-                console.log(item);
-            })
+                friends.forEach((item) => {
+                    console.log(item);
+                })
             console.log("############# forEach ############")
+
 
             // 4) arr.map()
             console.log("############# map() method ############")
-            mappedFriends = friends.map((friend) => {
-                return `$$ ${friend} $$`
-            })
-            console.log(mappedFriends);
+                mappedFriends = friends.map((friend) => {
+                    return `$$ ${friend} $$`
+                })
+                console.log(mappedFriends);
             console.log("############# map() method ############")
+
 
             // 5) arr.filter()
             console.log("############# filter() method ############")
-            evenNums = nums.filter((num) => {
-                return num%2 == 0
-            })
-            console.log(evenNums);
+                evenNums = nums.filter((num) => {
+                    return num%2 == 0
+                })
+                console.log(evenNums);
             console.log("############# filter() method ############")
+
 
             // 6) arr.reduce()
             console.log("############# reduce() method ############")
-            const greatestNum = nums.reduce((prev, curr) => {
-                return prev>curr?prev:curr;
-            });
-            console.log(greatestNum);
+                const greatestNum = nums.reduce((prev, curr) => {
+                    return prev>curr?prev:curr;
+                });
+                console.log(greatestNum);
             console.log("############# reduce() method ############")
+
 
             // 7) arr.some()
             console.log("############# some() method ############")
-            const evenNumsPresent = nums.some((num) => {
-                return num%2 == 0;
-            })
-            console.log(evenNumsPresent? "Even numbers present in array.": "Even numbers not present in array.");
+                const evenNumsPresent = nums.some((num) => {
+                    return num%2 == 0;
+                })
+
+                console.log(evenNumsPresent? "Even numbers present in array.": "Even numbers not present in array.");
             console.log("############# some() method ############")
+
 
             // 8) arr.every()
             console.log("############# every() method ############")
-            const everyNumberOdd = nums.every((num) => {
-                return num%2 != 0;
-            });
-            if(everyNumberOdd) {
-                console.log("Every number in array is Odd.");
-            } else {
-                console.log("No every number in array is Odd.");
-            }
+                const everyNumberOdd = nums.every((num) => {
+                    return num%2 != 0;
+                });
+                if(everyNumberOdd) {
+                    console.log("Every number in array is Odd.");
+                } else {
+                    console.log("No every number in array is Odd.");
+                }
             console.log("############# every() method ############")
+
 
             // 9) arr.push()
             console.log("############# push() method ############")
-            let newFriendsLength = friends.push("Tasadukk");
-            console.log(`New Friends array Length: ${newFriendsLength}`);
-            console.log(`New friends array after pushed: ${friends}`);
+                let newFriendsLength = friends.push("Tasadukk");
+                console.log(`New Friends array Length: ${newFriendsLength}`);
+                console.log(`New friends array after pushed: ${friends}`);
             console.log("############# push() method ############")
+
 
             // 10) arr.pop()
             console.log("############# pop() method ############")
-            const newPoppedItem = friends.pop();
-            console.log(`Popped Item from friends array: ${newPoppedItem}`);
-            console.log(`New Friends array Length: ${friends.length}`);
-            console.log(`New friends array after popped Item: ${friends}`);
+                const newPoppedItem = friends.pop();
+                console.log(`Popped Item from friends array: ${newPoppedItem}`);
+                console.log(`New Friends array Length: ${friends.length}`);
+                console.log(`New friends array after popped Item: ${friends}`);
             console.log("############# pop() method ############")
+
 
             // 11) arr.unshift()
             console.log("############# unshift() method ############")
-            newFriendsLength = friends.unshift("Tasadduk");
-            console.log(`New Friends array Length: ${newFriendsLength}`);
-            console.log(`New friends array after unshift: ${friends}`);
+                newFriendsLength = friends.unshift("Tasadduk");
+                console.log(`New Friends array Length: ${newFriendsLength}`);
+                console.log(`New friends array after unshift: ${friends}`);
             console.log("############# unshift() method ############")
+
 
             // 12) arr.shift()
             console.log("############# shift() method ############")
-            const newShifteditem = friends.shift();
-            console.log(`Shifted Item from friends array: ${newShifteditem}`);
-            console.log(`New Friends array Length: ${friends.length}`);
-            console.log(`New friends array after shifted Item: ${friends}`);
+                const newShifteditem = friends.shift();
+                console.log(`Shifted Item from friends array: ${newShifteditem}`);
+                console.log(`New Friends array Length: ${friends.length}`);
+                console.log(`New friends array after shifted Item: ${friends}`);
             console.log("############# shift() method ############")
+
 
             // 13) arr.splice()
             console.log("############# splice() method ############")
-            friends.splice(3,2, "Tausif", "Niraj", "Sakidraj");
-            console.log(`New Friends array Length: ${friends.length}`);
-            console.log(`New friends array after splice method: ${friends}`);
+                friends.splice(3,2, "Tausif", "Niraj", "Sakidraj");
+                console.log(`New Friends array Length: ${friends.length}`);
+                console.log(`New friends array after splice method: ${friends}`);
             console.log("############# splice() method ############")
+
 
             // 14) arr.slice()
             console.log("############# slice() method ############")
-            const bffs = friends.slice(0,2);
-            console.log("My BFFs are "+friends.slice(0,2).join(","));
+                const bffs = friends.slice(0,2);
+                console.log("My BFFs are "+friends.slice(0,2).join(","));
             console.log("############# slice() method ############")
+
 
             // 15) arr.concat()
             console.log("############# concat() method ############")
-            newFriendsList = friends.concat(bffs);
-            console.log(`New Friends List after concat: ${newFriendsList}`);
+                newFriendsList = friends.concat(bffs);
+                console.log(`New Friends List after concat: ${newFriendsList}`);
             console.log("############# concat() method ############")
 
 
-            // 16) Array.of
+            // 16) Array.of()
             console.log("############# Array.of() method ############")
-            const cars = Array.of("Honda City", "Maruti Suzuki Brezza", "Kia Sonet");
+                const cars = Array.of("Honda City", "Maruti Suzuki Brezza", "Kia Sonet");
 
-            console.log("My Cars List: "+cars);
+                console.log("My Cars List: "+cars);
             console.log("############# Array.of() method ############")
 
-            // 17) Array.from
+
+            // 17) Array.from()
             console.log("############# Array.from() method ############")
-            bikesString = "Yamaha FZX, Royal Field Hunter 350, Splendor pro 100cc, Hero Honda CDSS100"
-            console.log(Array.from(bikesString));
+                bikesString = "Yamaha FZX, Royal Field Hunter 350, Splendor pro 100cc, Hero Honda CDSS100"
+                console.log(Array.from(bikesString));
             console.log("############# Array.from() method ############")
+
 
             // 18) arr.toString()
             console.log("############# toString() method ############")
-            let friendsString = friends.toString();
-            console.log("friends array converts to string: "+ friendsString);
+                let friendsString = friends.toString();
+                console.log("friends array converts to string: "+ friendsString);
             console.log("############# toString() method ############")
+
 
             // 19) arr.join()
             console.log("############# join() method ############")
-            let friendsbyJoin = friends.join(",");
-            // console.log(typeof friendsbyJoin);
-            console.log("friends array converts to string by method join(): "+ friendsbyJoin);
+                let friendsbyJoin = friends.join(",");
+                // console.log(typeof friendsbyJoin);
+                console.log("friends array converts to string by method join(): "+ friendsbyJoin);
             console.log("############# join() method ############")
+
 
             // 20) arr.flat()
             console.log("############# flat() method ############")
-            nestedArrayNums = [1, [2, [3, [4]]]];
+                nestedArrayNums = [1, [2, [3, [4]]]];
 
-            console.log(nestedArrayNums.flat());
-            console.log(nestedArrayNums.flat(2));
-            console.log(nestedArrayNums.flat(3));
+                console.log(nestedArrayNums.flat());
+                console.log(nestedArrayNums.flat(2));
+                console.log(nestedArrayNums.flat(3));
             console.log("############# flat() method ############")
+
 
             // 21) arr.includes()
             console.log("############# includes() method ############")
-            ShahbazPresent = friends.includes("Shahbaz");
-            console.log(ShahbazPresent? "Shahbaz present in friends's array": "Shahbaz not present in friends's array" )
+                ShahbazPresent = friends.includes("Shahbaz");
+                console.log(ShahbazPresent? "Shahbaz present in friends's array": "Shahbaz not present in friends's array" )
             console.log("############# includes() method ############")
+
 
             // 22) arr.indexOf()
             console.log("############# indexOf() method ############")
-            nirajPosition = friends.indexOf("Niraj");
-            console.log(`In friends array "Niraj" present on ${nirajPosition}th index.`);
+                nirajPosition = friends.indexOf("Niraj");
+                console.log(`In friends array "Niraj" present on ${nirajPosition}th index.`);
             console.log("############# indexOf() method ############")
             
     
-    New code with all Array methods (-- ends --) */
+    ✅ New code with all Array methods (-- ends --) ✅ */
 
-console.log("@@@@@@@@@@@ Arrays Methods @@@@@@@@@@@");
+// ✅ @@@@@@@@@@@@@@@ Array Methods @@@@@@@@@@@@@@@ ✅ //

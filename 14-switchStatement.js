@@ -1,4 +1,4 @@
-console.log("@@@@@@@@@@@ Switch Statement @@@@@@@@@@@");
+// ✅ ############## Switch Statement ############## ✅ //
 
     const language = "HTML";    // JAVA
 
@@ -14,4 +14,4 @@ console.log("@@@@@@@@@@@ Switch Statement @@@@@@@@@@@");
         break;
     }
 
-console.log("@@@@@@@@@@@ Switch Statement @@@@@@@@@@@");
+// ✅ ############## Switch Statement ############## ✅ //

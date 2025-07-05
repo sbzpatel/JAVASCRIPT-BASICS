@@ -161,7 +161,7 @@
 
 
     // ✅ ############## Sparse arrays ############## ✅ //
-            // Sparse array is an array that do not have its elements at contiguos positions, there are some empty slots & holes.
+            // Sparse array is an array that don't have its elements at contiguos positions, there are some empty slots & holes.
             
             // Eg:
                 const friends = [];

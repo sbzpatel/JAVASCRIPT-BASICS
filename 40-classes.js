@@ -1,8 +1,7 @@
 // ✅ $$$$$$$$$$$$$$$$$$$ JavaScript Classes $$$$$$$$$$$$$$$$$$$ ✅ //
 
     // A class is a blueprint for creating objects with shared properties and methods.
-
-
+    
 
     //🔹$$$$$$$$$$$$$$$$$$$ Syntax of a Class(Class Creation) $$$$$$$$$$$$$$$$$$$🔹//
     
@@ -23,7 +22,7 @@
     //🔹$$$$$$$$$$$$$$$$$$$ Syntax of a Class(Class Creation) $$$$$$$$$$$$$$$$$$$🔹//
 
 
-    // 🔹 $$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$🔹 //
+    //🔹$$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$🔹//
 
         let fortuner = new ToyotaCar();     // creates object of class fortuner
 
@@ -35,7 +34,7 @@
 
         console.log(fortuner.brandName);        // Output ->> Fortuner
 
-    // 🔹 $$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$ 🔹 //
+    //🔹$$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$🔹//
 
 
 

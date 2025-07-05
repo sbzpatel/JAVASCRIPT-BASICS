@@ -1,6 +1,6 @@
 // ✅ ############## Type Coercion in Javascript ############## ✅ //
 
-    // Type coercion is an automatic or implicit conversion of values from one type to another by javascript during arithmetic or comparison operations.
+    // Type coercion is an automatic or implicit conversion of values from one type to another by JavaScript during arithmetic or comparison operations.
 
     // There are 2 types of coercions in JavaScript:
         // ✅ 1) Implicit Coercion ->> Done automatically by JavaScript    ->> 1 + "2" = "12"

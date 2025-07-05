@@ -6,9 +6,9 @@
             // The function doesn't:
             // ✅ 1) Add & Modify external variables
             // ✅ 2) Change input parameters(mutate them)
-            // ✅ 3) log to console
-            // ✅ 4) Make HTTP Request
-            // ✅ 5) affects the DOM
+            // ✅ 3) Log to console
+            // ✅ 4) Make HTTP request
+            // ✅ 5) Affects the DOM
 
     // Eg:
         function square(x) {
@@ -16,12 +16,14 @@
         }
 
 
-    // ✅ Benefits of Pure Functions ✅ //
+    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Benefits of Pure Functions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
+
         // ✅ 1) Easy to test
         // ✅ 2) Easy to debug
         // ✅ 3) Easy to reuse
         // ✅ 4) Supports memoization (Results can be cached to avoid recomputation)
-    // ✅ Benefits of Pure Functions ✅ //
+        
+    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Benefits of Pure Functions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Pure Functions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
 

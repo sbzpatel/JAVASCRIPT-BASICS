@@ -18,15 +18,15 @@
     // calculate sum of 1 to 50
         sum = 0;
         for(let m=1; m<=50; m++) {
-            sum = sum+m;
+            sum = sum + m;
         }
 
-        console.log("Sum =>",sum);
+        console.log("Sum =>", sum);
 
-        for (var n=1; n<=5; n++) {
-            console.log("n =",n);
+        for(var n=1; n<=5; n++) {
+            console.log("n =", n);
         }
 
-        console.log("value of n after looping: ",n);
+        console.log("value of n after looping: ", n);
 
 // ✅ ############## for Loop ############## ✅ //

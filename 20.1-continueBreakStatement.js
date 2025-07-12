@@ -1,6 +1,6 @@
 // ✅ ############## `continue` & `break` Statemenet ############## ✅ //
 
-    // These 2 statements help to control the flow of loop.
+    // These 2 statements help to controls the flow of loop.
 
     // ✅ ############## break Statement ############## ✅ //
         // The `break` statement immediately exits the loop, regardless of the loop condition.

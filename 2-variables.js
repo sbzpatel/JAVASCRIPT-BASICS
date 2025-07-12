@@ -1,6 +1,6 @@
 // ✅ ############## JavaScript Variable ############## ✅ //
 
-    // Variable is a named container that store and manage different types of data(like number, text, object, array) use for further operations throughout the program.
+    // Variable is a named container that store and manage different types of data(like number, text, object, array) for further operations throughout the program.
 
     // Assignment operator(=) used to store a value in a variable.
 

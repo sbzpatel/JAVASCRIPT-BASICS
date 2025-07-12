@@ -1,7 +1,8 @@
 // ✅ $$$$$$$$$$$$$$$$$$$ Method Overriding $$$$$$$$$$$$$$$$$$$ ✅ //
 
     // Method overriding is a phenomenon in inheritance, where child class method overrides with its parent class method if they both method had a same name.
-    // Generally method overriding is applicable for inherited class methods & it's constructors.
+
+    // Generally method overriding is applicable for inherited class methods & it's constructor.
 
 
     // Eg:

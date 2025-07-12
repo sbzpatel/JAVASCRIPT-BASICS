@@ -1,15 +1,15 @@
-// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promises $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ JavaScript Promises $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
     // Promise object is a solution to callback hell.
 
-    // A Promise is a JS Object which represents the eventual completion(or failure) of an asynchronous operation and it returns the resulting value.
+    // A Promise is a JS Object which represents the eventual completion(or failure) status of an asynchronous operation and it returns the resulting value.
 
-    // A Promise has one out of below 3 states:
+    // Each Promise has one out of below 3 states:
         // ✅ 1) Pending: The initial state, where the operation has not completed yet.
         // ✅ 2) Fulfilled(Resolved): The operation completed successfully.
         // ✅ 3) Rejected: The operation gets failed.
 
-    // Once a promise is created, it can be used with .then() & .catch() methods to handle its fulfilled or rejected state. 	
+    // Once a promise is created, it can be used with .then() & .catch() methods to handle its fulfilled or rejected states. 	
 
     // The .then() method allows to chain multiple promises, creating a sequence of asynchronous operations that executes one after another completes.
 
@@ -79,4 +79,4 @@
         console.log("Error:", err);
     })
 
-// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promises $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ JavaScript Promises $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //

@@ -1,15 +1,20 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Recursion in Javascript $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
     // Recursion is a programming technique where a function call itself to solve smaller instance of the same problem.
-    // It is useful for problems that can be broken down into simillar sub-problems like factorial calculation, fibonacci series etc.
 
-    // ⚠️ Key Concepts ⚠️ //
-        // 1) Base case ->> 
-            // The condition that stops recursion (it prevents infinite loop)
-        // 2) Recursive case ->> 
-            // The function continuos calling itself.
-        // 3) Call Stack ->> 
+    // It is useful for problem that can be divided into simillar sub-problems like factorial calculation, fibonacci series & etc.
+
+
+    // ⚠️ $$$$$$$$$$$$$$$$$$$$$$$$ Key Concepts $$$$$$$$$$$$$$$$$$$$$$$$ ⚠️ //
+
+        // 1) Base Case =>
+            // The condition that stops recursion (it prevents from infinite loop)
+        // 2) Recursive Case => 
+            // The function continuosly calling itself.
+        // 3) Call Stack => 
             // Each recursive call is pushed to the call stack. Too many calls may cause a stack overflow.
+
+    // ⚠️ $$$$$$$$$$$$$$$$$$$$$$$$ Key Concepts $$$$$$$$$$$$$$$$$$$$$$$$ ⚠️ //
 
 
     
@@ -22,17 +27,19 @@
                 return recursiveFunction(modifiedParameters);
             }
         }
+
         
     // Eg: (Factorial)
         function factorial(n) {
             if(n === 0) {
                 return 1;   // base case
             } else {
-                return n * factorial(n-1);  //recursive case
+                return n * factorial(n-1);  // recursive case
             }
         }
         
         console.log(factorial(5));      // 120
+        
         
     // Eg: (Fibonacci numbers count)
         function fibonacci(n) {

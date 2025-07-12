@@ -1,269 +1,268 @@
 // ✅ ############## Data Types ############## ✅ //
-// Data is a raw information that is used to store, process, manipulate & display within the program. 
+    // Data is a raw information that is used to store, process, manipulate & display within the program. 
 
-// Each data has its specific type which determines how it can be use and which type of operations we can perform on it. 
+    // Each data has its specific type that determines how it can be use and which type of operations we can perform on it. 
 
-// Data usage with specific type in programming for a purpose of memory management, which leads to ensures efficient memory allocation, preventing wastage and optimizing performance.
+    // Data usage with specific type in programming for a purpose of memory management, which leads to ensures efficient memory allocation, preventing wastage and optimizing performance.
 
-// There are 2 different categories(types) of data available in JavaScript as below:
+    // There are 2 different categories(types) of data available in JavaScript as below:
 
-    // ✅ 1) Primitive DataTypes => (Number, String, Boolean, Undefined, Null, BigInt, Symbol) 
-        // Primitive DataTypes are basic, immutable and store by value. 
-    // ✅ 2) Non-Primitive DataTypes (Array, Object, Function, Date, Map, Set)
-        // Non-Primitive DataTypes are complex, mutable & store by reference.
-
-
-
-    // ✅ ############## Primitive DataTypes ############## ✅ //
-
-        // ✅ ############## Number ############## ✅ //
-
-            // In JavaScript, `Number` datatype represents both integer and floating point number.
-
-            // Eg:
-                let age = 24;       // Integer
-                console.log(typeof age);    // number (Represents numerical value)
-
-                let percentage = 78.13;     // Floating-point number
-                console.log(typeof percentage);     // number
-
-                let mstetNegativeMarks = -20    // Negative number
-                console.log(typeof mstetNegativeMarks);     // number
-
-                let large = 1e6;        // 1000000 (scientific notation)
-                let small = 1e-6;       // 0.000001 
+        // ✅ 1) Primitive DataTypes => (Number, String, Boolean, Undefined, Null, BigInt, Symbol) 
+            // Primitive DataTypes are basic, immutable and store by value. 
+        // ✅ 2) Non-Primitive DataTypes (Array, Object, Function, Date, Map, Set)
+            // Non-Primitive DataTypes are complex, mutable & store by reference.
 
 
-            // 📌 ############## Special Numeric Values ############## 📌 //
-                /*
-                | Value       | Description                                |
-                | ----------- | ------------------------------------------ |
-                | `Infinity`  | Positive infinity                          |
-                | `-Infinity` | Negative infinity                          |
-                | `NaN`       | "Not-a-Number", result of invalid math ops | 
-                */
+
+        // ✅ ############## Primitive DataTypes ############## ✅ //
+
+            // ✅ ############## Number ############## ✅ //
+
+                // In JavaScript, `Number` datatype represents both integer and floating point number.
 
                 // Eg:
-                console.log(1/0);       // Infinity
-                console.log(-1/0);      // -Infinity
-                console.log("Shahbaz"*10);      // NaN
+                    let age = 24;       // Integer
+                    console.log(typeof age);    // number (Represents numerical value)
 
-            // 📌 ############## Special Numeric Values ############## 📌 //
+                    let percentage = 78.13;     // Floating-point number
+                    console.log(typeof percentage);     // number
 
+                    let mstetNegativeMarks = -20    // Negative number
+                    console.log(typeof mstetNegativeMarks);     // number
 
-            // 🧠 ############## Number Methods ############## 🧠 //
+                    let large = 1e6;        // 1000000 (scientific notation)
+                    let small = 1e-6;       // 0.000001 
 
-                // Eg:
-                let n = 123.456;
 
-                n.toFixed(2);       // "123.46" — rounds to 2 decimal places
-                n.toString();       // "123.456" — converts to string
-                n.toExponential();      // "1.23456e+2"
+                // 📌 ############## Special Numeric Values ############## 📌 //
+                    /*
+                    | Value       | Description                                |
+                    | ----------- | ------------------------------------------ |
+                    | `Infinity`  | Positive infinity                          |
+                    | `-Infinity` | Negative infinity                          |
+                    | `NaN`       | "Not-a-Number", result of invalid math ops | 
+                    */
 
-            // 🧠 ############## Number Methods ############## 🧠 //
+                    // Eg:
+                    console.log(1/0);       // Infinity
+                    console.log(-1/0);      // -Infinity
+                    console.log("Shahbaz"*10);      // NaN
 
-        // ✅ ############## Number ############## ✅ //
+                // 📌 ############## Special Numeric Values ############## 📌 //
 
 
-        // (String represents sequence of characters enclosed in single or double inverted commas)
-        console.log(typeof "Sbz");          // string
+                // 🧠 ############## Number Methods ############## 🧠 //
 
+                    // Eg:
+                    let n = 123.456;
 
-        // Boolean means a logical value which can be one out of `true` or `false`, are used for controlling program flow and making decisions.
-        let married = true;         // true
-        console.log(typeof married);    // boolean
+                    n.toFixed(2);       // "123.46" — rounds to 2 decimal places
+                    n.toString();       // "123.456" — converts to string
+                    n.toExponential();      // "1.23456e+2"
 
+                // 🧠 ############## Number Methods ############## 🧠 //
 
-        // `Undefined` represents "absence of a value". When we declare a variable but not initialize any data to it, then javascript compiler automatically(implicitly) sets the value `undefined` to it.
-        let wifeName;
-        console.log(typeof wifeName);   // undefined
+            // ✅ ############## Number ############## ✅ //
 
 
-        // null means also same as undefined "no value" but its an explicitly assigned using assignment operator(=).
-        let salary = null;
-        console.log(typeof salary);     // null variable is treated as an "object"
+            // (String represents sequence of characters enclosed in single or double inverted commas)
+            console.log(typeof "Sbz");          // string
 
 
-        // ✅ ############## BigInt ############## ✅ //
+            // Boolean means a logical value which can be one out of `true` or `false`, are used for controlling program flow and making decisions.
+            let married = true;         // true
+            console.log(typeof married);    // boolean
 
-            // It's a large type of number when compares with regular number.
 
-            // We can declare bigInt in 2 ways
-            let bigNum = 9007199254740991n;    // way1
-            let big1 = BigInt("9007199254740991");      // way2
+            // `Undefined` represents "absence of a value". When we declares a variable but not initialize any data to it, then JavaScript compiler automatically(implicitly) sets the value `undefined` to it.
+            let wifeName;
+            console.log(typeof wifeName);   // undefined
 
-            console.log(bigNum);       // 9007199254740991n
-            console.log(big1);      // 9007199254740991n
 
-        // ✅ ############## BigInt ############## ✅ //
+            // null datatype also same as undefined "no value" but it is explicitly assigned using assignment operator(=).
+            let salary = null;
+            console.log(typeof salary);     // null variable is treated as an "object"
 
 
-        // ✅ ############## Symbol ############## ✅ //
+            // ✅ ############## BigInt ############## ✅ //
 
-            // Symbols are introduced in ES6 that represent unique and immutable values.
-            // Primarily used as a unique identifiers for object properties, offering a way to avoid naming collision and create a form of weak encapsulation.
+                // It's a large type of number when compares with regular number.
 
-            let Id = Symbol("userID");
-            console.log(Id);        // Symbol(userID)
+                // We can declare bigInt in 2 ways
+                let bigNum = 9007199254740991n;    // way1
+                let big1 = BigInt("9007199254740991");      // way2
 
-            // We can assign symbol to the object's key
-            const personn = {
-                name: "Shahbaz Patel",
-                [Id]: 786
-            }
-            console.log(personn);        // { name: 'Shahbaz Patel', [Symbol(userID)]: 786 }
-            console.log(personn[Id]);        
-            // 786, Actual key "userID" was hidden to use, in substitute used Symbol "Id"
-            // We can access Object property(declare with Symbol) only using bracket([]) notation
+                console.log(bigNum);       // 9007199254740991n
+                console.log(big1);      // 9007199254740991n
 
-            console.log(Object.keys(personn));      // ["name"]     // missing [Id]
+            // ✅ ############## BigInt ############## ✅ //
 
-        // ✅ ############## Symbol ############## ✅ //
 
-    // ✅ ############## Primitive DataTypes ############## ✅ //
+            // ✅ ############## Symbol ############## ✅ //
 
+                // Symbols are introduced in ES6 that represent unique and immutable values.
+                // Primarily used as a unique identifiers for object properties, offering a way to avoid naming collision and create a form of weak encapsulation.
 
-    // ✅ ############## Non-primitive DataTypes ############## ✅ //
+                let Id = Symbol("userID");
+                console.log(Id);        // Symbol(userID)
 
-        // ✅ ############## Array ############## ✅ //
+                // We can assign symbol to the object's key
+                const personn = {
+                    name: "Shahbaz Patel",
+                    [Id]: 786
+                }
+                console.log(personn);        // { name: 'Shahbaz Patel', [Symbol(userID)]: 786 }
+                console.log(personn[Id]);        
+                // 786, Actual key "userID" was hidden to use, in substitute used Symbol "Id"
+                // We can access Object property(declare with Symbol) only using bracket([]) notation
 
-            // In JavaScript, array is an ordered collection of values of any type(string, number, another array and functions) to store a complex data. Each value of an array called `Element`.
-            // Each element in an array has numerical index to access it, first element's index is 0, next element's index is 1 and so on.
-            // Arrays are dynamic, so its size can change(increase or shrink) during program execution.
+                console.log(Object.keys(personn));      // ["name"]     // missing [Id]
 
+            // ✅ ############## Symbol ############## ✅ //
 
-            // ✅ Syntax ->> (Using literal [])
-                const fruits = ["Banana", "Orange", "Mango"];
-                console.log(fruits);
-                
-            // ✅ Syntax ->> (Using `Array` Constructor)
-                const Fruits = new Array("Banana", "Orange", "Mango");
-                console.log(Fruits); 
-                
-            // The literal "[]" syntax is preferred for readability and simplicity.
+        // ✅ ############## Primitive DataTypes ############## ✅ //
 
-            // In array, each element has a numeric index, starting from 0, in "fruits" array variable contains 3 elements & "Banana" present on index 0, simillarly "Orange" element present on index 1 and "Mango" element present on index 2.
 
-        // ✅ ############## Array ############## ✅ //
+        // ✅ ############## Non-primitive DataTypes ############## ✅ //
 
+            // ✅ ############## Array ############## ✅ //
 
-        // ✅ ############## Object ############## ✅ //
+                // In JavaScript, array is an ordered collection of values of any type(string, number, another array and functions) to store a complex data. Each value of an array called `Element`.
+                // Each element of an array has numerical index to access it, first element's index is 0, next element's index is 1 and so on.
+                // Arrays are dynamic, so its size can change(increase or shrink) during program execution.
 
-            // An object is a collection of key-value pairs which is used to represents real-world entity and complex data. 
 
-            const student = {
-                fullName: "Shahbaz Shaikh",
-                age: 36,
-                cgpa: 8.9,
-                isPass: true
-            };
-            // fullName, age, cgpa & isPass ->> Object's keys
-            // Shahbaz Patel, 36, 8.9, true ->> Object's values
+                // ✅ Syntax ->> (Using literal [])
+                    const fruits = ["Banana", "Orange", "Mango"];
+                    console.log(fruits);
+                    
+                // ✅ Syntax ->> (Using `Array` Constructor)
+                    const Fruits = new Array("Banana", "Orange", "Mango");
+                    console.log(Fruits); 
+                    
+                // The literal "[]" syntax is preferred for readability and simplicity.
 
-        // ✅ ############## Object ############## ✅ //
+                // In array, each element has a numeric index, starting from 0, in "fruits" array variable contains 3 elements & "Banana" present on index 0, simillarly "Orange" element present on index 1 and "Mango" element present on index 2.
 
+            // ✅ ############## Array ############## ✅ //
 
-        // ✅ ############## Function ############## ✅ //
 
-            // Function is a group of statements that performs a specific task on its invocation where it needed, that prevent us from writing redundant code and make code more reliable.
+            // ✅ ############## Object ############## ✅ //
 
-            // A JS function is defined with the `function` keyword, followed by a name, followed by parantheses() and curly braces({}) which having functional code.
-            function callSbz() {                                    // function definition
-                console.log("Bolo Barkhurdaar, I am Shahbaz Patel(The Great coder of Asia).");
-            }
+                // An object is a collection of key-value pairs sepatered by the commas which is used to represents real-world entity and complex data. 
 
-            callSbz();                                              // function call
-            callSbz();
+                const student = {
+                    fullName: "Shahbaz Shaikh",
+                    age: 36,
+                    cgpa: 8.9,
+                    isPass: true
+                };
+                // fullName, age, cgpa & isPass ->> Object's keys
+                // Shahbaz Patel, 36, 8.9, true ->> Object's values
 
-        // ✅ ############## Function ############## ✅ //
+            // ✅ ############## Object ############## ✅ //
 
 
-        // ✅ ############## Map ############## ✅ //
+            // ✅ ############## Function ############## ✅ //
 
-            // In JavaScript, Map is a built-in object that stores value in a key-value pair format and remembers the original insertion order of the keys.
-            // Unlike objects, we can store any type of keys in Map object.
+                // Function is a group of statements that performs a specific task on its invocation where it needed, that prevent us from writing redundant code and makes code more reliable.
 
-            const mymap = new Map();
-            mymap.set("name", "Shahbaz");
-            mymap.set(2, "Patel");
+                // A JS function is defined with the `function` keyword, followed by a name, followed by parantheses() and curly braces({}) which having functional code.
+                function callSbz() {                                    // function definition
+                    console.log("Bolo Barkhurdaar, I am Shahbaz Patel(The Great coder of Asia).");
+                }
 
-            console.log(mymap);     // Map(2) { 'name' => 'Shahbaz', 2 => 'Patel' }
+                callSbz();                                              // function call
+                callSbz();
 
-        // ✅ ############## Map ############## ✅ //
+            // ✅ ############## Function ############## ✅ //
 
 
-        // ✅ ############## Set ############## ✅ //
+            // ✅ ############## Map ############## ✅ //
 
-            // In JavaScript, Set is a built-in object used to store collection of unique values(means no duplicates are allowed).
-            // It can store any type of values, whether it can primitive or any object.
+                // In JavaScript, Map is a built-in object that stores value in a key-value pair format and remembers the original insertion order of the keys.
+                // Unlike objects, we can store any type of keys in Map object.
 
-            const set = new Set();
+                const mymap = new Map();
+                mymap.set("name", "Shahbaz");
+                mymap.set(2, "Patel");
 
-            set.add(1);
-            set.add(2);
-            set.add(2);     // Duplicate will ignore
+                console.log(mymap);     // Map(2) { 'name' => 'Shahbaz', 2 => 'Patel' }
 
-            console.log(set);       // Set(2) {1, 2}
+            // ✅ ############## Map ############## ✅ //
 
-            // We can also initialize set with an array
-            const friends = new Set(["Shahbaz", "Kaleem", "Ilham"]);
-            console.log(friends);   // Set(3) { 'Shahbaz', 'Kaleem', 'Ilham' }
 
+            // ✅ ############## Set ############## ✅ //
 
-            // Iterating Set values by for of loop
-            for(let friend of friends) {
-                console.log(friend);
-            }
+                // In JavaScript, Set is a built-in object used to store collection of unique values(means no duplicates are allowed) of any type(primitive or non-primitive).
 
-            // We can remove duplicate items from an array
-            const arr = [1, 2, 2, 3, 4];
-            console.log([...new Set(arr)]);     // [ 1, 2, 3, 4 ]
+                const set = new Set();
 
-        // ✅ ############## Set ############## ✅ //
+                set.add(1);
+                set.add(2);
+                set.add(2);     // Duplicate will ignore
 
+                console.log(set);       // Set(2) {1, 2}
 
-        // ✅ ############## Date ############## ✅ //
+                // We can also initialize set with an array
+                const friends = new Set(["Shahbaz", "Kaleem", "Ilham"]);
+                console.log(friends);   // Set(3) { 'Shahbaz', 'Kaleem', 'Ilham' }
 
-            // Date is a non-primitive data type (It's an object).
-            // Internally it saves a time in milliseconds as a number since 1 Jan, 1970 UTC.
 
-            let currentDate = new Date();   // created current date by Date constructor
-            console.log(currentDate);   // 2025-05-21T13:46:20.520Z
+                // Iterating Set values by for of loop
+                for(let friend of friends) {
+                    console.log(friend);
+                }
 
+                // We can remove duplicate items from an array
+                const arr = [1, 2, 2, 3, 4];
+                console.log([...new Set(arr)]);     // [ 1, 2, 3, 4 ]
 
-            let specificDate = new Date("2025-05-20T13:46:20.520Z");     // Specific date and time
-            console.log(specificDate);
+            // ✅ ############## Set ############## ✅ //
 
 
-            // Date with year, month (0-indexed), day, hour, minute, second
-            const custom = new Date(2025, 4, 21, 10, 30); 
-            console.log(custom);    // May 21, 2025 at 10:30
+            // ✅ ############## Date ############## ✅ //
 
-            // There are many Date methods available which returns year, month, day, hour, minutes, seconds, milliseconds as below.
-            console.log(currentDate.getFullYear());     // 2025
-            console.log(currentDate.getMonth());        // 4 (0 -> January, 11 -> December)
-            console.log(currentDate.getDate());         // 21
-            console.log(currentDate.getDay());          // 3 (0 -> Sunday, 6 -> Saturday)
-            console.log(currentDate.getHours());        // 14 (UTC Timing)
-            console.log(currentDate.getMinutes());      // 6 (UTC Timing)
-            console.log(currentDate.getSeconds());      // 5
-            console.log(currentDate.getTime());         // get milliseconds since Jan 1 1970
-            console.log(new Date().toString());     // Wed May 21 2025 14:09:36 GMT+0000 (Coordinated Universal Time)
-            console.log(new Date().toISOString());      // 2025-05-21T14:09:36.367Z
-            console.log(new Date().toLocaleDateString());   // 5/21/2025
-            console.log(new Date().toDateString());   // Wed May 21 2025
+                // Date is a non-primitive data type (It's an object).
+                // Internally it saves a time in milliseconds as a number since 1 Jan, 1970 UTC.
 
+                let currentDate = new Date();   // created current date by Date constructor
+                console.log(currentDate);   // 2025-05-21T13:46:20.520Z
 
-            // Dates can be compared using .getTime() or direct subtraction
-            const d1 = new Date("2025-01-01");  
-            const d2 = new Date("2026-01-01");
 
-            console.log(d2 > d1); // true
-            console.log(d2 - d1); // milliseconds difference
+                let specificDate = new Date("2025-05-20T13:46:20.520Z");     // Specific date and time
+                console.log(specificDate);
 
-        // ✅ ############## Date ############## ✅ //
 
-    // ✅ ############## Non-primitive DataTypes ############## ✅ //
+                // Date with year, month (0-indexed), day, hour, minute, second
+                const custom = new Date(2025, 4, 21, 10, 30); 
+                console.log(custom);    // May 21, 2025 at 10:30
+
+                // There are many Date methods available which returns year, month, day, hour, minutes, seconds, milliseconds as below.
+                console.log(currentDate.getFullYear());     // 2025
+                console.log(currentDate.getMonth());        // 4 (0 -> January, 11 -> December)
+                console.log(currentDate.getDate());         // 21
+                console.log(currentDate.getDay());          // 3 (0 -> Sunday, 6 -> Saturday)
+                console.log(currentDate.getHours());        // 14 (UTC Timing)
+                console.log(currentDate.getMinutes());      // 6 (UTC Timing)
+                console.log(currentDate.getSeconds());      // 5
+                console.log(currentDate.getTime());         // get milliseconds since Jan 1 1970
+                console.log(new Date().toString());     // Wed May 21 2025 14:09:36 GMT+0000 (Coordinated Universal Time)
+                console.log(new Date().toISOString());      // 2025-05-21T14:09:36.367Z
+                console.log(new Date().toLocaleDateString());   // 5/21/2025
+                console.log(new Date().toDateString());   // Wed May 21 2025
+
+
+                // Dates can be compared using .getTime() or direct subtraction
+                const d1 = new Date("2025-01-01");  
+                const d2 = new Date("2026-01-01");
+
+                console.log(d2 > d1); // true
+                console.log(d2 - d1); // milliseconds difference
+
+            // ✅ ############## Date ############## ✅ //
+
+        // ✅ ############## Non-primitive DataTypes ############## ✅ //
 
 // ✅ ############## Data Types ############## ✅ //
 

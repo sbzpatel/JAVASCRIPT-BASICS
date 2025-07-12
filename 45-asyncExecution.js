@@ -2,7 +2,7 @@
 
     // Async programming is a sequence of execution of statements where some tasks may take time, so these tasks not break the loop but instead of parallelly executes side by side for achieve a better performance level.
 
-    // JavaScript supports both type of programming executions(Synchronous and Asynchronous programming).
+    // JavaScript supports both type of programming executions(Synchronous and Asynchronous Programming).
 
 
 
@@ -20,7 +20,7 @@
 
 
 
-    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Asynchronization execution in JS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
+    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Asynchronized execution in JS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
 
         console.log("One");     // executes 1st
 
@@ -37,6 +37,6 @@
 
         console.log("Four");    // executes 4th
 
-    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Asynchronization execution in JS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
+    // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Asynchronized execution in JS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
 
 // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Async Programming @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //

@@ -1,6 +1,6 @@
 // ✅ @@@@@@@@@@@@@@@@@@@@@ JS Destructure @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-    // Destructuring in JavaScript is a powerful way to unpack the elements of an array or properties of an object in a distinct variables separetely.
+    // Destructuring in JavaScript is a powerful way to unpack the elements of an array or properties of an object in a distinct variables separately.
 
     // We can destructure arrays & objects both of.
 
@@ -134,7 +134,7 @@
 
 
 
-        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combine Array & Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combined Array of Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
         
             const people = [
                 { name: "Tom", age: 40 },
@@ -145,7 +145,7 @@
             console.log(firstName);     // Tom
             console.log(secondAge);     // 32
 
-        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combine Array & Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
+        // ✅ @@@@@@@@@@@@@@@@@@@@@ Combined Array of Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
     // ✅ @@@@@@@@@@@@@@@@@@@@@ Object Destructuring @@@@@@@@@@@@@@@@@@@@@ ✅ //
 

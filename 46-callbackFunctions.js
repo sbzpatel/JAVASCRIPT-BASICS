@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Callback Function $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // A callback is a function passed as an argument to another function during invocation. The callback function starts to execute when another function has finished.
+    // A callback is a function passed as an argument to another function during invocation. The callback function starts to execute when another function has finished its execution.
     
     // Callbacks are often used to handle asynchronous events such as Network Requests, File I/O operations and working with a timers.
 

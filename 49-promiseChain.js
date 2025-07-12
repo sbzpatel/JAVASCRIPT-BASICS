@@ -1,8 +1,8 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promise Chain $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // Promise chaining is a javascript technique that allow us to run multiple asynchronous tasks in a sequence.
-    // The .then() method allows to chain multiple promises, creating a sequence of asynchronous operations that execute one after other complete.
-    // The .catch() method is used to handle any errors that occurs in the promise chain when operation failed.
+    // Promise chaining is a JavaScript technique that allow us to run multiple asynchronous tasks in a sequence.
+    // A .then() method allows to chain multiple promises, creating a sequence of asynchronous operations that execute one after other complete.
+    // A .catch() method is used to handle any errors that occurs in the promise chain when operation failed.
 
     // Eg:
         function asyncFunc() {
@@ -56,7 +56,7 @@
             let p2 = asyncFunc2();  // run 4th
 
             p2.then((res) => {
-                // console.log(res)
+                // console.log(res);
             })
         }); */
 

@@ -1,6 +1,6 @@
 // ✅ ############## Prompt ############## ✅ //
 
-    // prompt is a built-in function that displays a dialog box with a message and allows the user to input data. 
+    // prompt is JavaScript's built-in method used to display the dialog box with a message and allows users to input data. 
 
 
     // Eg:

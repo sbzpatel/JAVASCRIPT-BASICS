@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$ Debouncing & Throttling $$$$$$$$$$$$$$$$$ ✅ //
 
-    // Debouncing & Throttling are techniques to control how a function exectues, especially useful in performance-sensitive situations like scroll, resize, input or keypress events.
+    // Debouncing & Throttling are techniques to control how a function executes, especially useful in performance-sensitive situations like scroll, resize, input or keypress events.
 
     // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Debouncing @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ //
 
@@ -21,7 +21,7 @@
 
             // Usage
             const handleInput = debounce(() => {
-            console.log("Input processed");
+                console.log("Input processed");
             }, 300);
 
             document.getElementById("search").addEventListener("input", handleInput);
@@ -33,12 +33,12 @@
 
     // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Throttling @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ //
 
-        // Throttling ensures a function is called at most once every X milliseconds, no matter how many times it’s triggered.
+        // Throttling ensures a function is called at most once every X milliseconds, no matter how many times it triggered.
 
         // Use Case ->>
-        //     Scrolling
-        //     Mouse movement
-        //     Repeated button presses
+            // Scrolling
+            // Mouse movement
+            // Repeated button presses
 
         // Anology ->>
         //     "Do this no more than once every 200ms, no matter how many events occur."
@@ -48,9 +48,10 @@
                 let lastCall = 0;
                 return function(...args) {
                     const now = Date.now();
+                    
                     if (now - lastCall >= limit) {
-                    lastCall = now;
-                    fn.apply(this, args);
+                        lastCall = now;
+                        fn.apply(this, args);
                     }
                 };
             }

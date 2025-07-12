@@ -1,6 +1,6 @@
 // ✅ ############## reduce() Function ############## ✅ //
 
-    // Performs some operations & reduces the array to a single value. it returns only single value.
+    // Perform some operations & reduces the array to a single value. it returns only single value.
 
     // Eg:
         let arr = [8, 3, 4, 5, 1];

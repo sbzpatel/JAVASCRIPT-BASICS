@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Spread(...) Operator $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // Spread operator allow to expand iterables (like arrays, objects & strings) into individual element or property.
+    // Spread(...) Operator allow to expand iterables (like arrays, objects & strings) into individual element or property.
 
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Spread in Arrays $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
@@ -81,7 +81,7 @@
         // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Overriding Properties $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
             const base = { name: "John", age: 25 };
-            const updated = {...base, age: 35 };
+            const updated = { ...base, age: 35 };
             
             console.log(updated);       // { name: 'John', age: 35 }
 

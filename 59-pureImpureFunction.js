@@ -12,7 +12,7 @@
 
     // Eg:
         function square(x) {
-            return x*x;     // here input "4" always gives an output "16"
+            return x * x;     // here input "4" always gives an output "16"
         }
 
 

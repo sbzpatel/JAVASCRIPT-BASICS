@@ -1,11 +1,11 @@
 // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Event Loop, Micro & Macro Tasks @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-    // In Javascript, especially in the context of the browser or Node.js executions event loop, microtasks, macrotasks are core concepts that determine how asynchronous code is executed.
-    // Here below are the breakdown of each in detail how they work with each other during processing:
+    // In the context of browser & node.js execution the core concepts are Event Loops, Micro Tasks & Macro Tasks that determine how asynchronous code is going to execute.
+    // Here below is a breakdown of each in detail how they works with each other during execution:
 
 
     // ✅ Event Loop ->>
-        // The event loop is the mechanism that coordinates the execution of code, event handling and tasks.
+        // The event loop is the mechanism that coordinates the execution of code, event handlings and tasks.
         // It continuosly check for tasks in different queues and process them in a specific order.
 
         // 🧱 $$$$$$$$$$$$$$$$$ Macrotasks (Tasks) $$$$$$$$$$$$$$$$$ 🧱 //

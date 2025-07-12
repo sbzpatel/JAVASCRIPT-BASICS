@@ -1,14 +1,20 @@
-let btn1 = document.querySelector("#btn1");
+// ✅ ############## External Event Handling ############## ✅ //
 
-btn1.onclick = () => {
-    console.log("btn1 was clicked!!!");
-    let a = 25;
-    a++;
-    console.log(a); // 26
-}
+    
 
-let box = document.querySelector("#box");
+    let btn1 = document.querySelector("#btn1");
 
-box.onmouseover = () => {
-    console.log("U are inside div...");
-}
+    btn1.onclick = () => {
+        console.log("btn1 was clicked!!!");
+        let a = 25;
+        a++;
+        console.log(a); // 26
+    }
+
+    let box = document.querySelector("#box");
+
+    box.onmouseover = () => {
+        console.log("U are inside div...");
+    }
+
+// ✅ ############## External Event Handling ############## ✅ //

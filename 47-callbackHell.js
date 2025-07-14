@@ -2,7 +2,7 @@
 
     // Callback is used for handle asynchronous operations like reading files, making API requests and working with a timers.
 
-    // When there are accessive nesting function calls, its become difficult to read, debug & maintain the code. Such a situation is leads to a problem known as `Callback Hell`.
+    // When there are accessive nesting function calls, it becomes difficult to read, debug & maintain the code. Such a situation is leads to a problem known as `Callback Hell`.
     
     // To overcome from this problem we are using promise object and async/await function which improves the code readability and maintainability. 
 

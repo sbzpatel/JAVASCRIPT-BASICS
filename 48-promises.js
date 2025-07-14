@@ -9,7 +9,7 @@
         // ✅ 2) Fulfilled(Resolved): The operation completed successfully.
         // ✅ 3) Rejected: The operation gets failed.
 
-    // Once a promise is created, it can be used with .then() & .catch() methods to handle its fulfilled or rejected states. 	
+    // Once a promise is created, it can be used with .then() & .catch() methods to handle its fulfilled & rejected states respectively. 	
 
     // The .then() method allows to chain multiple promises, creating a sequence of asynchronous operations that executes one after another completes.
 

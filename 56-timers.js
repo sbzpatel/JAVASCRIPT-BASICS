@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ JavaScript Timers $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // In JavaScript, timers are used to execute code after a delay or at regular interval. These are key tools for handling asynchronous operations.
+    // In JavaScript, timers are used to execute code after a delay or at regular interval. These are key tools for creating asynchronous operations.
 
     // ✅ 1) setTimeout() ✅ //
         // Runs a function once after a given time of delay(in milliseconds).

@@ -1,5 +1,7 @@
 // ✅ ############## Arrow Functions ############## ✅ //
 
+    // Arrow Function is a concise form of an expression to define a function.
+
     const arrowSum = (a, b) => console.log(a+b);
 
     arrowSum(5, 4);

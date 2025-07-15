@@ -12,7 +12,7 @@
         // 2) Recursive Case => 
             // The function continuosly calling itself.
         // 3) Call Stack => 
-            // Each recursive call is pushed to the call stack. Too many calls may cause a stack overflow.
+            // Each recursive call is pushed to the call stack. Too many calls may cause a `stack overflow`.
 
     // ⚠️ $$$$$$$$$$$$$$$$$$$$$$$$ Key Concepts $$$$$$$$$$$$$$$$$$$$$$$$ ⚠️ //
 
@@ -44,13 +44,13 @@
     // Eg: (Fibonacci numbers count)
         function fibonacci(n) {
             if(n <= 1) {
-                return n;
+                return 1;
             } else {
                 return fibonacci(n-1) + fibonacci(n-2);
             }
         }
         
-        console.log(fibonacci(6));      // 8
+        console.log(fibonacci(6));      // 13
 
 
 

@@ -11,7 +11,7 @@
 
     // ✅ $$$$$$$$$$$$$$$$$ Event Loop $$$$$$$$$$$$$$$$$ ✅ //
 
-    
+
 
     // 🧱 $$$$$$$$$$$$$$$$$ Macrotasks (Tasks) $$$$$$$$$$$$$$$$$ 🧱 //
     
@@ -31,7 +31,7 @@
 
     // 🔬 $$$$$$$$$$$$$$$$$ Microtasks $$$$$$$$$$$$$$$$$ 🔬 //
 
-        // Microtasks are smaller tasks that are executed immediately after the current operation completes and before any macrotask. 
+        // Microtasks are smaller tasks that are executed immediately after the current operation completes. 
         // They're queued in the microtask queue.
 
         // Examples of Microtasks:

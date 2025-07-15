@@ -116,7 +116,7 @@
             
     // 🧰 ############ How to Avoid Memory Leaks ############ 🧰 //
     
-        // 1) Use let, const & to avoid polluting the global variables which causes memory leaks
+        // 1) Use let, const & to avoid polluting the global variables which cause memory leaks
         // 2) Clear intervals/timeouts with clearInterval(), clearTimeout() methods
         // 3) Nullify references when related work done; eg: obj = null;
         // 4) Use browser tools like Chrome DevTools Memory Tab to analyze memory usage and detect leaks.

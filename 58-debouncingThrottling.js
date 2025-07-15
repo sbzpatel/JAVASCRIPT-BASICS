@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$ Debouncing & Throttling $$$$$$$$$$$$$$$$$ ✅ //
 
-    // Debouncing & Throttling are techniques to control how a function executes, especially useful in performance-sensitive situations like scroll, resize, input or keypress events.
+    // Debouncing & Throttling are techniques to control how a function executes, that especially useful in performance-sensitive situations like scroll, resize, input or keypress events.
 
     // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Debouncing @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ //
 

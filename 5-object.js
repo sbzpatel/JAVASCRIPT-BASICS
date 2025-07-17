@@ -1,6 +1,6 @@
 // ✅ ############## JavaScript Object ############## ✅ //
 
-    // An object is a non-primitive data that contains collection of key-value pairs which is used to represent real-world entity and complex data. 
+    // An object is a non-primitive data that contains collection of values in the form of key-value pairs which is used to represent real-world entity and complex data. 
 
     const student = {
         fullName: "Shahbaz Shaikh",
@@ -12,25 +12,34 @@
     // Shahbaz Patel, 36, 8.9, true ->> Object's values
 
 
-    // ✅ Key Characteristics ->>
+    // ✅ ############## Key Characteristics ############## ✅ //
+
         // 🔹 Keys are always string
         // 🔹 Values can be of any data type(primitive or non-primitive value)
         // 🔹 Object is mutable(we can add, modify or delete properties)
         // 🔹 Object is stored and passed by reference
 
+    // ✅ ############## Key Characteristics ############## ✅ //
 
-    // ✅ Accessing Object Properties ->>
+
+    // ✅ ############## Accessing Object Properties ############## ✅ //
+    
         console.log(student.fullName);       // Dot notation ->> "Shahbaz Shaikh"
         console.log(student["age"]);        // Bracket notation ->> 36
+    
+    // ✅ ############## Accessing Object Properties ############## ✅ //
 
 
-    // ✅ Modifying Object Properties ->>
+    // ✅ ############## Modifying Object Properties ############## ✅ //
+
         person.age = 35;        // modify `age` property
         person.city = "Pune";   // Add new property `city`
         delete person.isPass;   // Delete property `isPass`
 
+    // ✅ ############## Modifying Object Properties ############## ✅ //
 
-    // ✅ Object Methods ->>
+
+    // ✅ ############## Object Methods ############## ✅ //
         // Object can also contain functions, called methods:
 
         // Eg:
@@ -43,8 +52,11 @@
 
             console.log(user.greet());      // "Hello, Shahbaz"
 
+    // ✅ ############## Object Methods ############## ✅ //
+
         
-    // ✅ Creating Object in Different Ways ->>
+    // ✅ ############## Creating Object in Different Ways ############## ✅ //
+
         // ✅ 1)  Object literal ->>
             let obj1 = {};
 
@@ -59,8 +71,10 @@
 
             let myCar = new Car("Toyota", "Fortuner");
 
+    // ✅ ############## Creating Object in Different Ways ############## ✅ //
 
-    // ✅ Common Object Methods ->>
+
+    // ✅ ############## Common Object Methods ############## ✅ //
         // ✅ 1) Object.keys(obj) ->>        (Returns array of keys)
 
             // Eg:
@@ -98,6 +112,8 @@
                 console.log(result);    // { a: 1, b: 2, c: 3, d: 4 }
                 console.log(target);    // Also { a: 1, b: 2, c: 3, d: 4 }
                 // ➡️ Note: It modifies the target object and also returns it.
+
+    // ✅ ############## Common Object Methods ############## ✅ //
 
 // ✅ ############## JavaScript Object ############## ✅ //
 

@@ -86,7 +86,7 @@
 
             // ✅ ############## BigInt ############## ✅ //
 
-                // It's a large type of number when compares with regular number.
+                // BigInt is allow to represents integer larger than the safe limit of the `Number` type.
 
                 // We can declare bigInt in 2 ways
                 let bigNum = 9007199254740991n;    // way1

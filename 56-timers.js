@@ -15,7 +15,7 @@
         // Runs a function repeatedly at a specified interval of time(in milliseconds).
 
         setInterval(() => {
-            console.log("Runs every 1 second...");
+            console.log("Runs after every 1 second...");
         }, 1000);
 
 

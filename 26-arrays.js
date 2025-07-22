@@ -98,68 +98,6 @@
     // ✅ ############## Convert array like object to an array ############## ✅ //
 
 
-    // ✅ ############## Spread operators & arrays ############## ✅ //
-        // The spread operator(...) in javascript used to expand or spread the elements of an array into individual element.
-        
-        // ✅ ############## Copying Array ############## ✅ //
-            // It allows to create a shallow copy of an existing array
-
-            // Eg:
-                const originalArray = [1,2,3,4];
-                const copiedArray = [...originalArray];
-                console.log(copiedArray);
-
-        // ✅ ############## Copying Array ############## ✅ //
-
-
-        // ✅ ############## Concatenating Array ############## ✅ //
-            // It enables to combine two or more arrays into a new array.
-
-            // Eg:
-                const arr1 = [1, 2];
-                const arr2 = [3, 4];
-                const combinedArr = [...arr1, ... arr2];
-
-                console.log(combinedArr);
-
-        // ✅ ############## Concatenating Array ############## ✅ //
-
-
-        // ✅ ############## Inserting Elements ############## ✅ //
-            // It lets you insert an elements in an array at any position.
-
-            // Eg:
-                const array = [1, 3, 4];
-                const newArray = [1, 2, ...array.slice(1)] // newArray will be [1, 2, 3, 4]
-
-        // ✅ ############## Inserting Elements ############## ✅ //
-
-
-        // ✅ ############## Passing array elements as an arguments to a function ############## ✅ //
-
-            // Eg:
-                function add(a, b, c) {
-                    return a+b+c;
-                }
-
-                const numbers = [1,2,3];
-                console.log(add(...numbers));
-
-        // ✅ ############## Passing array elements as an arguments to a function ############## ✅ //
-
-    
-        // ✅ ############## Converting String to Array ############## ✅ //
-            // Spread operator allow we to convert string to an array:
-
-            // Eg:
-                const fname = "Shahbaz";
-                const nameArr = [...fname];     // ["S","h",a","h","b","a","z"]
-
-        // ✅ ############## Converting String to Array ############## ✅ //
-
-    // ✅ ############## Spread operators & arrays ############## ✅ //
-
-
     // ✅ ############## Sparse arrays ############## ✅ //
             // Sparse array is an array that don't have its elements at contiguos positions, there are some empty slots & holes.
             
@@ -174,16 +112,6 @@
     // ✅ ############## Sparse arrays ############## ✅ //
         
 // ✅ ############## JavaScript Arrays ############## ✅ //
-
-
-// ✅ ############## For of to display arrays ############## ✅ //
-
-    // Eg:
-        for (let item of nums) {
-            console.log(item);
-        }
-
-// ✅ ############## For of to display arrays ############## ✅ //
 
 
 // ✅ ############## Average of Marks ############## ✅ //

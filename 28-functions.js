@@ -10,8 +10,13 @@
         }
 
         callSbz();                                              // function call
+        // other code in middle
+        // other code in middle
+        // other code in middle
+        // other code in middle
         callSbz();
-
+        // other code in middle
+        callSbz();
 
 
         function printSbzData(name, age, place) {  
@@ -225,9 +230,14 @@
             function Person(name, age) {
                 this.name = name;
                 this.age = age;
+
+                this.intro = function() {
+                    console.log(`Hello ${this.name}!!! Your age is ${this.age}...`)
+                }
             }
 
             const sbz = new Person("Shahbaz", 35);      // created object of constructor function using 'new' keyword 
+            sbz.intro();
 
     // ✅ ############## Constructor Function ############## ✅ //
 
@@ -329,7 +339,7 @@
                     sayHi(); // ❌ Error: Cannot access 'sayHi' before initialization
 
                     const sayHi = function() {
-                    console.log("Hi!");
+                        console.log("Hi!");
                     };
 
                 // Mostly used in callbacks & closures.
@@ -504,7 +514,7 @@
 
 
         // 🧠 What is function hoisting in JavaScript?
-            // Hoisting is a javascript default behavior of moving declarations to the top of the current scope before code execution.
+            // Hoisting is a JavaScript's default behavior of moving declarations to the top of the current scope before code execution.
 
             // 🔁 Function Hoisting ->>
                 // 🔹 Function Declarations are hoisted ✅
@@ -549,24 +559,28 @@
                 // 2) has access to its own scope, outer function scope and global scope.
 
             // Eg:
-                function add() {
-                    let counter = 0;
-                    return function plus() 
-                    { 
-                        return counter += 1;
+                function createCounter() {
+                    let count = 0;
+                    
+                    return function() {
+                        count++;
+                        return count;
                     }
                 }
 
-                let addOne = add();
+                const counter1 = createCounter();
 
-                console.log(addOne());
-                console.log(addOne());
-                console.log(addOne());
+                console.log(counter1());   // Output: 1 
+                console.log(counter1());   // Output: 2
+                console.log(counter1());   // Output: 3
+
+                const counter2 = createCounter(); // Creates a new, independent closure
+                console.log(counter2()); // Output: 1
 
 
 
         // 🧠 What is the difference between call(), apply(), and bind() methods?
-            // These are methods availabe on javascript function to let explicitly set the value of `this` during function invocation.
+            // These are methods available with a JavaScript function to let explicitly set the value of `this` during function invocation.
 
             // 📌 1. call() Method ->>
                 // 1) Calls the function immediately
@@ -596,7 +610,7 @@
                 greet1.apply(personn, ["Hello", "How R U"]);        // Hello, How R U Shahbaz Patel.
 
             
-            // apply() & call() both are works simillarly but major difference is call() takes single or multiple value(s) and apply() takes an single array as an argument during function call.
+            // apply() & call() both are works simillarly but major difference is call() takes single or multiple value(s) and apply() takes a single array as an argument during function call.
 
 
             // 📌 3. bind() Method ->>

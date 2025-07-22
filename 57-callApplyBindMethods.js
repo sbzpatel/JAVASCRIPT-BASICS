@@ -3,7 +3,7 @@
     // The call(), apply() and bind() methods in javascript are used to manually set the value of this in a function (which is especially useful when borrowing methods or controlling context).
 
     // ✅ 1) call() ->>
-        // Invokes a function immediately, with a specified this value and comma-separated arguments.
+        // Invokes a function immediately, with a specified `this` value and comma-separated arguments.
 
         function greet(greeting, name) {
             console.log(`${greeting} ${name}!`);

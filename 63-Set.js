@@ -103,11 +103,11 @@
         // ✅ 2) To remove duplicates from an array:
 
             // Eg:
-            const nums = [1, 2, 2, 3, 4, 4];
-            console.log(nums);      // [ 1, 2, 2, 3, 4, 4 ] (array contains even duplicate values)
+                const nums = [1, 2, 2, 3, 4, 4];
+                console.log(nums);      // [ 1, 2, 2, 3, 4, 4 ] (array contains even duplicate values)
 
-            const uniqueNums = [...new Set(nums)];      // convert to Set and then further to a new array by using (...) spread operator
-            console.log(uniqueNums);    // [ 1, 2, 3, 4 ]
+                const uniqueNums = [...new Set(nums)];      // convert to Set and then further to a new array by using (...) spread operator
+                console.log(uniqueNums);    // [ 1, 2, 3, 4 ]
 
     // 🧠 $$$$$$$$$$$$$$$$$ When to Use Set? $$$$$$$$$$$$$$$$$ 🧠 //
 

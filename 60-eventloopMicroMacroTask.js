@@ -31,7 +31,7 @@
 
     // 🔬 $$$$$$$$$$$$$$$$$ Microtasks $$$$$$$$$$$$$$$$$ 🔬 //
 
-        // Microtasks are smaller tasks that are executed immediately after the current operation completes. 
+        // Microtasks are smaller tasks that are executed immediately after the current operation completes that before the macro task. 
         // They're queued in the microtask queue.
 
         // Examples of Microtasks:

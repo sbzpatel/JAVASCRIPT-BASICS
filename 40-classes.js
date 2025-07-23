@@ -37,7 +37,6 @@
     //🔹$$$$$$$$$$$$$$$$$$$ Creating Object from a Class $$$$$$$$$$$$$$$$$$$🔹//
 
 
-
     // ✅ $$$$$$$$$$$$$$$$$$$ Another Example $$$$$$$$$$$$$$$$$$$ ✅ //
 
         let innova = new ToyotaCar();

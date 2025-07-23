@@ -1,6 +1,6 @@
 // ✅ ############## Object's Getters & Setters ############## ✅ //
 
-    // Getters and Setters are special methods of an object which control the access of its properties(like adding logic when getting and setting a value).
+    // Getters and Setters are special methods of an object which control the access of its properties(like adding logic when getting and setting its value).
     // They used for encapsulation & validation.
 
 

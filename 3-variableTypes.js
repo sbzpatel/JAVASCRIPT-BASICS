@@ -1,11 +1,11 @@
 // ✅ ##############  Variable Types (Variable Declaration Keyword) ############## ✅ //
 
-    // Variable can declare using different keywords(var, let & const) which are differ in their scope.
+    // Variable can declare using different keywords(var, let & const) which may differ in their scope.
     
     // There are 3 variable declaration keywords in javascript:
     // 1) var      2) let       3) const
 
-    // ✅ 1) var ->> The oldest method for declaring variables. It has function-scoped and allow to re-declare and re-assign its value. Now a days we avoiding it that prevents from unexpected behavior of a program.
+    // ✅ 1) var ->> The oldest method for declaring variables. It has function-scoped and allow to re-declare and re-assign its value. Now a days we avoiding it to prevents from unexpected behavior of a program.
 
     // Eg:
         var a = 20;

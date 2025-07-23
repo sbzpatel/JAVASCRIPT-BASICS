@@ -254,66 +254,6 @@
 
     // ✅ ############## Copy Object (Object.assign) ############## ✅ //
 
-
-    // ✅ ############## Object.seal() ############## ✅ //
-
-        // Eg:
-        const person2 = {
-            name: "Shahbaz",
-            age: 35, 
-            address: {
-                city: "Pune",
-                country: "India"
-            }
-        }
-
-        Object.seal(person2);
-        // Object restricts to add and delete properties, but can update existing properties
-
-        person2.name = "Kaleem";
-        person2.age = 25;
-
-        console.log(person2);
-
-        // Output ->>
-            // {
-            //   name: 'Kaleem',
-            //   age: 25,
-            //   address: { city: 'Pune', country: 'India' }
-            // }
-
-    // ✅ ############## Object.seal() ############## ✅ //
-
-
-    // ✅ ############## Object.freeze() ############## ✅ //
-
-        // Eg:
-        const person3 = {
-            name: "Shahbaz",
-            age: 35, 
-            address: {
-                city: "Pune",
-                country: "India"
-            }
-        }
-
-        Object.freeze(person3);
-        // freeze method makes object completely `immutable` (cannot update, delete existing or add new property)
-
-        person3.name = "Kaleem";
-        person3.age = 25;
-
-        console.log(person3);
-
-        // Output ->>
-            // {
-            //   name: 'Shahbaz',
-            //   age: 35,
-            //   address: { city: 'Pune', country: 'India' }
-            // }
-
-    // ✅ ############## Object.freeze() ############## ✅ //
-
 // ✅ ############## JavaScript Objects ############## ✅ //
 
 
@@ -406,9 +346,9 @@
                 // }
 
 
-    // ✅ What is the `this` keyword inside an object method? How does its behavior change in arrow function?
+    // ✅ What is the `this` keyword inside an object method? How does it's behaviour change in arrow function?
         // The `this` keyword refers to the context in which function is executing.
-        // In the context of an object method, `this` typically refers to the object when its method executes.
+        // In the context of an object, `this` typically refers to the object when it's method executes.
 
         // ✅ `this` Inside an Object Method (Regular Function) ->>
             
@@ -453,140 +393,7 @@
             } 
 
             user4.greet();      // Output: "Hello, Shahbaz"
-
-
-    // ✅ What are property descriptors? Explain writable, enumerable, and configurable?
-        // What are Property Descriptors in Javascriptor?
-            // Every property in a JavaScript object has metadata attached to it called a property descriptor. This metadata controls how the property behaves(whether it can be changed, listed or deleted).
-            // We can access or define these using:
-                // 1) Object.getOwnPropertyDescriptor();
-                // 2) Object.defineProperty()
-
-            // ✅ 1. writable ->>
-                // Controls: Whether the property can be changed.
-                // Default: `false` ->> when defined via Object.defineProperty().
-
-                // Eg:
-                const obj = {};
-
-                Object.defineProperty(obj, "name", {
-                    value: "Shahbaz",
-                    // writable: true      // default value 'false' (on comment writable `false` here)
-                });
-
-                obj.name  = "Kaleem";
-                console.log(obj.name);      // Shahbaz
-
-            // ✅ 2. enumerable ->>
-                // Controls: Whether the property shows up during enumeration(by using for...in or Object.keys()).
-                // Default: false(with defineProperty)
-
-                // Eg:
-                const obj22 = {
-                    a: 1,
-                    b: 2
-                };
-
-                Object.defineProperty(obj22, 'c', {
-                    value: 3,
-                    // enumerable: true        // by default its `false` (on comment enumerable `false` here)
-                });
-
-                console.log(Object.keys(obj22))     // [ "a", "b" ]
-
-                for (let key in obj22) {
-                    console.log(key);           // Output: "a", "b"
-                }
-
-                console.log(obj22.propertyIsEnumerable('a'));       // Output: true
-                console.log(obj22.propertyIsEnumerable('c'));       // Output: false
-
-            // ✅ 3. configurable ->>
-                // Controls: Whether the property can be deleted or redefined.
-                // Default: false(with defineProperty)
-
-                // Eg:
-                const user0 = {};
-
-                Object.defineProperty(user0, "role", {
-                    value: "admin",
-                    writable: true,
-                    enumerable: true,
-                    // configurable: true        // by default its `false` (on comment configurable `false` here)
-                });
-
-                console.log(user0.role);     // "admin"
-
-                // Try deleting the property "role"
-                delete user0.role;
-                console.log(user0.role);     // "admin" → ❌ not deleted because configurable: false 
-
-                // Try redefining the property (throws an error in strict mode)
-                Object.defineProperty(user0, "role", {
-                    value: "superadmin"
-                })  // ❌ TypeError in strict mode
-                console.log(user0.role);
-
-
-    // ✅ Explain how Object.freeze(), Object.seal(), and Object.preventExtensions() differ.
-        // These 3 methods(Object.freeze(), Object.seal(), and Object.preventExtensions()) are used to control how objects can be modified in JavaScript.
-
-        // 🔐 1. Object.preventExtensions(obj) ->>
-            // Prevents new properties from being added to the object
-            // Existing properties can still be changed or deleted.
-
-            // Eg: 
-            const user11 = { name: "Shahbaz Patel" };
-
-            Object.preventExtensions(user11);
-
-            user11.age = 35;      // ❌ Fails silently or throws in strict mode
-            console.log(user11);      // { name: 'Shahbaz Patel' }
-
-            user11.name = "Kaleem Patel";
-            console.log(user11);      // { name: 'Kaleem Patel' }
-
-            delete user11.name;
-            console.log(user11);      // {}
-
-        // You want to lock structure, but still allow value updates and deletions.
-
-
-
-        // 🔒 2. Object.seal(obj) ->>
-            // Prevents new properties from being added.
-            // Prevents properties from being deleted.
-            // Existing properties can still be changed (if writable: true).
-
-            // Eg:
-            const user22 = { name: "Alice" };
-            Object.seal(user22);
-
-            user22.age = 25;        // ❌ Cannot add new property
-            user22.name = "Bob";    // ✅ Can update
-            delete user22.name;     // ❌ Cannot delete
-
-        // You want to protect both structure and property presence, but allow value updates.
-
-
-
-        // 🧊 3. Object.freeze(obj) ->>
-            // Makes the object completely immutable:
-                // ❌ No adding
-                // ❌ No deleting
-                // ❌ No changing existing values
-
-            // const user = { name: "Alice" };
-
-            // Eg:
-            const user786 = { name: "Alice" };
-            Object.freeze(user786);
-
-            user786.name = "Bob";    // ❌ Fails silently or throws in strict mode
-            user786.age = 25;        // ❌ Cannot add
-            delete user786.name;     // ❌ Cannot delete
-
-        // You want the object to be completely read-only.
+        
 
     
     // ✅ What are the differences between Object.create() and using object literals {}?

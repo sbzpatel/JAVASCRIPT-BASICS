@@ -1,37 +1,65 @@
 // ✅ $$$$$$$$$$$$$$$$$ Call, Apply, Bind Methods $$$$$$$$$$$$$$$$$ ✅ //
 
-    // The call(), apply() and bind() methods in javascript are used to manually set the value of this in a function (which is especially useful when borrowing methods or controlling context).
+    // These are methods available with a JavaScript function to let explicitly set the value of `this` during function invocation.
 
-    // ✅ 1) call() ->>
-        // Invokes a function immediately, with a specified `this` value and comma-separated arguments.
+    // 📌 $$$$$$$$$$$$$$$$$ call() Method $$$$$$$$$$$$$$$$$ 📌 //
 
-        function greet(greeting, name) {
-            console.log(`${greeting} ${name}!`);
-        }
+        // 1) Calls the function immediately
+        // 2) We pass arguments individually
 
-        greet.call(this, "Hello", "Shahbaz");
+        // Eg:
+            function greet(greeting) {
+                console.log(greeting+" "+this.fname)
+            }
+
+            const person = {fname: "Shahbaz"};
+
+            greet.call(person, "Hello");     // Hello Shahbaz
+
+    // 📌 $$$$$$$$$$$$$$$$$ call() Method $$$$$$$$$$$$$$$$$ 📌 //
 
 
+    // 📌 $$$$$$$$$$$$$$$$$ apply() Method $$$$$$$$$$$$$$$$$ 📌 //
 
-    // ✅ 2) apply() ->>
-        // Also invokes immediately, like call(), but takes arguments as an array (or array-like object).
+        // 1) Calls the function immediately
+        // 2) We should pass arguments in a single array
 
-        greet.apply(this, ["Hey", "Kaleem"]);
+        // Eg:
+            function greet1(greeting1, greeting2) {
+                console.log(`${greeting1}, ${greeting2} ${this.firstName} ${this.lastName}.`);
+            }
+
+            const personn = {firstName: "Shahbaz", lastName: "Patel"}
+
+            greet1.apply(personn, ["Hello", "How R U"]);        // Hello, How R U Shahbaz Patel.
+
+    // 📌 $$$$$$$$$$$$$$$$$ apply() Method $$$$$$$$$$$$$$$$$ 📌 //
+
+    
+    // apply() & call() both are works simillarly but major difference is call() takes single or multiple value(s) and apply() takes a single array as an argument during function call.
 
 
+    // 📌 $$$$$$$$$$$$$$$$$ bind() Method $$$$$$$$$$$$$$$$$ 📌 //
 
-    // ✅ 3) bind() ->>
-        // Does NOT invoke the function immediately.
-        // Instead, it returns a new function with this bound and optionally some preset arguments.
+        // 1) Does not call the function immediately
+        // 2) Returns a new function with this and optional arguments which were permanently bound
 
-        const greetHello = greet.bind(this, "Love U");
-        greetHello("Shabu!!");
+        // Eg: 
+            function greet3(greet) {
+                console.log(`${greet} ${this.name}`);
+            }
 
+            const person3 = {name: "Shahbaz"};
+            
+            const greetAlice = greet3.bind(person3, "Hey");
+            greetAlice();       // "Hey, Alice"
+
+    // 📌 $$$$$$$$$$$$$$$$$ bind() Method $$$$$$$$$$$$$$$$$ 📌 //
 
 
     // ✅ $$$$$$$$$$$$$$$$$ Practical Use Case Example $$$$$$$$$$$$$$$$$ ✅ //
 
-        const person = {
+        const person1 = {
             name: "Shahbaz",
             greet: function() {
                 console.log(`Hello, ${this.name}!`);
@@ -40,9 +68,9 @@
 
         const anotherPerson = {name:"Kaleem"};
 
-        person.greet.bind(anotherPerson);
-        person.greet.apply(anotherPerson);
-        const boundGreet = person.greet.bind(anotherPerson);
+        person1.greet.bind(anotherPerson);
+        person1.greet.apply(anotherPerson);
+        const boundGreet = person1.greet.bind(anotherPerson);
         boundGreet();
 
     // ✅ $$$$$$$$$$$$$$$$$ Practical Use Case Example $$$$$$$$$$$$$$$$$ ✅ //

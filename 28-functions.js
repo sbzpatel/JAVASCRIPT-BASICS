@@ -223,7 +223,7 @@
 
     // ✅ ############## Constructor Function ############## ✅ //
         // Constructor function converts itself to the class declaration.
-        // Constructor function used to create objects in javascript.
+        // Constructor function used to create objects in JavaScript.
         // Conventionally constructor function name should be capitalized.
 
         // Eg:

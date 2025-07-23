@@ -149,7 +149,7 @@
 
             // ✅ ############## Object ############## ✅ //
 
-                // An object is a collection of key-value pairs sepatered by the commas which is used to represents real-world entity and complex data. 
+                // An object is a collection of values in the form of key-value pairs sepatered by the commas which is used to represents real-world entity and complex data. 
 
                 const student = {
                     fullName: "Shahbaz Shaikh",

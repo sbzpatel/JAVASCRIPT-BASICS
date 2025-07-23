@@ -1,6 +1,6 @@
 // ✅ ############## Event Object ############## ✅ //
 
-    // Event Object is a large object which contains different information about tag, event, cursor position on screen in X & Y direction and many more.
+    // Event Object is a JS large built-in object which contains different information about tag, event, cursor position on screen in X & Y direction and many more.
 
     const btn11 = document.querySelector("#btn11");
 

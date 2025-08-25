@@ -70,3 +70,62 @@
     // 🎯 ############## Why Is Currying Useful? ############## 🎯 //
 
 // ✅ ############## Currying Function ############## ✅ //
+
+
+// ✅ ############## Currying Function (Real-World Examples) ############## ✅ //
+
+    // Eg1:
+        const products = [
+          { name: "iPhone 15", category: "Mobile", price: 79999, rating: 4.8 },
+          { name: "OnePlus 12", category: "Mobile", price: 55999, rating: 4.5 },
+          { name: "Dell Laptop", category: "Laptop", price: 120000, rating: 4.6 },
+        ];
+
+        function filterProducts(category, priceRange, rating) {
+          return products.filter(p => 
+            p.category === "Mobile" &&
+            p.price <= priceRange &&
+            p.rating >= rating
+          )
+        }
+
+
+        function filterProducts(category) {
+          return function(priceRange) {
+            return function(rating) {
+              return products.filter(p => 
+                p.category === category &&
+                p.price <= priceRange &&
+                p.rating >= rating
+              )
+            }
+          }
+        }
+
+        // console.log(filterProducts("Mobile")(60000)(4.5));
+
+        const filteredProducts = filterProducts("Mobile");
+        const mobileUnder60k = filteredProducts(60000);
+        const bestMobiles = mobileUnder60k(4.5);
+
+        console.log(bestMobiles);
+
+        
+
+    // Eg2:
+        function applyDiscount(category) {
+            return function(discount) {
+                return function(price) {
+                return `${category} Price - ${price - (price * discount / 100)}`;   
+                }
+            }
+        }
+
+        const mobileDiscount = applyDiscount("Mobile")(10);
+
+        console.log(mobileDiscount(50000));
+
+        const laptopDiscount = applyDiscount("Laptop")(15);
+        console.log(laptopDiscount(100000));
+
+// ✅ ############## Currying Function (Real-World Examples) ############## ✅ //

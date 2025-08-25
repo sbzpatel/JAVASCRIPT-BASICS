@@ -8,9 +8,9 @@
     // There are 2 different categories(types) of data available in JavaScript as below:
 
         // ✅ 1) Primitive DataTypes => (Number, String, Boolean, Undefined, Null, BigInt, Symbol) 
-            // Primitive DataTypes are basic, immutable and store by value. 
+            // Primitive DataTypes are basic, immutable and store or copy by value. 
         // ✅ 2) Non-Primitive DataTypes (Array, Object, Function, Date, Map, Set)
-            // Non-Primitive DataTypes are complex, mutable & store by reference.
+            // Non-Primitive DataTypes are complex, mutable & store or copy by reference.
 
 
 
@@ -77,6 +77,17 @@
             // `Undefined` represents "absence of a value". When we declares a variable but not initialize any data to it, then JavaScript compiler automatically(implicitly) sets the value `undefined` to it.
             let wifeName;
             console.log(typeof wifeName);   // undefined
+            
+
+            // ✅ ############## Optional Chaining (?.) ############## ✅ //
+
+                // This allows safe access to nested properties, returning undefined if an intermediate property is null or undefined.
+
+                let emptyObj = {};
+
+                console.log(emptyObj?.address?.city);       // unefined
+
+            // ✅ ############## Optional Chaining (?.) ############## ✅ //
 
 
             // null datatype also same as undefined "no value" but it is explicitly assigned using assignment operator(=).
@@ -128,7 +139,7 @@
             // ✅ ############## Array ############## ✅ //
 
                 // In JavaScript, array is an ordered collection of values of any type(string, number, another array and functions) to store a complex data. Each value of an array called `Element`.
-                // Each element of an array has numerical index to access it, first element's index is 0, next element's index is 1 and so on.
+                // Each element of an array has numerical index to access it separately, first element's index is 0, next element's index is 1 and so on.
                 // Arrays are dynamic, so its size can change(increase or shrink) during program execution.
 
 

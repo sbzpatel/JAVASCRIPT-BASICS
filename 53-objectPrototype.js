@@ -15,7 +15,7 @@
 
     student.name = "Shahbaz";
 
-    student.greet();    // Output: "Hello!"
+    student.greet();    // Output: "Hello!"us
 
 
 

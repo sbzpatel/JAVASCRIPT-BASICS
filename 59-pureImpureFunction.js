@@ -43,7 +43,7 @@
 
     // Eg: (Not Deterministics)
         function getRandom() {
-            return Math.random();   // We can't predicts the output of that function
+            return Math.random().toFixed(2)*100;    // We can't predicts the output of that function
         }
 
 // ✅ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Impure Functions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ✅ //

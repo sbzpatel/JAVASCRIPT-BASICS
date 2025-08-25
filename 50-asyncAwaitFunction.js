@@ -1,8 +1,8 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Async Await Function $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // async-await Function is used to handle asynchronous operations that simplify asynchronous code, that makes it more synchronous and readable than traditional Promise chaining or callbacks.
+    // async-await Function is used to handle asynchronous operations that simplify asynchronous code, which makes it more synchronous and readable than traditional Promise chaining or callbacks.
 
-    // await pauses the execution of its surrounding async functions until the current promise is settled.
+    // `await` pauses the execution of its surrounding async functions until the current promise is settled.
 
     // Syntax ->> async function myFunc() {...}
 

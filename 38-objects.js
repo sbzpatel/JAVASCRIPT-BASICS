@@ -141,9 +141,9 @@
 
     // ✅ ############## Looping through Properties ############## ✅ //
 
-        //🔹############## Using for-of ##############🔹//
+        //🔹############## Using for-in ##############🔹//
 
-            for(let key of person) {
+            for(let key in person) {
                 console.log(key, person[key]);
             }
 

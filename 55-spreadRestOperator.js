@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Spread(...) Operator $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // Spread(...) Operator allow to expand iterables (like arrays, objects & strings) into individual element or property.
+    // Spread(...) Operator allow to expand iterables (like arrays, objects & strings) into an individual element or property.
 
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Spread in Arrays $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 

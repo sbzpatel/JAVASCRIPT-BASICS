@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$ Object's Prototype $$$$$$$$$$$$$$$$$ ✅ //
 
-    // Each object has a special object named "prototype" which contains properties and methods that can inherit by other object.
+    // Each object has a special object named "prototype" which contain properties and methods that can inherit by other object.
     // We can set the prototype using "__proto__"
 
 

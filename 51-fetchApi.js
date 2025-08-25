@@ -1,11 +1,7 @@
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Fetch API $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // The Fetch API provides an interface for fetching (sending/receiving) resources.
-    // It uses Request & Response Objects.
-    // The fetch() method is used to fetch a resource(data).
-    // HTTP ->> Hypertext transfer Protocol (according to that rules, defined some methods as below)
-
-
+    // The Fetch API provides a JavaScript interface for making HTTP requests and processing the responses.
+    // Fetch is the modern replacement for XMLHTTPRequest in JavaScript.
 
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Methods $$$$$$$$$$$$$$$$$$$$$$$$ ✅ // 
 
@@ -14,10 +10,9 @@
         // 3) PUT ->> Here we are edit some data on the server side through passing data and using specific id 
         // 4) DELETE ->> Here we delete the particular field or document in database through that API by passing specific id
 
-    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Methods $$$$$$$$$$$$$$$$$$$$$$$$ ✅ // 
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Methods $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //  
 
-
-    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Status Codes $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Status Codes (Server Response) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
         // 1) 200 ->> Getting Successful Response
         // 2) 201 ->> POST Method successfully created or inserted field in database
@@ -28,7 +23,59 @@
         // 400 onwards ->> Status code shows the errors occurred at the client side
         // 500 onwards ->> Status code shows the errors occurred at the server side
 
-    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Status Codes $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ HTTP Status Codes (Server Response) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Syntax (Promise-then) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+        // fetch('https://api.example.com/data')
+        //     .then(response => response.json()) // Parse JSON response
+        //     .then(data => {
+        //         console.log(data); // Use the data
+        //     })
+        //     .catch(error => {
+        //         console.error('Error:', error); // Handle errors
+        //     });
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Syntax (Promise-then) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ GET Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+        // Eg: (GET Method -- using promise-then method)
+            fetch("https://jsonplaceholder.typicode.com/posts/1")
+                .then(response => {
+                    if(!response.ok) {
+                        throw new Error("HTTP error!, status:", response.status);
+                    } else {
+                        return response.json();     // parse response data in json format
+                    }
+                })
+                .then(data => {
+                    console.log("API data:", data);
+
+                    // code to do with receiving API `data`
+                })
+                .catch(e => {
+                    console.log("Error occurred, status:", e);
+                })
+
+
+        // Eg: (GET Method - using async await function) 
+            async function fetchAPIData() {
+                try {
+                    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+
+                    if(!response.ok) {
+                        throw new Error("HTTP error!, status:", response.status);
+                    } else {
+                        const data = await response.json();     // parse response data in json format
+                    }
+                } catch(e) {
+                    console.log("Error occurred, status:", e);
+                }
+            }
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ GET Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
 
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Headers $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
@@ -39,45 +86,125 @@
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Headers $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
 
-    const URL = "https://catfact.ninja/facts";
-    let factPara = document.querySelector("#fact");
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ POST Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-
-    // let promise = fetch(URL);
-    // console.log(promise);
-
-    const getApiData = async () => {
-        console.log("getApiData calling (using async await function)");
-
-        let response = await fetch(URL);    // here fetch sending "GET" method request
-        console.log(response);      // here actual data not present because at this stage data available in a JSON format
-
-        // So first we need to convert our JSON format data to the "Real Object Readable data"
-        // Which is also promise function like fetch() as below
-
-        let data = await response.json();        // here we converts the JSON to Object readable format (we say parsing json data to JS Object)
-
-        console.log(data);          // fetch whole response data in JS Object
-        console.log("Cat's related 1st fact by sbz:", data.data[0].fact);     // extract and print only 1st fact from JS Object
-        factPara.innerHTML = data.data[0].fact;
-    }
-
-    const getFactsThroughPromiseChain = () => {
-        console.log("getFactsThroughPromiseChain calling...");
-
-        fetch(URL)              // fetch function is a promise function which returns its state, and we will get it using .then()
-            .then((response) => {
-                return response.json();
+        // Eg: (POST Method - Promise-then method)
+            fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST",
+                header: {
+                    'Content-Type': "application/json"
+                },
+                body: JSON.stringify({      // stringify the JSON data
+                    title: 'foo',
+                    body: 'bar',
+                    userId: 1
+                })
             })
-            .then((data) => {
-                console.log(data);
-                factPara.innerHTML = data.data[0].fact;
+                .then(response => {
+                    if(!response.ok) {
+                        throw new Error("HTTP error!, status:", response.status);
+                    } else {
+                        return response.json();     // parse response data in json format
+                    }
+                })
+                .then(data => {
+                    console.log("API data:", data);
+
+                    // code to do with receiving API `data`
+                })
+                .catch(e => {
+                    console.log("Error occurred, status:", e);
+                })
+
+        // Eg: (POST Method - async await function)
+            async function sendPOSTData() {
+                try {
+                    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+                        method: "POST",
+                        header: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({      // stringify the JSON data
+                            title: 'foo',
+                            body: 'bar',
+                            userId: 1
+                        })
+                    });
+
+                    if(!response.ok) {
+                        throw new Error("HTTP Error occurrred!!!, status", response.status);
+                    } else {
+                        const data = await response.json();     // parse response data in json format
+
+                        console.log("POST data:", data);
+                    }
+                } catch(e) {
+                    console.log("Error occurred!! status:", e);
+                }
+            }
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ POST Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ PUT Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+        // Eg: (PUT Method - Promise-then method)
+            fetch("https://jsonplaceholder.typicode.com/posts/1", {
+                method: "PUT",
+                header: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({      // stringify the JSON data
+                    id: 1,
+                    title: 'Updated Title',
+                    body: 'Updated Body',
+                    userId: 1
+                })
             })
-    }
+            .then(response => {
+                if(!response.ok) {
+                    console.log("Response HTTP error occurred!!!, status:", response.status);
+                } else {
+                    return response.json();         // parse response data in json format
+                }
+            })
+            .then(data => {
+                console.log("API data Updated:", data);
 
-    getApiData();       // we are using async-await over promise chain due to its code simplicity, 
+                // code to do with updated API `data`
+            })
+            .catch(e => {
+                console.log("Error occurred!!, status:", e);
+            })
 
+        // Eg: (PUT Method - async await function)
+            async function APIUpdateData() {
+                try {
+                    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
+                        method: "PUT",
+                        header: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({      // stringify the JSON data
+                            id: 1,
+                            title: 'Updated Title',
+                            body: 'Updated Body',
+                            userId: 1
+                        })
+                    });
 
-    // getFactsThroughPromiseChain();       // Its a promise chaining code to getAPIData 
+                    if(!response.ok) {
+                        throw new Error("Response HTTP Error occurred!, status", response.status);
+                    } else {
+                        const data = await response.json();         // parse response data in json format
+
+                        console.log("Updated Data received: ", data);
+                    }
+                } catch(e) {
+                    console.log("Error occurred! Error Detail:", e);
+                }
+            }
+
+    // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ PUT Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Fetch API $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //

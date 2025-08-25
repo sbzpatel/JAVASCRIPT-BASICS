@@ -1,6 +1,6 @@
 // ✅ $$$$$$$$$$$$$$$$$$$ Class Constructor $$$$$$$$$$$$$$$$$$$ ✅ //
 
-    // class constructor is a method which is automatically called on creation of class object which initialize the object's properties.
+    // class constructor is a method which is automatically called on creation of class object to initialize the object's properties.
 
 
     // Eg:

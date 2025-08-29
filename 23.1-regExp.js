@@ -8,6 +8,13 @@
         // 3) .replace()
         // 4) .split()
         // 5) .test()
+
+
+    // Using Flags =>
+        // 1) g => global (find all matches)
+        // 2) i => case-insensitive
+        // 3) m => multiline
+
         
     // Creating a Regex =>
         // 1) Literal Syntax =>
@@ -58,5 +65,100 @@
                         //   'a', 'a', 'a',
                         //   'a'
                         // ]
-                      
+
+
+
+        // ✅ ############## "match()" Method ############## ✅ //
+
+                // const greet = "Hello World!!!";
+                // console.log(greet.match(/World/));
+                
+                
+                // const str = "Hello hello HeLLo";
+                // console.log(str.match(/hello/gi));
+                
+                
+                // const str1 = "Order numbers: 123, 456, and 789.";
+                // console.log(str1.match(/\d+/g));
+        
+        // ✅ ############## "match()" Method ############## ✅ //
+
+
+        // ✅ ############## "search()" Method ############## ✅ //
+
+                // const str2 = "Order number: 12345";
+                // console.log(str2.search(/\d+/));
+                
+                
+                // const str3 = "Hello World!!!";
+                // console.log(str3.search(/world/));
+                // console.log(str3.search(/world/gi));
+
+        // ✅ ############## "search()" Method ############## ✅ //
+
+
+        // ✅ ############## "replace()" Method ############## ✅ //
+
+                // const str = "Hello World!!!";
+                // console.log(str.replace("World", "JavaScript"));
+                // console.log(str.replace("world", "JS"));
+                
+                
+                // const str = "Hello World, World!!!";
+                // console.log(str.replace(/World/g, "JS"));
+
+
+                // const str = "Hello world World!!!";
+                // console.log(str.replace(/World/gi, "JavaScript"));
+
+
+                // const str = "Order numbers: 123, 456, and 789.";
+                // const result = str.replace(/\d+/g, "#");
+                // console.log(result);
+
+        // ✅ ############## "replace()" Method ############## ✅ //
+
+
+        // ✅ ############## "split()" Method ############## ✅ //
+
+                // const text = "Hello    World  from    JavaScript";
+                // console.log(text.split(/\s+/)); 
+                
+                
+                // const str = "one1two2three3four";
+                // const parts = str.split(/\d/);
+                // console.log(parts);
+                
+                
+                // const text = "apple,banana,cherry,dates";
+                // const parts = text.split(/,/, 2);
+                // console.log(parts);
+
+        // ✅ ############## "split()" Method ############## ✅ //
+
+
+        // ✅ ############## "test()" Method ############## ✅ //
+
+                // const regex = /World/;
+                // console.log(regex.test("Hello World!!!"));
+                // console.log(regex.test("Hello JavaScript!!!"));
+                
+                
+                // const regex = /world/i;     // i => ignore case
+                // console.log(regex.test("Hello World!!!"));
+                // console.log(regex.test("HELLO WORLD!!!"));
+
+
+                // const regex = /\d/;       // d = any digit
+                // console.log(regex.test("Order123"));
+                // console.log(regex.test("NoanyOrder"));
+
+
+                // console.log(/^Hello/.test("Hello World"));
+                // console.log(/World$/.test("Hello World"));
+                // console.log(/World$/.test("World Hello"));
+
+        // ✅ ############## "test()" Method ############## ✅ //
+  
+
 // ✅ ############## RegExp (Regular Expression) ############## ✅ //

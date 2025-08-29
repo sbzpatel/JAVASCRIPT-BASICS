@@ -77,6 +77,17 @@
     // ✅ ############## Default Paramters ############## ✅ //
 
 
+    // ✅ ############## Anonymous Function ############## ✅ //
+        // Function without a name. Commonly used in expressions or callbacks.
+
+        // Eg:
+            setTimeout(function() {
+                console.log("This runs after 3 seconds...");
+            }, 3000);
+
+    // ✅ ############## Anonymous Function ############## ✅ //
+
+
     // ✅ ############## Function Expression ############## ✅ //
         // We can assign function definition to the variable.
 
@@ -88,17 +99,6 @@
             greet("Shahbaz");        // Hello, Kaleem
 
     // ✅ ############## Function Expression ############## ✅ //
-
-
-    // ✅ ############## Anonymous Function ############## ✅ //
-        // Function without a name. Commonly used in expressions or callbacks.
-
-        // Eg:
-            setTimeout(function() {
-                console.log("This runs after 3 seconds...");
-            }, 3000);
-
-    // ✅ ############## Anonymous Function ############## ✅ //
 
 
     // ✅ ############## Immediately Invoked Function Expressions (IIFE) ############## ✅ //
@@ -190,7 +190,7 @@
     // ✅ ############## JavaScript Function Overloading ############## ✅ //
         // JS not supports function overloading, The `arguments` object available inside every function that inspect the number of arguments passed to the function at runtime using `arguments.length`.
         
-        // Eg:
+        // Eg1:
             function greet(name) {
                 if(arguments.length == 0) {     // checks arguments present or not by 'arguments.length' 
                     console.log("Hello!!");
@@ -201,6 +201,21 @@
 
             greet();        // Hello!!
             greet("Shahbaz");       // Hello Shahbaz
+
+
+        // Eg2:
+            function calculateArea(a,b) {
+                if(arguments.length === 1) {
+                    // Circle: π * r^2
+                    return Math.PI * a * a;
+                } else if(arguments.length === 2) {
+                    // Rectangle: length * width
+                    return a * b;
+                }
+            }
+
+            console.log(calculateArea(5).toFixed(2));   // Circle → 78.54
+            console.log(calculateArea(4,6));            // Rectangle → 24
 
     // ✅ ############## JavaScript Function Overloading ############## ✅ //
 

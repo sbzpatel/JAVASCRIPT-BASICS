@@ -116,7 +116,7 @@
         function applyDiscount(category) {
             return function(discount) {
                 return function(price) {
-                return `${category} Price - ${price - (price * discount / 100)}`;   
+                    return `${category} Price - ${price - (price * discount / 100)}`;   
                 }
             }
         }
@@ -127,5 +127,23 @@
 
         const laptopDiscount = applyDiscount("Laptop")(15);
         console.log(laptopDiscount(100000));
+
+
+    // Eg3:
+        function formatCurrency(currencySymbol) {
+            return function(decimals) {
+                return function(amount) {
+                return currencySymbol + amount.toFixed(decimals);
+                }
+            }   
+        }
+        
+        const formatUSD = formatCurrency("$")(2);   // US dollars, 2 decimals
+        const formatEUR = formatCurrency("€")(0);   // Euros, 2 decimals
+        const formatJPY = formatCurrency("¥")(0);   // Japanese Yen, no decimals
+
+        console.log(formatUSD(25));
+        console.log(formatEUR(125));
+        console.log(formatJPY(225));
 
 // ✅ ############## Currying Function (Real-World Examples) ############## ✅ //

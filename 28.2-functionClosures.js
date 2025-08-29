@@ -64,4 +64,35 @@
 
     // Closures allow functions to "remember" results to avoid repeated computation (Memoization/Caching).
 
+
+    // Below is a Real World Example of Function Closure:
+
+    // Eg:
+      function createBankAccount(owner, initialBalance) {
+        let balance = initialBalance;
+
+        return {
+          getBalance: function() {
+            return `${owner}'s Balance: ${balance}`;
+          },
+          deposit: function(amount) {
+            balance += amount;
+            return `Deposited ${amount}, Balance: ${balance}`;
+          },
+          withdraw: function(amount) {
+            if(amount > balance) {
+              return `Insufficient funds!!`;
+            } 
+            balance -= amount;
+            return `Withdraw ${amount}, Balance: ${balance}`;
+          }
+        }
+      }
+
+      const srkAccount = createBankAccount("Shahrukh Khan", 780000000);
+      console.log(srkAccount.getBalance());
+      console.log(srkAccount.deposit(500000));
+      console.log(srkAccount.withdraw(15000000));
+
+
 // ✅ $$$$$$$$$$$$$$$$$ Function Closure $$$$$$$$$$$$$$$$$ ✅ //

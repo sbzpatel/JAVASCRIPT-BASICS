@@ -208,3 +208,128 @@
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ PUT Method $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Fetch API $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Practice Questions (Fetch API) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+    // #1 =>
+        // fetch("https://jsonplaceholder.typicode.com/users")
+        //     .then(response => response.json())
+        //     .then(users => {
+        //         users.forEach((user) => {
+        //             console.log(user.name);
+        //         })
+        //     })
+        //     .catch(err => {
+        //         console.error(`Error: ${err}`);
+        //     });
+		
+		
+            
+    // #2 =>
+        // async function getPosts() {
+        //     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        //     const data = await response.json();
+        //     console.log(`First 5 posts: ${data.slice(0,5)}`);
+        // }
+
+        // getPosts();
+        
+        
+        
+    // #3 =>
+        // async function fetchData() {
+        //     const res = fetch("https://jsonplaceholder.typicode.com/wrong-url");
+
+        //     if(!res.ok) {
+        //         throw new Error(`Failed status: ${res.status}`);
+        //     }
+
+        //     const data = await res.json();
+
+        //     console.log(data);
+        // }
+
+        // fetchData().catch(err => console.error(err));
+        
+            
+
+    // #4 =>
+        // fetch("https://jsonplaceholder.typicode.com/users", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type: "application/json"
+        //     },
+        //     body: JSON.stringify({
+        //         name: "Shahrukh Khan",
+        //         profession: "Acting"
+        //     })
+        // })
+        //     .then(response => response.json())
+        //     .then(data => console.log(data))
+        //     .catch(err => console.log("Error message: " + err.message));
+
+
+
+    // #5 =>
+        // fetch("https://jsonplaceholder.typicode.com/posts/1", {
+        //     method: "PUT",
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify({
+        //         title: "New Updated Title"
+        //     })
+        // })
+        //     .then(res => res.json())
+        //     .then(data => console.log(data));
+
+
+
+    // #6 =>
+        // fetch("https://jsonplaceholder.typicode.com/posts/5", {
+        //     method: "DELETE"
+        // })
+        //     .then(() => console.log("Deleted!"));
+        
+        
+        
+    // #7 =>
+        // Promise.all(
+        //     fetch("https://jsonplaceholder.typicode.com/users")
+        //         .then(res => {
+        //             return res.json();
+        //         }),
+        //     fetch("https://jsonplaceholder.typicode.com/posts")
+        //         .then(res => {
+        //             return res.json();
+        //         })
+        // )
+        //     .then([users, posts] => {
+        //         console.log(`Total Users: ${users}`),
+        //         console.log(`Total Posts: ${posts}`)
+        //     });
+        
+        
+
+    // #8 =>	(Cancel a fetch request using AbortController)
+        // const controller = new AbortController();
+
+        // setTimeout(() => {
+        //     controller.abort();
+        // }, 3000);
+
+        // fetch("https://jsonplaceholder.typicode.com/posts", {
+        //     signal = controller.signal
+        // })
+        //     .then(response => response.json())
+        //     .then(data => console.log(data))
+        //     .catch(err => console.error(err));
+            
+        
+        
+    // #9 =>
+        // fetch("https://picsum.photos/200")
+        //     .then(response => response.blob()) 
+        //     .then(img => console.log(`Image size ${img.size} byte(s)`))
+        //     .catch(err => console.error(err));
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Practice Questions (Fetch API) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //

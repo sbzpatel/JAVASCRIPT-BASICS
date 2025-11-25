@@ -37,11 +37,11 @@
             ];
 
             const cartProductInfo = [
-                {name: "Sony Bravia TV", price: 35999, stockStatus: "Out of Stock", sellerName: "Omni Tech Retail", expectedDelivery: "26 aug"},
-                {name: "OnePlus Nord buds 3 pro", price: 2999, stockStatus: "In Stock", sellerName: "SVP Peripherals", expectedDelivery: "21 aug"},
-                {name: "Garbage Bags", price: 115, stockStatus: "In Stock", sellerName: "Shri Fashion Hubs", expectedDelivery: "28 aug"},
-                {name: "Laundry Bag", price: 149, stockStatus: "In Stock", sellerName: "Kuber Industries", expectedDelivery: "28 aug"},
-                {name: "Under Arm", price: 247, stockStatus: "In Stock", sellerName: "Plix", expectedDelivery: "24 aug"}
+                { name: "Sony Bravia TV", price: 35999, stockStatus: "Out of Stock", sellerName: "Omni Tech Retail", expectedDelivery: "26 aug" },
+                { name: "OnePlus Nord buds 3 pro", price: 2999, stockStatus: "In Stock", sellerName: "SVP Peripherals", expectedDelivery: "21 aug" },
+                { name: "Garbage Bags", price: 115, stockStatus: "In Stock", sellerName: "Shri Fashion Hubs", expectedDelivery: "28 aug" },
+                { name: "Laundry Bag", price: 149, stockStatus: "In Stock", sellerName: "Kuber Industries", expectedDelivery: "28 aug" },
+                { name: "Under Arm", price: 247, stockStatus: "In Stock", sellerName: "Plix", expectedDelivery: "24 aug" }
             ]
 
 

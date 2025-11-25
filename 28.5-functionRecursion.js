@@ -31,14 +31,14 @@
         
     // Eg: (Factorial)
         function factorial(n) {
-            if(n === 0 || n=== 1) {
-                return 1;   // base case
-            } else {
-                return n * factorial(n-1);  // recursive case
+            if(n == 0) {       // base case
+                return 1;
             }
+
+            return n * factorial(n-1);     // recursive case
         }
-        
-        console.log(factorial(5));      // 120
+
+        console.log(factorial(5));    // 120
         
         
     // Eg: (Fibonacci numbers count)
@@ -52,6 +52,30 @@
         
         console.log(fibonacci(6));      // 13
 
+
+    // Eg: (count down of given numbers)
+        function countDown(n) {
+            if(n == 0) {
+                console.log("Done!!!");
+                return;
+            }
+
+            console.log(n);
+            countDown(n-1);
+        }
+
+
+    // Eg: (sum of number array - recursive)
+        function arraySum(arr) {
+            if(arr.length === 0) {
+                // console.log("0");
+                return 0;
+            }
+            
+            return arr[0] + arraySum(arr.slice(1));
+        }
+
+        console.log("Sum of an array: " + arraySum([1,2,3,4]));
 
 
     // ✅ When to Use ✅ //

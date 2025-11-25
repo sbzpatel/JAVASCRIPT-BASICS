@@ -85,7 +85,7 @@
 
                 let emptyObj = {};
 
-                console.log(emptyObj?.address?.city);       // unefined
+                console.log(emptyObj?.address?.city);       // undefined
 
             // ✅ ############## Optional Chaining (?.) ############## ✅ //
 
@@ -160,7 +160,7 @@
 
             // ✅ ############## Object ############## ✅ //
 
-                // An object is a collection of values in the form of key-value pairs sepatered by the commas which is used to represents real-world entity and complex data. 
+                // An object is a collection of values in the form of key-value pairs separated by the commas which is used to represents real-world entity and complex data. 
 
                 const student = {
                     fullName: "Shahbaz Shaikh",
@@ -271,6 +271,33 @@
                 console.log(d2 > d1); // true
                 console.log(d2 - d1); // milliseconds difference
 
+
+                // Eg: (Flipkart Offer Starts In)
+                    const nowDate = new Date();
+                    const eventDate = new Date("2025-09-05T08:54:59");
+
+                    const diff = eventDate - nowDate;
+
+                    // console.log(diff);
+
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor(diff / (1000 * 60 * 60) % 24);
+                    const minutes = Math.floor(diff / (1000 * 60) % 60);
+                    const seconds = Math.floor((diff / 1000) % 60);
+
+                    console.log(`Flipkart Offer Starts: ${days} days ${hours} hours ${minutes} minutes & ${seconds} seconds`);
+
+                    
+                // Eg: (Meetings in different regions on same time)
+
+                    let meetingOn = new Date("2025-09-05T12:30:00");
+                    
+                    let zones = ["America/New_York", "Asia/Kolkata", "Europe/London", "Asia/Tokyo"];
+                    
+                    zones.forEach(zone => {
+                        console.log(`${zone} => ${meetingOn.toLocaleString("en-US", {timeZone: zone})}`);
+                    });
+            
             // ✅ ############## Date ############## ✅ //
 
         // ✅ ############## Non-primitive DataTypes ############## ✅ //

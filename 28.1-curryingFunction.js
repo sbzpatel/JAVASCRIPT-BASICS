@@ -3,12 +3,12 @@
     // Currying is a functional programming technique where a function with multiple parameters is transformed into the sequence(series) of functions, each taking single argument at a time.
 
     // Eg:
-        // Regular Function //
+        // ✅ Regular Function ✅ //
         // function sum(a,b) {
         //     return a+b;
         // }
 
-        // Currying a regular function //
+        // ✅ Currying a regular function ✅ //
         function first(a) {
             return function withSum(b) {
                 return a*b;
@@ -81,13 +81,13 @@
           { name: "Dell Laptop", category: "Laptop", price: 120000, rating: 4.6 },
         ];
 
-        function filterProducts(category, priceRange, rating) {
-          return products.filter(p => 
-            p.category === "Mobile" &&
-            p.price <= priceRange &&
-            p.rating >= rating
-          )
-        }
+        // function filterProducts(category, priceRange, rating) {
+        //   return products.filter(p => 
+        //     p.category === "Mobile" &&
+        //     p.price <= priceRange &&
+        //     p.rating >= rating
+        //   )
+        // }
 
 
         function filterProducts(category) {

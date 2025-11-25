@@ -5,7 +5,7 @@
 
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ String Methods $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
-        // str.length();	str.charAt();	str.charCodeAt();	    str.indexOf("z");       str.lastIndexOf("z");
+        // str.charAt();	str.charCodeAt();	    str.indexOf("z");       str.lastIndexOf("z");
 
         // str.includes();		str.startsWith();		str.endsWith();
 

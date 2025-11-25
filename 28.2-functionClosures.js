@@ -67,7 +67,7 @@
 
     // Below is a Real World Example of Function Closure:
 
-    // Eg:
+    // Eg: (Bank Account with Balance & deposit & withdraw function)
       function createBankAccount(owner, initialBalance) {
         let balance = initialBalance;
 
@@ -94,5 +94,41 @@
       console.log(srkAccount.deposit(500000));
       console.log(srkAccount.withdraw(15000000));
 
+
+    // Eg: (Cart Item quantity Increment, Decrement & Get Current Quantity)
+      function createCartItem(itemName) {
+      let quantity = 1;
+      
+      return {
+        increment: function() {
+          quantity++;
+          console.log(`${itemName} quantity: ${quantity}`);
+        },
+        decrement: function() {
+          quantity--;
+          console.log(`${itemName} quantity: ${quantity}`);
+        },
+        getQuantity: function() {
+          return quantity;
+        }
+      }
+    }
+
+    const myPhoneCart = createCartItem("iPhone 16");
+
+    console.log(myPhoneCart.getQuantity());
+
+    myPhoneCart.increment();
+    // console.log(myCart.getQuantity());
+
+    myPhoneCart.increment();
+    // console.log(myCart.getQuantity());
+
+    myPhoneCart.increment();
+    // console.log(myCart.getQuantity());
+
+    myPhoneCart.decrement();
+    myPhoneCart.decrement();
+    myPhoneCart.decrement();
 
 // ✅ $$$$$$$$$$$$$$$$$ Function Closure $$$$$$$$$$$$$$$$$ ✅ //

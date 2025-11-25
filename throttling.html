@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+
+    <body>
+        <h2>Throttling in JavaScript</h2>
+
+        <p id="output">Mouse position will show here...</p>
+    </body>
+
+    <script>
+        function throttle(func, limit) {
+            let lastCall = 0;
+
+            return function(...args) {
+                let now = Date.now();
+
+                if(now - lastCall >= limit) {
+                    lastCall = now;
+                    func.apply(this, args);
+                }
+            };
+        }
+
+        window.addEventListener("mousemove", throttle((e) => {
+            document.getElementById("output").innerHTML =  `Mouse at: ${e.clientX}, ${e.clientY}`;
+        }, 500));
+    </script>
+</html>

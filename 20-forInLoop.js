@@ -25,7 +25,7 @@
 
         for(let key in formData) {
             if(!formData[key]) {
-                console.log(`❌ ${field} is required`);
+                console.log(`❌ ${formData[key]} is required`);
             }
         }
 

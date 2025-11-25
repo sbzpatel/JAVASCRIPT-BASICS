@@ -103,6 +103,43 @@
             console.log(employee.age);      // (undefined) unable to access age, its property of child object 'employee1'
             // create an copied of 'employee' object, where shows only employee1 methods, but can use enhireted methods of employee 'object'.
 
+
+            // Eg: (Different Type of User's Operations Handles in `Flipkart` like Web Portal)
+            const FKuser = {
+                isLoggedIn: false,
+                login: function() {
+                    this.isLoggedIn = true;
+                    console.log(`${this.name}(${this.type}) has logged in successfully!!!`);
+                },
+                logout: function() {
+                    this.isLoggedIn = false;
+                    console.log(`${this.name}(${this.type}) has logged out successfully!!!`);
+                }
+            }
+
+            const admin = Object.create(FKuser);
+            admin.name = "Shahrukh";
+            admin.type = "admin";
+            admin.deleteUser = function(userName) {
+                console.log(`${this.name} deleted user ${userName}.`);
+            }
+
+            const customer = Object.create(FKuser);
+            customer.name = "Shabu";
+            customer.type = "customer";
+            customer.purchase = function(item) {
+                console.log(`${this.name} purchased ${item}.`);
+            }
+
+
+
+            admin.login();
+
+            customer.login();
+            customer.purchase("iPhone 16 Pro");
+
+            admin.deleteUser("Shabu");
+
         // ✅ ############## Object.create Method ############## ✅ //
 
     // ✅ ############## Several ways to create an object ############## ✅ //
@@ -147,9 +184,9 @@
                 console.log(key, person[key]);
             }
 
-        //🔹############## Using for-of ##############🔹//
+        //🔹############## Using for-in ##############🔹//
 
-        //🔹############## Using Object method (Object.keys, Object.values, Object.entries)🔹############## //
+        //🔹############## Using Object method (Object.keys, Object.values, Object.entries)##############🔹//
 
             // ✅ 1) Object.keys(obj) ->>        (Returns array of keys)
 
@@ -189,7 +226,7 @@
                     console.log(target);    // Also { a: 1, b: 2, c: 3, d: 4 }
                     // ➡️ Note: It modifies the target object and also returns it.
 
-        //🔹############## Using Object method (Object.keys, Object.values, Object.entries)🔹############## //
+        //🔹############## Using Object method (Object.keys, Object.values, Object.entries)##############🔹//
 
     // ✅ ############## Looping through Properties ############## ✅ //
 
@@ -226,8 +263,8 @@
 
     // ✅ ############## Comparison Object ############## ✅ //
 
-        const a1 = {x:1};
-        const b1 = {x:1};
+        const a1 = { x:1 };
+        const b1 = { x:1 };
 
         console.log(a1 === b1);        // false
 
@@ -306,7 +343,7 @@
 
                 console.log(copyBySpread);      // original object can't affects
 
-            // 🟡 Deep Copy (structuredClone() and Object.assign() both are used for deep copy of non-primitive data) ->>
+            // 🟡 Deep Copy (structuredClone() is used for deep copy of non-primitive data) ->>
 
             // Eg:
                 const person786 = {
@@ -323,15 +360,6 @@
                 }
 
                 let person1_786 = structuredClone(person786);   // Both objects point to the difference object
-
-                Object.assign(anotherPerson, person786);    // returns and update target object(anotherPerson) with whole copy all the content of person786
-
-                console.log(anotherPerson);     
-
-                person1_786.address.city = "Mumbai";
-
-                console.log(person786);
-                console.log(person1_786);
 
             // Output:
                 // {
@@ -363,7 +391,7 @@
             user2.greet(); // Output: "Hello, Shahbaz"
             // 🟢 Here, this.name refers to user2.name because greet() is called as a method of user2.
 
-        // ❗ Arrow Function & this ->>
+        // ❗Arrow Function & this ->>
             // Arrow function in JavaScript provides a simple syntax for writing functions.
             // Unlike regular functions, arrow functions do not have its own `this` context. Instead, they inherit the `this` value from its outer scope where it defined.
 

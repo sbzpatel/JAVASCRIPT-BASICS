@@ -33,10 +33,10 @@
                 
                 console.log(text.match(/[ap]/ig));
                 // O/P => // [
-                        //   'A', 'p', 'p',
-                        //   'a', 'a', 'a',
-                        //   'a'
-                        // ]
+                                //   'A', 'p', 'p',
+                                //   'a', 'a', 'a',
+                                //   'a'
+                          // ]
                 
                 
         // 2) Constructor Syntax =>
@@ -159,6 +159,66 @@
                 // console.log(/World$/.test("World Hello"));
 
         // ✅ ############## "test()" Method ############## ✅ //
+
+
+        // ✅ ############## Practice Examples ############## ✅ //
+
+                // test() => test the particular pattern whether particular pattern of string present or not in a given string.
+
+                // const regex = /!!!!/;
+                // console.log(regex.test("Hello, Shahrukh Khan!!!"));
+
+
+                // const str = "The rain in Spain stays mainly in the plain";
+                // console.log(str.match(/ain/g));     // [ 'ain', 'ain', 'ain', 'ain' ]
+
+
+                // const str = "cat is sits on the cott...";
+                // const regex = /c.t/g;
+                // console.log(str.match(regex));
+
+
+                // const str = "Hello SRK!!!";
+                // const regex = /^Hello/;
+                // // const regex = new RegExp("^Hello");
+                // console.log(regex.test(str));
+
+
+                // const str = "Hello SRK!!!";
+                // const regex = /SRK!!!$/;
+                // console.log(regex.test(str));
+
+
+                // const str = "What a Good shot!!!";
+                // const regex = /Go+d/;
+                // console.log(regex.test(str));
+
+
+                // const str = "What is your age!!!";
+                // console.log(/[aeiou]/.test(str));
+                // console.log(str.match(/[aeiou]/g));
+
+
+                // const str = "What is your age!!!";
+                // console.log(/[aeiou]/.test(str));
+                // console.log(str.match(/[^aeiou]/g));
+
+
+                // const number = "123456789";
+                // const regex = /\d/g;
+                // console.log(number.match(regex));
+
+
+                // const password = "SRK_786007sbz";
+                // const regex = /\w/;
+                // console.log(regex.test(regex));
+
+
+                // const str = "Shahrukh       Khan";
+                // const regex = /\s/;
+                // console.log(regex.test(str));
+
+        // ✅ ############## Practice Examples ############## ✅ //
   
 
 // ✅ ############## RegExp (Regular Expression) ############## ✅ //

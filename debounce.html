@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+
+    <body>
+        <h2>Debouncing in JavaScript</h2>
+        
+        <input 
+            id="search"
+            type="text"
+            placeholder="Enter for products"
+        />
+
+        <div id="results"></div>
+    </body>
+
+    <script>
+        function debounce(func, delay) {
+            let timeout;
+
+            return function(...args) {
+                clearTimeout(timeout);
+
+                timeout = setTimeout(() => func.apply(this, args), delay);
+            }
+        }
+
+        function fetchProducts(query) {
+            // mocking api for fetch products data
+            console.log(`Fetching product data with query ${query}...`);
+
+            document.getElementById("results").innerHTML = `<p>Results for <b>${query}</b> (fetched from API)</p>`;
+        }
+
+        const searchBox = document.getElementById("search");
+        searchBox.addEventListener("input", debounce((event) => {
+            fetchProducts(event.target.value);
+        }, 500));
+    </script>
+</html>

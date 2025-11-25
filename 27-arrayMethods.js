@@ -256,7 +256,7 @@
 
             // 13) arr.splice()
             console.log("############# splice() method ############")
-                friends.splice(3,2, "Tausif", "Niraj", "Sakidraj");
+                friends.splice(3, 2, "Tausif", "Niraj", "Sakidraj");
                 console.log(`New Friends array Length: ${friends.length}`);
                 console.log(`New friends array after splice method: ${friends}`);
             console.log("############# splice() method ############")

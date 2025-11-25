@@ -51,7 +51,7 @@
 
         let diff = diffFun(5, 1);
         console.log("Difference of 5 & 1 is", diff);
-        console.log(`Diffeence of 5 & 1 is ${diff}`);       // expression return using back ticks(``)
+        console.log(`Difference of 5 & 1 is ${diff}`);       // expression return using back ticks(``)
 
 
 
@@ -92,7 +92,7 @@
         // We can assign function definition to the variable.
 
         // Eg:
-            const greet = function(name = "Shahbaz") {
+            const greet = function(name) {
                 console.log(`Hello, ${name}`);
             }
 
@@ -131,7 +131,7 @@
             function outer() {
                 let count = 0;
 
-                return function inner() {
+                return function() {
                     count++;
                     console.log(count);
                 }

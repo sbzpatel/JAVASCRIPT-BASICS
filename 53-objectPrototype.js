@@ -1,4 +1,3 @@
-
 // ✅ $$$$$$$$$$$$$$$$$ Object Prototype $$$$$$$$$$$$$$$$$ ✅ //
 
     // JavaScript uses prototypal inheritance, that means object can inherit properties and methods from other object via a prototype chain.

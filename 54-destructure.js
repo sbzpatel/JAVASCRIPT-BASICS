@@ -32,7 +32,7 @@
 
         // ✅ @@@@@@@@@@@@@@@@@@@@@ Default Values @@@@@@@@@@@@@@@@@@@@@ ✅ //
 
-            const [x = 200, y=400] = [1];
+            const [x = 200, y = 400] = [1];
 
             console.log(x);     // 1
             console.log(y);     // 400 (prints default value)

@@ -99,10 +99,9 @@
         
 // ✅ ############## JavaScript Arrays ############## ✅ //
 
+// ✅ ############## Examples ############## ✅ //
 
-// ✅ ############## Average of Marks ############## ✅ //
-
-    // Eg:
+    // Eg: (Average of Marks)
         let marks = [85, 95, 84, 92, 89];
 
         let sum = 0;
@@ -114,4 +113,22 @@
         console.log("Obtained Marks are:", sum);
         console.log("Obtained Avg Marks are:", (sum / marks.length));
 
-// ✅ ############## Average of Marks ############## ✅ //
+    // Eg: (Find name in a Contact List)
+        let contacts = [
+            "Badreaalam Rohile",
+            "Fai Patel",
+            "Muzammil Patel",
+            "Maghfir Patel",
+            "Aarif Patel"
+        ];
+        let searchName = "Muzammil Patel";
+        
+        const index = contacts.indexOf(searchName);
+        
+        if(index !== -1) {
+            console.log(`${searchName} found at position ${index}!!!`)
+        } else {
+            console.log(`${searchName} not found in contacts...`);
+        }
+
+// ✅ ############## Examples ############## ✅ //

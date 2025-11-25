@@ -8,8 +8,8 @@
     // !== (Not Equal to & type)
     // < (less than)
     // > (greater than)
-    // <= (less than & equal to)
-    // >= (greater than & equal to)
+    // <= (less than | equal to)
+    // >= (greater than | equal to)
 
     
     // Eg:

@@ -24,6 +24,16 @@
     // ✅ ############## console.log() ############## ✅ //
 
 
+    // ✅ ############## console.error() ############## ✅ //
+        // console.error() is JavaScript's built-in method used to show error in a program during execution.
+
+        // Eg:
+            console.error("Error occurred!!!");
+            console.error("Downloading failed!!!");
+
+    // ✅ ############## console.error() ############## ✅ //
+
+
     // ✅ ############## console.table() ############## ✅ //
 
         // The console.table() method in JavaScript is used to display data in a tabular format within the browser's developer console or Node.js environment.

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <!-- <h1 id="heading">Welcome</h1>
+    <button onclick="changeText()">Click Me</button> -->
+
+    <!-- <h1 id="title">Title Coming Soon...</h1>
+
+
+    <div id="box">Shahrukh Khan</div>
+
+
+    <ul id="list"></ul>
+
+
+    <p id="item">Paragram will be removed from DOM</p>
+
+
+    <a href="#" id="link">Google Link</a>
+
+
+    <p>Paragram with active class...</p> -->
+
+
+    <!-- <button id="btn">Click Me</button> -->
+
+
+
+
+
+
+
+
+    <!-- <h1 id="title">Hello SRK</h1> -->
+
+
+    <!-- <p class="info">Green Paragraph</p> -->
+
+
+    <!-- <div id="box"></div> -->
+
+
+    <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg" /> -->
+
+    <!-- <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul> -->
+
+    <!-- <ul id="list"></ul> -->
+
+    <!-- <h4>Heading 4 (Headding3 will be prepend on the top of this)</h4> -->
+
+
+    <!-- <p id="removeMe">Remove Me from DOM</p> -->
+
+    <!-- <p id="oldPara"></p> -->
+
+
+    <!-- <button id="toggleBtn">Toggle Body's class</button> -->
+
+    <!-- <div id="box" style="height: 100px; width: 100px; background-color: black;"></div> -->
+
+    <!-- <button>Disable Me</button> -->
+
+    <!-- <input type="text" placeholder="..." /> -->
+
+    <!-- <h2 id="heading">Please change my text</h2>
+
+    <button id="btn">Click Me</button> -->
+
+    <!-- <input type="text" placeholder="Enter your " /> -->
+
+    <!-- <div id="box" style="border-width: 1px; border-color: black; width: 100px; height: 100px; border-style: dashed;"></div> -->
+
+
+    <!-- <span id="count">0</span>
+    <button id="btn">Increment Counter</button> -->
+
+
+    <!-- <button id="btn">Create New Div with Dynamic Background Color</button> -->
+
+    <!-- <div class="card"></div> -->
+
+    <script>
+        // const card = document.querySelector(".card");
+        // const copy = car.cloneNode(true);       // true = deep clone (innclues children)
+        // document.body.appendChild(copy);
+
+        // const btn = document.getElementById("btn");
+
+        // btn.addEventListener("click", () => {
+        //     const newDiv = document.createElement("div");
+        //     newDiv.style.width = "100px";
+        //     newDiv.style.height = "100px";
+        //     newDiv.style.borderWidth = "1px";
+        //     newDiv.style.borderColor = "black";
+        //     newDiv.style.borderStyle = "dotted";
+        //     newDiv.style.margin = "10px";
+        //     newDiv.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
+
+        //     console.log(`#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`);
+
+        //     const body = document.querySelector("body");
+        //     body.appendChild(newDiv);
+        // });
+
+        
+
+        // let count = 0;
+
+        // document.getElementById("btn").addEventListener("click", () => {
+        //     count++;
+        //     document.getElementById("count").innerText = count;
+        // });
+
+
+
+        // const box = document.getElementById("box");
+
+        // box.addEventListener("mouseenter", () => {
+        //     box.style.backgroundColor = "yellow";
+        // });
+
+        // box.addEventListener("mouseleave", () => {
+        //     box.style.backgroundColor = "#fff";
+        // });
+
+
+
+        // const input = document.querySelector("input");
+
+        // input.addEventListener("input", () => {
+        //     console.log("Input...");
+        //     input.placeholder = "Live text...";
+        // });
+
+        // const btn = document.getElementById("btn");
+        // btn.addEventListener("click", () => {
+        //     document.getElementById("heading").innerText = "Text changed...";
+        // });
+
+        // const textInput = document.querySelector("input");
+        // textInput.placeholder = "Enter your name";
+
+        // const button = document.querySelector("button");
+
+        // button.disabled = true;
+
+        // const box = document.getElementById("box");
+        // box.style.background = "blue";
+
+        // const toggleButton = document.getElementById("toggleBtn");
+        // toggleButton.addEventListener("click", () => {
+        //     console.log("button clicked!!!");
+
+        //     console.log(document.querySelector("body"));
+
+        //     const body = document.querySelector("body");
+
+        //     body.classList.toggle("dark-mode");
+        // });
+        
+
+
+        // document.getElementById("oldPara").innerText = "This is new paragraph!";
+
+        // const removeElement = document.getElementById("removeMe");
+        // removeElement.remove();
+
+        // const heading3 = document.createElement("h3");
+        // heading3.innerText = "Prepended Heading";
+        // document.getElementsByTagName("body")[0].prepend(heading3);
+
+        // const newList = document.createElement("li");   // create new list
+        // newList.innerText = "New Item";     // add data
+        // document.getElementById("list").appendChild(newList);   // append it
+
+        // // const allListsByTagName = document.getElementsByTagName("li");      // returns HTMLCollections
+        // // console.log(allListsByTagName);
+
+        // const allLists = document.querySelectorAll("li");       // returns nodeLists
+        // console.log(allLists);
+
+        // allLists.forEach(list => {
+        //     list.innerText = "Updated!!!";
+        // });
+
+        // document.getElementsByTagName("img")[0].src = "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D";
+
+        // document.getElementById("box").innerHTML = "<p>New content added!</p>";
+
+        // document.getElementById("title").innerText = "Hello DOM!";  
+
+        // document.getElementsByClassName("info")[0].style.color = "green";
+
+
+        // function changeText() {
+        //     console.log("calling changeText()");
+        //     document.getElementById("heading").innerText = "Ohhooo!!! Text updated";
+        // }
+
+
+
+        // document.getElementById("title").innerText = "New Title";
+        // document.getElementById("title").innerHTML = "<b>Bold Title</b>";
+
+
+
+        // document.getElementById("box").style.color = "white";
+        // document.getElementById("box").style.backgroundColor = "grey";
+        // document.getElementById("box").style.fontSize = 32;
+
+
+
+        // const newItem = document.createElement("li");
+        // newItem.innerText = "New List Item";
+
+        // document.getElementById("list").appendChild(newItem);
+
+
+
+        // document.getElementById("item").remove();
+
+
+
+        // document.getElementById("link").href = "https://www.google.com/"
+        
+
+
+        // document.getElementsByTagName("p").classList.add("active");
+
+
+
+        // document.getElementById("btn").addEventListener("click", function() {
+        //     console.log("Button clicked!!!");
+        // });
+
+
+        // const btn = document.getElementById("btn");
+        // btn.addEventListener("click", () => {
+        //     box.style.backgroundColor = "grey";
+        // })
+    </script>
+</body>
+</html>

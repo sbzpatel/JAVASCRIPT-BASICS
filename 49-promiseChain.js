@@ -86,3 +86,100 @@
     // ✅ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
 
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promise Chain $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promise Chain (Best Example to Understand) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+        // 1) Login User
+        // 2) Get User Profile
+        // 3) Get user posts
+        // 4) Get post comments
+
+        /*          
+        function loginUser(username, password) {
+            console.log("Fetching User...");
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(username !== "john" || password !== "1234") {
+                        reject("Invalid username or password!!!");
+                    } else {
+                        const user = {
+                            id: 1,
+                            name: "john",
+                            password: "1234"
+                        }
+                        
+                        resolve(user);
+                    }
+                }, 2000);
+            })
+        }
+
+        function getUserProfile(userId) {
+            console.log("Getting User Profile using 'userId'...");
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(!userId) {
+                        reject("User ID not found!!!");    
+                    } else {
+                        const profile = {
+                            id: 101,
+                            name: "Shahrukh Khan"
+                        };
+                        
+                        resolve(profile);
+                    }
+                }, 2000);
+            });
+        }
+
+        function getUserPosts(profileId) {
+            console.log("Fetching User's posts using 'profileId'...");
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(!profileId) {
+                        reject("Invalid Profile Id!!!");
+                    } else {
+                        const posts = [
+                            { id: 101, title: "post1", description: "post1 description" },
+                            { id: 102, title: "post2", description: "post2 description" }
+                        ];
+                        
+                        resolve(posts);
+                    }
+                }, 2000);
+            });
+        }
+
+        function getPostComments(postId) {
+            console.log("Fetching posts comments using 'postId'...");
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if(!postId) {
+                        reject("Post ID missing!!!");
+                    } else {
+                        const comments = [
+                            "Nice",
+                            "Awesome",
+                            "I am not agreed!!!"
+                        ];
+                        
+                        resolve(comments);
+                    }
+                }, 2000);
+            });
+        }
+
+        loginUser("john", "1234")
+            .then(user => getUserProfile(user.id))
+            .then(profile => getUserPosts(profile.id))
+            .then(posts => getPostComments(posts[0].id))
+            .then(comments => console.log("Comments: " + comments.join(",")))
+            .catch(error => console.log(error));
+        */
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Promise Chain (Best Example to Understand) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //

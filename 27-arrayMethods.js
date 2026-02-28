@@ -19,7 +19,7 @@
             // e) splice()
             // f) slice()
 
-    // ✅ 3)  Search and Check Methods ->>
+    // ✅ 3) Search and Check Methods ->>
             // a) includes()
             // b) indexOf()
             // c) lastIndexOf()

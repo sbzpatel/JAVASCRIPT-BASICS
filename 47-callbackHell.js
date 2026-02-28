@@ -109,3 +109,106 @@
     */
 
 // ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Callback Hell $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Callback Hell (Best Example to Understand) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //
+
+        // 1) Login User
+        // 2) Get User Profile
+        // 3) Get user posts
+        // 4) Get post comments
+
+        /*
+        function loginUser(username, password, callback) {
+            console.log("Fetching User...");
+            
+            setTimeout(() => {
+                if(username !== "john" || password !== "1234") {
+                    return callback("Invalid username or password!!!", null);
+                }
+                
+                const user = {
+                    id: 1,
+                    name: "john",
+                    password: "1234"
+                }
+                
+                callback(null, user);
+            }, 2000);
+        }
+
+        function getUserProfile(userId, callback) {
+            console.log("Getting User Profile using 'userId'...");
+            
+            setTimeout(() => {
+                if(!userId) {
+                    return callback("User ID not found!!!", null);    
+                }
+                
+                const profile = {
+                    id: 101,
+                    name: "Shahrukh Khan"
+                };
+                
+                callback(null, profile);
+            }, 2000);
+        }
+
+        function getUserPosts(profileId, callback) {
+            console.log("Fetching User's posts using 'profileId'...");
+            
+            setTimeout(() => {
+                if(!profileId) {
+                    return callback("Invalid Profile Id!!!", null);
+                }
+                const posts = [
+                    { id: 101, title: "post1", description: "post1 description" },
+                    { id: 102, title: "post2", description: "post2 description" }
+                ];
+                
+                callback(null, posts);
+            }, 2000);
+        }
+
+        function getPostComments(postId, callback) {
+            console.log("Fetching posts comments using 'postId'...");
+            
+            setTimeout(() => {
+                if(!postId) {
+                    return callback("Post ID missing!!!", null);
+                }
+                
+                const comments = [
+                    "Nice",
+                    "Awesome",
+                    "I am not agreed!!!"
+                ];
+                
+                callback(null, comments);
+            }, 2000);
+        }
+
+        loginUser("john", "1234", function(err, user) {
+            if(err) {
+                return console.log("Error: " + err); 
+            }
+            
+            getUserProfile(user.id, function(err, profile) {
+                if(err) {
+                    return console.log("Error: " + err); 
+                }
+                
+                getUserPosts(profile.id, function(err, posts) {
+                    if(err) {
+                        return console.log("Error: " + err);
+                    }
+                    
+                    getPostComments(posts[0].id, function(err, comments) {
+                        console.log("Comments: " + comments);
+                    });
+                });
+            });
+        });
+        */
+
+// ✅ $$$$$$$$$$$$$$$$$$$$$$$$ Callback Hell (Best Example to Understand) $$$$$$$$$$$$$$$$$$$$$$$$ ✅ //

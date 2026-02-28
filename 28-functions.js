@@ -529,7 +529,7 @@
 
 
         // 🧠 What is function hoisting in JavaScript?
-            // Hoisting is a JavaScript's default behavior of moving declarations to the top of the current scope before code execution.
+            // Hoisting is a JavaScript's default behaviour of moving declarations to the top of the current scope before code execution.
 
             // 🔁 Function Hoisting ->>
                 // 🔹 Function Declarations are hoisted ✅
